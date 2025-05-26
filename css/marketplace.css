@@ -1,26 +1,48 @@
 .text-orange {
-    color: #ff8c00;
-  }
-  
-  .btn-orange {
-    background-color: #ff8c00;
-    color: white;
-    border: none;
-  }
-  
-  .btn-orange:hover {
-    background-color: #e67800;
-  }
-  
-  .sidebar {
-    width: 220px;
-    min-height: 100vh;
-  }
-
-  .icon-logo{
-    width: 20px;
-  }
-
-  .nav-link:hover{
-    color: #e67800 !important;
-  }
+  color: #ff8c00;
+}
+.btn-orange {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+}
+.btn-orange:hover {
+  background-color: #e67800;
+}
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: #1f252f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff8c00;
+}
+.sidebar .nav-link {
+  color: #fff;
+  padding: 8px 0;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #ff8c00;
+  font-weight: 600;
+}
+.text-orange {
+  color: #ff8c00;
+}
+.user {
+  color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+.table thead {
+  background-color: #f9f9f9;
+}
+.nav-link:hover{
+  color: #e67800 !important;
+}
