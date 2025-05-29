@@ -14,7 +14,7 @@
   <div class="form-panel" id="formPanel">
     <div class="form-container login active" id="loginForm">
       <h3>Login</h3>
-      <form action="" method="post">
+      <form action="funcoes/login.php" method="post">
       <input type="email" class="form-control mb-2" placeholder="E-mail" name="email">
       <input type="password" class="form-control mb-3" placeholder="Senha" name="senha">
       <button type="submit" class="btn btn-orange">Entrar</button>
@@ -23,7 +23,7 @@
 
     <div class="form-container cadastro" id="cadastroForm">
       <h3>Cadastre-se</h3>
-      <form action="" method="post">
+      <form action="funcoes/cadastroUser.php" method="post">
       <input type="text" class="form-control mb-2" placeholder="Nome" name="nome">
       <input type="text" class="form-control mb-2" placeholder="Sobrenome" name="sobrenome">
       <input type="text" class="form-control mb-2" placeholder="CPF" name="cpf">
