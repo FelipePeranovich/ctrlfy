@@ -8,13 +8,11 @@ $nome = filter_input(INPUT_POST,"nome",FILTER_SANITIZE_SPECIAL_CHARS);
 $sobrenome = filter_input(INPUT_POST,"sobrenome",FILTER_SANITIZE_SPECIAL_CHARS);
 
 $senhaHash = password_hash($senha,PASSWORD_DEFAULT);
+
 include_once '../funcoes/banco.php';
 $bd = conectar();
 $sql = "insert into usuario (`id_usuario`, `nome`, `sobrenome`, `email`, `senha`, `telefone`, `nivel_acesso`, `cpf`) values "
-. "(NULL, '$nome','$sobrenome' ,'$email', '$senhahash', '$telefone', 'null','$cpf')";
-
-echo $sql;
-
+. "(NULL, '$nome','$sobrenome' ,'$email', '$senhaHash', '$telefone', 'null','$cpf')";
 $verifica_cpf ="select * from usuario where cpf = '$cpf'";
 $res = $bd->query($verifica_cpf);
 if($res->rowCount()!=0){
@@ -35,11 +33,12 @@ $bd->beginTransaction();
         }
     else {
         session_start();
-        $_SESSION['usuario'] = $nome;
+        $_SESSION['nome'] = $nome;
+        $_SESSION['sobrenome'] = $sobrenome;
         $_SESSION['permissao'] = "usuario";
         $_SESSION['cpf'] = $cpf;
         $bd->commit();       
-        header("location:../index.php");
+        header("location:../dashboard.php");
     }
 
 
