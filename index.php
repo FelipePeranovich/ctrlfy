@@ -32,6 +32,7 @@
       <input type="password" class="form-control mb-3" placeholder="Senha" name="senha">
       <button type="submit" class="btn btn-orange">Cadastrar</button>
     </form>
+    <a href="">Logar com google</a>
     </div>
   </div>
 
