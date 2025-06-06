@@ -6,7 +6,7 @@ $client = new Google\Client;
 
 $client->setClientId("1066806316509-5hhc9aro4vjqh0qve5taqk2oh4tjqlkj.apps.googleusercontent.com");
 $client->setClientSecret("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");
-$client->setRedirectUri("http://localhost/ctrlfy/dashboard.php");  
+$client->setRedirectUri("http://localhost/ctrlfy/funcoes/cadastroUserGoogle.php");  
 
 $client->addScope("email");
 $client->addScope("profile");
@@ -36,7 +36,6 @@ $url= $client->createAuthUrl();
       <input type="password" class="form-control mb-3" placeholder="Senha" name="senha">
       <button type="submit" class="btn btn-orange">Entrar</button>
     </form>
-    <a href="<?= $url ?>">Logar com google</a>
     </div>
 
     <div class="form-container cadastro" id="cadastroForm">
@@ -50,8 +49,9 @@ $url= $client->createAuthUrl();
       <input type="password" class="form-control mb-3" placeholder="Senha" name="senha" required>
       <button type="submit" class="btn btn-orange">Cadastrar</button>
     </form>
-    <a href="">Entrar com google</a>
+    <a href="<?= $url ?>">Logar com google</a>
     </div>
+
   </div>
 
   <div class="logo-panel right" id="logoPanel">
