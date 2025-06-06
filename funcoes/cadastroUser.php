@@ -25,6 +25,7 @@ if($teste -> rowCount()!=0){
     echo "<script>alert('EMAIL INVÁLIDO! ESSE EMAIL JÁ POSSUI CADASTRO');javascript:history.go(-1)</script>";
     die();
 }
+
 $bd->beginTransaction();
 
     $i = $bd->exec($sql);  

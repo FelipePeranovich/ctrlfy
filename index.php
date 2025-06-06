@@ -1,3 +1,20 @@
+<?php
+
+require __DIR__ . "/vendor/autoload.php";
+
+$client = new Google\Client;
+
+$client->setClientId("1066806316509-5hhc9aro4vjqh0qve5taqk2oh4tjqlkj.apps.googleusercontent.com");
+$client->setClientSecret("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");
+$client->setRedirectUri("http://localhost/ctrlfy/dashboard.php");  
+
+$client->addScope("email");
+$client->addScope("profile");
+
+$url= $client->createAuthUrl();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,20 +36,21 @@
       <input type="password" class="form-control mb-3" placeholder="Senha" name="senha">
       <button type="submit" class="btn btn-orange">Entrar</button>
     </form>
+    <a href="<?= $url ?>">Logar com google</a>
     </div>
 
     <div class="form-container cadastro" id="cadastroForm">
       <h3>Cadastre-se</h3>
       <form action="funcoes/cadastroUser.php" method="post">
-      <input type="text" class="form-control mb-2" placeholder="Nome" name="nome">
-      <input type="text" class="form-control mb-2" placeholder="Sobrenome" name="sobrenome">
-      <input type="text" class="form-control mb-2" placeholder="CPF" name="cpf">
-      <input type="tel" class="form-control mb-2" placeholder="Telefone" name="telefone">
-      <input type="email" class="form-control mb-2" placeholder="E-mail" name="email">
-      <input type="password" class="form-control mb-3" placeholder="Senha" name="senha">
+      <input type="text" class="form-control mb-2" placeholder="Nome" name="nome" required>
+      <input type="text" class="form-control mb-2" placeholder="Sobrenome" name="sobrenome" required>
+      <input type="text" class="form-control mb-2" placeholder="CPF" name="cpf" id="cpf" maxlength="14" required>
+      <input type="tel" class="form-control mb-2" placeholder="Telefone" name="telefone" id="telefone" maxlength="15" onkeyup="handlePhone(event)" required>
+      <input type="email" class="form-control mb-2" placeholder="E-mail" name="email" required>
+      <input type="password" class="form-control mb-3" placeholder="Senha" name="senha" required>
       <button type="submit" class="btn btn-orange">Cadastrar</button>
     </form>
-    <a href="">Logar com google</a>
+    <a href="">Entrar com google</a>
     </div>
   </div>
 
@@ -68,6 +86,33 @@
       logoPanel.classList.add('right');
     }
   });
+
+  //formatar cpf
+const input = document.getElementById("cpf");
+
+input.addEventListener("keyup", formatarCPF);
+
+function formatarCPF(e){
+  var v=e.target.value.replace(/\D/g,"");
+  v=v.replace(/(\d{3})(\d)/,"$1.$2");
+  v=v.replace(/(\d{3})(\d)/,"$1.$2");
+  v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
+  e.target.value = v;
+} 
+
+//formatar telefone
+const handlePhone = (event) => {
+    let input = event.target
+    input.value = phoneMask(input.value)
+  }
+  
+  const phoneMask = (value) => {
+    if (!value) return ""
+    value = value.replace(/\D/g,'')
+    value = value.replace(/(\d{2})(\d)/,"($1) $2")
+    value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+    return value
+  }
 </script>
 
 </body>
