@@ -16,7 +16,6 @@
 <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
 <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
 <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Configurações</a></li>
 </ul>
 <?php
 session_start();

@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1f252f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff8c00;
+}
+
+.sidebar .nav-link {
+  color: #ccc;
+  margin: 10px 0;
+  transition: 0.3s;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.sidebar .user {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+.container-fluid {
+  background-color: #f3f4f6;
+  padding: 40px;
+}
+
+.btn-warning {
+  background-color: #ff8c00;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e67600;
+}
+
+.text-orange {
+  color: #ff8c00;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+input.form-control,
+select.form-select {
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: #f9f9f9;
+}
+
+.table th {
+  font-weight: 600;
+  color: #555;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.badge {
+  border-radius: 12px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.status-instock {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-lowstock {
+  background-color: #ffc107;
+  color: black;
+}
+
+.status-outstock {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.pagination .page-link {
+  color: #333;
+  border-radius: 8px;
+  margin: 0 2px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.table td button {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.table td button i {
+    margin: 0;
+}
