@@ -7,7 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/estoque.css" />
 </head>
-<body>
+<body> 
 <div class="d-flex">
 <div class="sidebar p-3 text-white">
 <h4 class="logo">Ctrlfy</h4>
@@ -16,7 +16,6 @@
 <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
 <li class="nav-item"><a class="nav-link active" href="#">Estoque</a></li>
 <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Configurações</a></li>
 </ul>
 <?php
 session_start();

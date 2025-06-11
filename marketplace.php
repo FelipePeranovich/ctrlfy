@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/marketplace.css" />
 </head>
 <body>
-<div class="d-flex">
+<div class="d-flex"> 
 <div class="sidebar p-3 text-white">
 <h4 class="logo">Ctrlfy</h4>
 <ul class="nav flex-column mt-4">
@@ -16,7 +16,6 @@
 <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
 <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
 <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Configurações</a></li>
 </ul>
 <?php
 session_start();
