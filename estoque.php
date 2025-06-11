@@ -7,7 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/estoque.css" />
 </head>
-<body>
+<body> 
 <div class="d-flex">
 <div class="sidebar p-3 text-white">
 <h4 class="logo">Ctrlfy</h4>
