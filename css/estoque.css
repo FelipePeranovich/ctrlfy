@@ -1,38 +1,77 @@
 body {
-    background-color: #f3f4f6;
-    font-family: 'Segoe UI', sans-serif;
-  }
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: #1f252f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff8c00;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  padding: 8px 0;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.text-orange {
+  color: #ff8c00;
+}
+
+.user {
+  color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Estilo para o sidebar mobile */
+.sidebar-mobile {
+  background-color: #1f252f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-mobile .nav-link {
+  color: #fff;
+  padding: 8px 0;
+}
+
+.sidebar-mobile .nav-link:hover,
+.sidebar-mobile .nav-link.active {
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.sidebar-mobile .user {
+  color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+.table thead {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 767.98px) {
   .sidebar {
-    width: 220px;
-    min-height: 100vh;
-    background-color: #1f252f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: none !important;
   }
-  .sidebar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff8c00;
-  }
-  .sidebar .nav-link {
-    color: #fff;
-    padding: 8px 0;
-  }
-  .sidebar .nav-link:hover,
-  .sidebar .nav-link.active {
-    color: #ff8c00;
-    font-weight: 600;
-  }
-  .text-orange {
-    color: #ff8c00;
-  }
-  .user {
-    color: #fff;
-    padding: 10px 0;
-    border-top: 1px solid #ccc;
-    text-align: center;
-  }
-  .table thead {
-    background-color: #f9f9f9;
-  }
+}
