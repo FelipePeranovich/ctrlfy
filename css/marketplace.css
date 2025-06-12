@@ -10,12 +10,17 @@
   background-color: #e67800;
 }
 .sidebar {
+  position: fixed; /* Faz a sidebar ficar fixa na lateral */
+  top: 0;
+  left: 0;
   width: 220px;
-  min-height: 100vh;
+  height: 100vh; /* 100% da altura da tela */
   background-color: #1f252f;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: white;
+  z-index: 1000; /* Garante que ela fique acima do conteúdo */
 }
 
 .sidebar .logo {
@@ -76,4 +81,19 @@
 }
 .nav-link:hover{
   color: #e67800 !important;
+}
+
+.main-content {
+  margin-left: 220px; /* ou padding-left, dependendo do layout */
+  padding: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    display: none !important;
+  }
+  .main-content {
+    margin-left: 0; /* ou padding-left, dependendo do layout */
+    padding: 0;
+  }
 }

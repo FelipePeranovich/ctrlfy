@@ -21,7 +21,10 @@
                         <li class="nav-item"><a class="nav-link active" href="estoque.php">Estoque</a></li>
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                   </ul>
-                  <div class="user mt-auto pt-4">João da Silva</div>
+                  <?php
+                        session_start();
+                        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
+                  ?>
             </div>
 
             <!-- Sidebar mobile colapsável -->
@@ -41,14 +44,17 @@
                                     <li class="nav-item"><a class="nav-link active" href="estoque.php">Estoque</a></li>
                                     <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                               </ul>
-                              <div class="user mt-4 pt-4 text-center">João da Silva</div>
+                              <?php
+          session_start();
+        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
+        ?>
                         </div>
                   </div>
             </nav>
 
 
 
-            <div class="flex-grow-1 ps-md-2 pt-4">
+            <div class="main-content flex-grow-1 ps-md-2 pt-4">
                   <div class="container-fluid">
                         <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
                               <h3 class="text-orange fw-bold">Estoque</h3>

@@ -21,7 +21,10 @@
                 <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
                 <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
             </ul>
-            <div class="user mt-auto pt-4">João da Silva</div>
+            <?php
+          session_start();
+        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
+        ?>
         </div>
 
         <!-- Navbar Mobile -->
@@ -40,15 +43,18 @@
                         <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                     </ul>
-                    <div class="user mt-auto pt-4">João da Silva</div>
+                    <?php
+          session_start();
+        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
+        ?>
                 </div>
             </div>
         </nav>
 
         <!-- Conteúdo principal -->
-        <main class="p-4 flex-grow-1">
+        <main class="main-content p-4 flex-grow-1">
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3 class="fw-bold">Produtos</h3>
+                <h3 class="text-orange fw-bold">Produtos</h3>
                 <button class="btn btn-warning text-white">+ Adicionar Produto</button>
             </div>
 

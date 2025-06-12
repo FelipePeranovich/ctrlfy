@@ -21,7 +21,10 @@
         <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
         <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
       </ul>
-      <div class="user mt-auto pt-4">João da Silva</div>
+      <?php
+          session_start();
+        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
+        ?>
     </div>
 
     <!-- Sidebar mobile colapsável -->
@@ -41,13 +44,16 @@
             <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
             <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
           </ul>
-          <div class="user mt-auto pt-4">João da Silva</div>
+          <?php
+          session_start();
+        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
+        ?>
         </div>
       </div>
     </nav>
 
     <!-- Conteúdo principal -->
-    <main class="p-4 flex-grow-1">
+    <main class="main-content p-4 flex-grow-1">
       <h4 class="text-orange fw-bold">Marketplaces</h4>
       <button class="btn btn-orange mb-3">+ Cadastrar novo Marketplace</button>
 
