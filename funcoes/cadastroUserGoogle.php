@@ -8,7 +8,8 @@ $client->setClientSecret("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");
 $client->setRedirectUri("http://localhost/ctrlfy/funcoes/cadastroUserGoogle.php");  
 
 if(! isset($_GET["code"])){
-  exit("Login failed");
+  echo "<script>alert('ERRO AO CADASTRAR! TENTE NOVAMENTE!');javascript:history.go(-1)</script>";
+  die();
 }
 
 $token = $client->fetchAccessTokenWithAuthCode($_GET["code"]);
@@ -20,44 +21,54 @@ $oauth = new Google\Service\Oauth2($client);
 
 $userinfo = $oauth->userinfo->get();
 
-/*var_dump(
-    $userinfo->email,
-    $userinfo->familyName,
-    $userinfo->givenName,
-    $userinfo->name
-);*/
-
 $email = $userinfo->email;
 $nome = $userinfo->givenName;
 $sobrenome = $userinfo->familyName;
+$id = $userinfo->id;
 
 include_once '../funcoes/banco.php';
 $bd = conectar();
-$sql = "insert into usuario (`id_usuario`, `nome`, `sobrenome`, `email`, `senha`, `telefone`, `nivel_acesso`, `cpf`) values "
-. "(NULL, '$nome','$sobrenome' ,'$email', 'NULL', 'NULL', 'null','NULL')";
 
-$verifica_email = "select * from usuario where email = '$email'";
-$teste = $bd->query($verifica_email);
-if($teste -> rowCount()!=0){
-    echo "<script>alert('EMAIL INVÁLIDO! ESSE EMAIL JÁ POSSUI CADASTRO');javascript:history.go(-1)</script>";
-    die();
-}
+$verifica_id = "select * from usuario where id_oauth=$id";
+$testeId = $bd->query($verifica_id);
 
-$bd->beginTransaction();
-
-    $i = $bd->exec($sql);  
-        if ($i != 1){
-            $bd->rollBack();
-        }
-    else {
-        session_start();
-        $_SESSION['nome'] = $nome;
-        $_SESSION['sobrenome'] = $sobrenome;
-        $_SESSION['permissao'] = "usuario";
-        $bd->commit();       
-        header("location:../dashboard.php");
+if($testeId -> rowCount() == 0){
+    //se não existe o id ele cadastra
+    $verifica_email = "select * from usuario where email = '$email'";
+    $teste = $bd->query($verifica_email);
+    if($teste -> rowCount()!=0){
+        echo "<script>alert('EMAIL INVÁLIDO! ESSE EMAIL JÁ POSSUI CADASTRO');javascript:history.go(-1)</script>";
+        die();
     }
+    $sql = "insert into usuario (`id_usuario`,`id_oauth` ,`nome`, `sobrenome`, `email`, `senha`, `telefone`, `nivel_acesso`, `cpf`) values "
+    . "(NULL, $id ,'$nome','$sobrenome' ,'$email', 'NULL', 'NULL', 'null','NULL')";
 
+    $bd->beginTransaction();
+
+        $i = $bd->exec($sql);  
+            if ($i != 1){
+                $bd->rollBack();
+            }
+        else {
+            session_start();
+            $_SESSION['nome'] = $nome;
+            $_SESSION['sobrenome'] = $sobrenome;
+            $_SESSION['permissao'] = "usuario";
+            $bd->commit();       
+            header("location:../dashboard.php");
+        }
+    }
+$login = $testeId->fetch();
+if($login['id_oauth'] == $id){
+    session_start();
+            $_SESSION['nome'] = $nome;
+            $_SESSION['sobrenome'] = $sobrenome;
+            $_SESSION['permissao'] = "usuario";      
+            header("location:../dashboard.php");
+}else{
+    echo "<script>alert('ERRO AO ENTRAR! TENTE NOVAMENTE!');javascript:history.go(-1)</script>";
+        die();
+}
 
 $bd = null;
 ?>
