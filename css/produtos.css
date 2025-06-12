@@ -13,12 +13,10 @@ body {
 
 .sidebar {
   width: 220px;
+  min-height: 100vh;
   background-color: #1f252f;
-  color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  min-height: 100vh;
   justify-content: space-between;
 }
 
@@ -29,10 +27,7 @@ body {
 }
 
 .sidebar .nav-link {
-  color: #ccc;
-  margin: 10px 0;
-  transition: 0.3s;
-  text-decoration: none;
+  color: #fff;
   padding: 8px 0;
 }
 
@@ -42,11 +37,15 @@ body {
   font-weight: 600;
 }
 
-.sidebar .user {
+.text-orange {
+  color: #ff8c00;
+}
+
+.user {
+  color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
   text-align: center;
-  margin-top: auto;
-  padding-top: 20px;
-  border-top: 1px solid #555;
 }
 
 .container-fluid {
