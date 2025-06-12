@@ -37,7 +37,7 @@
                   </div>
 
                   <div class="collapse" id="mobileSidebar">
-                        <div class="sidebar-mobile p-3">
+                        <div class="sidebar-mobile p-3 align-items-center justify-content-center">
                               <ul class="nav flex-column">
                                     <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
                                     <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
