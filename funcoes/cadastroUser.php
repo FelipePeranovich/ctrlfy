@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 $email = filter_input(INPUT_POST,"email",FILTER_SANITIZE_EMAIL);
 $senha = filter_input(INPUT_POST,"senha",FILTER_SANITIZE_SPECIAL_CHARS);
 $cpf = filter_input(INPUT_POST,"cpf",FILTER_SANITIZE_SPECIAL_CHARS);
@@ -19,7 +16,7 @@ $sql = "insert into usuario (`id_usuario`, `nome`, `sobrenome`, `email`, `senha`
 $verifica_cpf ="select * from usuario where cpf = '$cpf'";
 $res = $bd->query($verifica_cpf);
 if($res->rowCount()!=0){
-    echo "<script>alert('CPF INVÁLIDO! ESSE CPF JÁ POSSUI CADASTRO');javascript:history.go(-1)</script>";
+    echo "<script>alert('Este usuário já possui cadastro!');javascript:history.go(-1)</script>";
     die();
 }
 $verifica_email = "select * from usuario where email = '$email'";
