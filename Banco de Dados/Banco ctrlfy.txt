@@ -1,35 +1,36 @@
 CREATE DATABASE ctrlfy;
 use ctrlfy;
-/* MERBancoMarketPlace: */
- 
+
 CREATE TABLE Produto (
     id_produto int PRIMARY KEY,
-    nome varchar(100),
-    descricao varchar(255),
+    titulo varchar(100),
+    variacao varchar(255),
     custo float(10,2),
     qtdMin int,
-    categoria varchar(100),
+    fornecedor varchar(100),
     cor varchar(50)
 );
- 
+
 CREATE TABLE Usuario (
-    id_usuario int PRIMARY KEY,
-    id_oauth varchar(255),
+    id_usuario int PRIMARY KEY AUTO_INCREMENT,
     nome varchar(100),
-    sobrenome varchar(100),	
     email varchar(100),
     senha varchar(100),
-    telefone varchar(15), 	
+    nivel_acesso varchar(100),
+    sobrenome varchar(100),
+    telefone varchar(15),
     cpf varchar(14),
-    nivel_acesso varchar(100)
+    id_oauth varchar(255)
 );
- 
+
 CREATE TABLE Marketplace (
     id_marketplace int PRIMARY KEY,
     nome varchar(100),
-    status boolean
+    status bool,
+    acess_token varchar(110),
+    refresh_token varchar(100)
 );
- 
+
 CREATE TABLE Pedidos (
     id_pedidos int PRIMARY KEY,
     data date,
@@ -38,55 +39,60 @@ CREATE TABLE Pedidos (
     taxa float(10,2),
     frete float(10,2),
     valorTotal float(10,2),
-    nomeComprador varchar(100),
-    status boolean,
+    cdg_venda varchar(100),
+    status bool,
     fk_Anuncio_id_anuncio int
 );
- 
+
 CREATE TABLE Anuncio (
     id_anuncio int PRIMARY KEY,
     preco float(10,2),
     taxaPlataforma int,
-    descricao varchar(255)
+    descricao varchar(255),
+    id_item varchar(110)
 );
- 
+
 CREATE TABLE Estoque (
     id_estoque int PRIMARY KEY,
     quantidade float,
     fk_Produto_id_produto int
 );
- 
+
 CREATE TABLE Produto_Anuncio (
     fk_Produto_id_produto int,
     fk_Anuncio_id_anuncio int
 );
- 
+
 CREATE TABLE Anuncio_Marketplace (
     fk_Anuncio_id_anuncio int,
     fk_Marketplace_id_marketplace int
 );
-ALTER TABLE `usuario` CHANGE `id_usuario` `id_usuario` INT(11) NULL AUTO_INCREMENT;
-
+ 
 ALTER TABLE Pedidos ADD CONSTRAINT FK_Pedidos_2
     FOREIGN KEY (fk_Anuncio_id_anuncio)
     REFERENCES Anuncio (id_anuncio)
     ON DELETE CASCADE;
+ 
 ALTER TABLE Estoque ADD CONSTRAINT FK_Estoque_2
     FOREIGN KEY (fk_Produto_id_produto)
     REFERENCES Produto (id_produto)
     ON DELETE RESTRICT;
+ 
 ALTER TABLE Produto_Anuncio ADD CONSTRAINT FK_Produto_Anuncio_1
     FOREIGN KEY (fk_Produto_id_produto)
     REFERENCES Produto (id_produto)
     ON DELETE RESTRICT;
+ 
 ALTER TABLE Produto_Anuncio ADD CONSTRAINT FK_Produto_Anuncio_2
     FOREIGN KEY (fk_Anuncio_id_anuncio)
     REFERENCES Anuncio (id_anuncio)
     ON DELETE RESTRICT;
+ 
 ALTER TABLE Anuncio_Marketplace ADD CONSTRAINT FK_Anuncio_Marketplace_1
     FOREIGN KEY (fk_Anuncio_id_anuncio)
     REFERENCES Anuncio (id_anuncio)
     ON DELETE RESTRICT;
+ 
 ALTER TABLE Anuncio_Marketplace ADD CONSTRAINT FK_Anuncio_Marketplace_2
     FOREIGN KEY (fk_Marketplace_id_marketplace)
     REFERENCES Marketplace (id_marketplace)
