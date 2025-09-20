@@ -8,26 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/produtos.css" />
+    <link rel="stylesheet" href="css/modais.css" />
 </head>
 
 <body class="bg-light">
+
     <div class="d-flex flex-column flex-md-row">
-        <!-- Sidebar desktop -->
-        <div class="sidebar d-none d-md-flex flex-column text-white p-3" style="width: 220px; height: 100vh; background-color: #1f252f;">
-            <h4 class="logo text-orange">Ctrlfy</h4>
+        <!-- Sidebar para desktop -->
+        <div class="sidebar d-none d-md-flex flex-column text-white p-3" style="width: 220px; height: 100vh;">
+            <h4 class="logo">Ctrlfy</h4>
             <ul class="nav flex-column mt-4">
                 <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link active" href="#">Produtos</a></li>
                 <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+                <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                 <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
             </ul>
             <?php
-          session_start();
-        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
-        ?>
+            session_start();
+            echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+            ?>
         </div>
 
-        <!-- Navbar Mobile -->
+        <!-- Sidebar mobile colapsável -->
         <nav class="navbar navbar-dark d-md-none" style="background-color: #1f252f;">
             <div class="container-fluid">
                 <span class="navbar-brand mb-0 h4 text-orange">Ctrlfy</span>
@@ -35,18 +38,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
+
             <div class="collapse" id="mobileSidebar">
-                <div class="p-3 align-items-center justify-content-center">
+                <div class="sidebar-mobile p-3 align-items-center justify-content-center">
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                     </ul>
                     <?php
-          session_start();
-        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
-        ?>
+                    session_start();
+                    echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                    ?>
                 </div>
             </div>
         </nav>
@@ -55,7 +60,56 @@
         <main class="main-content p-4 flex-grow-1">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h3 class="text-orange fw-bold">Produtos</h3>
-                <button class="btn btn-warning text-white">+ Adicionar Produto</button>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalAdicionarProduto">+ Adicionar Produto</button>
+
+                <div class="modal fade" id="modalAdicionarProduto" tabindex="-1" aria-labelledby="modalAdicionarProdutoLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalAdicionarProdutoLabel">Adicionar novo produto</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                            </div>
+                            <form>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="nomeProduto" class="form-label">Nome do Produto</label>
+                                        <input type="text" class="form-control" id="nomeProduto" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="idProduto" class="form-label">ID / SKU</label>
+                                        <input type="text" class="form-control" id="idProduto" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="categoriaProduto" class="form-label">Categoria</label>
+                                        <input type="text" class="form-control" id="categoriaProduto" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="precoProduto" class="form-label">Preço</label>
+                                        <input type="number" class="form-control" id="precoProduto" step="0.01" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="estoqueProduto" class="form-label">Estoque</label>
+                                        <input type="number" class="form-control" id="estoqueProduto" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="marketplaces" class="form-label">Marketplaces</label>
+                                        <select class="form-select" id="marketplaces" multiple>
+                                            <option>Amazon</option>
+                                            <option>Mercado Livre</option>
+                                            <option>Shopify</option>
+                                        </select>
+                                        <small class="text-muted">Segure CTRL para selecionar múltiplos.</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success">Salvar Produto</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Filtros -->
@@ -82,6 +136,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- Tabela de produtos -->
             <div class="bg-white p-3 rounded shadow-sm table-responsive">
@@ -132,7 +187,6 @@
                 </nav>
             </div>
 
-            <!-- Seção de novo produto -->
             <div class="border-top mt-4 pt-3">
                 <h6 class="text-muted">Adicionar novo produto</h6>
                 <table class="table">
@@ -146,9 +200,9 @@
                 </table>
             </div>
         </main>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
