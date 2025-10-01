@@ -68,7 +68,7 @@
                         <div class="bg-white p-4 rounded shadow-sm mb-4">
                               <div class="row">
                                     <div class="col-md-4 mb-3">
-                                          <input type="text" class="form-control" placeholder="Pesquise pelo título ou ID">
+                                          <input type="text" class="form-control" placeholder="Pesquise pelo título ou SKU">
                                     </div>
                                     <div class="col-md-4 mb-3">
                                           <select class="form-select">
@@ -116,7 +116,7 @@
                                           <thead>
                                                 <tr>
                                                       <th>Lista</th>
-                                                      <th>ID</th>
+                                                      <th>SKU</th>
                                                       <th>Marketplace</th>
                                                       <th>Preço</th>
                                                       <th>Status</th>
