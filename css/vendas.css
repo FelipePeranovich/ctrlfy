@@ -71,36 +71,8 @@ body {
   text-align: center;
 }
 
-.pagination .page-link {
-  color: #333;
-  border-radius: 8px;
-  margin: 0 2px;
-}
-
-.pagination .page-item.active .page-link {
-  background-color: #ff8c00;
-  border-color: #ff8c00;
-  color: white;
-}
-
-.pagination .page-item.disabled .page-link {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.table td button {
-    width: 36px;
-    height: 36px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    margin-right: 4px;
-    font-size: 16px;
-}
-
-.table td button i {
-    margin: 0;
+.table thead {
+  background-color: #f9f9f9;
 }
 
 .main-content {
@@ -115,5 +87,47 @@ body {
   .main-content {
     margin-left: 0; /* ou padding-left, dependendo do layout */
     padding: 0;
+  }
+}
+
+.vendas-search input {
+  min-width: 250px;
+}
+
+.venda-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.venda-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.venda-card p {
+  font-size: 14px;
+}
+
+.venda-card small {
+  font-size: 12px;
+}
+
+.venda-card .btn {
+  font-size: 13px;
+  padding: 4px 8px;
+}
+
+@media (max-width: 576px) {
+  .venda-card {
+    padding: 12px;
+  }
+  .venda-img {
+    width: 50px;
+    height: 50px;
   }
 }

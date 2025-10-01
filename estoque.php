@@ -18,12 +18,13 @@
                   <ul class="nav flex-column mt-4">
                         <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
                         <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="estoque.php">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                   </ul>
                   <?php
-                        session_start();
-                        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
+                  session_start();
+                  echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
                   ?>
             </div>
 
@@ -41,18 +42,17 @@
                               <ul class="nav flex-column">
                                     <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
                                     <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="estoque.php">Estoque</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="#">Estoque</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                                     <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                               </ul>
                               <?php
-          session_start();
-        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
-        ?>
+                              session_start();
+                              echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                              ?>
                         </div>
                   </div>
             </nav>
-
-
 
             <div class="main-content flex-grow-1 ps-md-2 pt-4">
                   <div class="container-fluid">

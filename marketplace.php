@@ -19,12 +19,13 @@
         <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
         <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
         <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
         <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
       </ul>
       <?php
-          session_start();
-        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
-        ?>
+      session_start();
+      echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+      ?>
     </div>
 
     <!-- Sidebar mobile colapsável -->
@@ -42,20 +43,27 @@
             <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
             <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+            <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
             <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
           </ul>
           <?php
           session_start();
-        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
-        ?>
+          echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+          ?>
         </div>
       </div>
     </nav>
 
     <!-- Conteúdo principal -->
     <main class="main-content p-4 flex-grow-1">
-      <h4 class="text-orange fw-bold">Marketplaces</h4>
-      <button class="btn btn-orange mb-3">+ Cadastrar novo Marketplace</button>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="text-orange fw-bold">Marketplace</h3>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <button class="btn btn-warning text-white">+ Cadastrar novo Marketplace</button>
+      </div>
+
 
       <div class="table-responsive">
         <table class="table table-bordered bg-white">

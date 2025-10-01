@@ -7,6 +7,7 @@
   <title>Dashboard - Ctrlfy</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/modais.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -15,17 +16,18 @@
   <div class="d-flex flex-column flex-md-row">
     <!-- Sidebar para desktop -->
     <div class="sidebar d-none d-md-flex flex-column text-white p-3" style="width: 220px; height: 100vh;">
-      <h4 class="logo">Ctrlfy</h4>
+      <h4 class="logo ">Ctrlfy</h4>
       <ul class="nav flex-column mt-4">
         <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
         <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
         <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
       </ul>
       <?php
-          session_start();
-        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
-        ?>
+      session_start();
+      echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+      ?>
     </div>
 
     <!-- Sidebar mobile colapsável -->
@@ -43,12 +45,13 @@
             <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
             <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+            <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
             <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
           </ul>
           <?php
           session_start();
-        echo'<div class="user mt-auto pt-4">'.$_SESSION["nome"].' '. $_SESSION["sobrenome"].'</div>';
-        ?>
+          echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+          ?>
         </div>
       </div>
     </nav>
@@ -91,7 +94,61 @@
       <div class="bg-white p-3 rounded shadow-sm">
         <div class="d-flex justify-content-between align-items-center mb-2">
           <h6 class="fw-bold">Faltando no estoque</h6>
-          <button class="btn btn-warning btn-sm text-white">Veja tudo</button>
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalVejaTudo">Veja tudo</button>
+
+          <div class="modal fade" id="modalVejaTudo" tabindex="-1" aria-labelledby="modalVejaTudoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalVejaTudoLabel">Produtos em falta no estoque</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                      <thead>
+                        <tr>
+                          <th>Produto</th>
+                          <th>ID</th>
+                          <th>Estoque</th>
+                          <th>Limite</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Fone de Ouvido Bluetooth com Cancelamento de Ruído</td>
+                          <td>32424326-Z</td>
+                          <td>5</td>
+                          <td>10</td>
+                          <td><span class="badge bg-danger">Crítico</span></td>
+                        </tr>
+                        <tr>
+                          <td>Smartwatch com Monitor de Frequência Cardíaca</td>
+                          <td>23232334-S</td>
+                          <td>3</td>
+                          <td>8</td>
+                          <td><span class="badge bg-danger">Crítico</span></td>
+                        </tr>
+                        <tr>
+                          <td>Caixa de Som Portátil à Prova d’Água</td>
+                          <td>46546564-F</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td><span class="badge bg-warning text-dark">Médio</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="table-responsive">
           <table class="table align-middle mb-0">
