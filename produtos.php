@@ -69,36 +69,41 @@
                                 <h5 class="modal-title" id="modalAdicionarProdutoLabel">Adicionar novo produto</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                             </div>
-                            <form>
+                            <form action="funcoes/cadastrarProduto.php" method="POST" enctype="multipart/form-data">
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="nomeProduto" class="form-label">Nome do Produto</label>
-                                        <input type="text" class="form-control" id="nomeProduto" required>
+                                        <input type="text" class="form-control" id="nomeProduto" name ="titulo" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="idProduto" class="form-label">ID / SKU</label>
-                                        <input type="text" class="form-control" id="idProduto" required>
+                                        <input type="text" class="form-control" id="idProduto" name="id_produto" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="categoriaProduto" class="form-label">Categoria</label>
-                                        <input type="text" class="form-control" id="categoriaProduto" required>
+                                        <label for="categoriaProduto" class="form-label">Descrição</label>
+                                        <input type="text" class="form-control" id="categoriaProduto" name="variacao" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="precoProduto" class="form-label">Preço</label>
-                                        <input type="number" class="form-control" id="precoProduto" step="0.01" required>
+                                        <label for="precoProduto" class="form-label">Custo</label>
+                                        <input type="number" class="form-control" id="precoProduto" name ="custo" step="0.01" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="estoqueProduto" class="form-label">Estoque</label>
-                                        <input type="number" class="form-control" id="estoqueProduto" required>
+                                        <label for="estoqueProduto" class="form-label">Quantidade Minima</label>
+                                        <input type="number" class="form-control" id="estoqueProduto" name="qtdmin" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="marketplaces" class="form-label">Marketplaces</label>
-                                        <select class="form-select" id="marketplaces" multiple>
-                                            <option>Amazon</option>
-                                            <option>Mercado Livre</option>
-                                            <option>Shopify</option>
-                                        </select>
-                                        <small class="text-muted">Segure CTRL para selecionar múltiplos.</small>
+                                        <label for="Fornecedor" class="form-label">Fornecedor</label>
+                                        <input type="text" class="form-control" id="Fornecedor" name="fornecedor" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="imagemProduto" class="form-label">Capa do Produto</label>
+                                        <input type="file" class="form-control" id="imagemProduto" name="imagem" accept="image/*">
+                                    </div>
+
+                                    <!-- Pré-visualização da imagem -->
+                                        <div class="mb-3 text-center">
+                                            <img id="previewImagem" src="" alt="Pré-visualização da imagem" style="max-width: 200px; display: none; border-radius: 8px; margin-top: 10px;">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -203,6 +208,26 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+    // Script para mostrar a imagem carregada
+    document.getElementById('imagemProduto').addEventListener('change', function (event) {
+        const arquivo = event.target.files[0];
+        const preview = document.getElementById('previewImagem');
+
+        if (arquivo) {
+            const leitor = new FileReader();
+            leitor.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            }
+            leitor.readAsDataURL(arquivo);
+        } else {
+            preview.src = '';
+            preview.style.display = 'none';
+        }
+    });
+</script>
 </body>
+
 
 </html>

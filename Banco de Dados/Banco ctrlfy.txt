@@ -1,14 +1,16 @@
 CREATE DATABASE ctrlfy;
 use ctrlfy;
+/* MERBancoMarketPlace 1: */
 
 CREATE TABLE Produto (
-    id_produto int PRIMARY KEY,
+    id_produto varchar(255) PRIMARY KEY,
     titulo varchar(100),
     variacao varchar(255),
     custo float(10,2),
     qtdMin int,
     fornecedor varchar(100),
-    cor varchar(50)
+    cor varchar(50),
+    url_imagem varchar(255)
 );
 
 CREATE TABLE Usuario (
@@ -49,17 +51,17 @@ CREATE TABLE Anuncio (
     preco float(10,2),
     taxaPlataforma int,
     descricao varchar(255),
-    id_item varchar(110)
+    id_item varchar(100)
 );
 
 CREATE TABLE Estoque (
     id_estoque int PRIMARY KEY,
     quantidade float,
-    fk_Produto_id_produto int
+    fk_Produto_id_produto varchar(255)
 );
 
 CREATE TABLE Produto_Anuncio (
-    fk_Produto_id_produto int,
+    fk_Produto_id_produto varchar(255),
     fk_Anuncio_id_anuncio int
 );
 
