@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+include_once 'funcoes/banco.php';
+$bd = conectar();
+$buscaProdutos = "Select * from produto";
+$produto = $bd->query($buscaProdutos);
+
+?>
+
+
 <html lang="pt-br">
 
 <head>
@@ -125,12 +134,12 @@
                     </div>
                     <div class="col-md-3">
                         <select class="form-select">
-                            <option>Todas as Categorias</option>
+                            <option>Todos os Fornecedores</option>
                         </select>
                     </div>
                     <div class="col-md-3">
                         <select class="form-select">
-                            <option>Todos os Estoques</option>
+                            <option>Todos os Marketplaces</option>
                         </select>
                     </div>
                     <div class="col-md-2">
@@ -151,8 +160,8 @@
                             <th><input type="checkbox" /></th>
                             <th>Produto</th>
                             <th>ID</th>
-                            <th>Categoria</th>
-                            <th>Preço</th>
+                            <th>Descrição</th>
+                            <th>Custo</th>
                             <th>Estoque</th>
                             <th>Status</th>
                             <th>Marketplaces</th>
@@ -160,7 +169,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <!-- <tr>
                             <td><input type="checkbox" /></td>
                             <td>
                                 <strong>Fone de Ouvido Sem Fio</strong><br>
@@ -176,7 +185,7 @@
                                 <button class="btn btn-dark btn-sm"><i class="bi bi-pencil"></i></button>
                                 <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
 
