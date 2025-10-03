@@ -23,10 +23,14 @@
                 <li class="nav-item"><a class="nav-link active" href="#">Vendas</a></li>
                 <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
             </ul>
-            <?php
-            session_start();
-            echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
-            ?>
+            <div class="mt-auto text-center">
+                <button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+
+                <?php
+                session_start();
+                echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                ?>
+            </div>
         </div>
 
         <!-- Sidebar mobile -->
@@ -47,10 +51,14 @@
                         <li class="nav-item"><a class="nav-link active" href="#">Vendas</a></li>
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                     </ul>
-                    <?php
-                    session_start();
-                    echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
-                    ?>
+                    <div class="mt-auto text-center">
+                        <button class="btn btn-outline-light w-100 mt-5 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+
+                        <?php
+                        session_start();
+                        echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                        ?>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -33,10 +33,14 @@ $produto = $bd->query($buscaProdutos);
                 <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                 <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
             </ul>
-            <?php
-            session_start();
-            echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
-            ?>
+            <div class="mt-auto text-center">
+                <button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+
+                <?php
+                session_start();
+                echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                ?>
+            </div>
         </div>
 
         <!-- Sidebar mobile colapsável -->
@@ -49,7 +53,7 @@ $produto = $bd->query($buscaProdutos);
             </div>
 
             <div class="collapse" id="mobileSidebar">
-                <div class="sidebar-mobile p-3 align-items-center justify-content-center">
+                <div class="sidebar-mobile p-5 align-items-center justify-content-center">
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#">Produtos</a></li>
@@ -57,10 +61,14 @@ $produto = $bd->query($buscaProdutos);
                         <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                     </ul>
-                    <?php
-                    session_start();
-                    echo '<div class="user mt-auto pt-4">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
-                    ?>
+                    <div class="mt-auto text-center">
+                        <button class="btn btn-outline-light w-100 mt-5 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+
+                        <?php
+                        session_start();
+                        echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                        ?>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -82,7 +90,7 @@ $produto = $bd->query($buscaProdutos);
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="nomeProduto" class="form-label">Nome do Produto</label>
-                                        <input type="text" class="form-control" id="nomeProduto" name ="titulo" required>
+                                        <input type="text" class="form-control" id="nomeProduto" name="titulo" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="idProduto" class="form-label">ID / SKU</label>
@@ -94,7 +102,7 @@ $produto = $bd->query($buscaProdutos);
                                     </div>
                                     <div class="mb-3">
                                         <label for="precoProduto" class="form-label">Custo</label>
-                                        <input type="number" class="form-control" id="precoProduto" name ="custo" step="0.01" required>
+                                        <input type="number" class="form-control" id="precoProduto" name="custo" step="0.01" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="estoqueProduto" class="form-label">Quantidade Minima</label>
@@ -111,8 +119,8 @@ $produto = $bd->query($buscaProdutos);
                                     </div>
 
                                     <!-- Pré-visualização da imagem -->
-                                        <div class="mb-3 text-center">
-                                            <img id="previewImagem" src="" alt="Pré-visualização da imagem" style="max-width: 200px; display: none; border-radius: 8px; margin-top: 10px;">
+                                    <div class="mb-3 text-center">
+                                        <img id="previewImagem" src="" alt="Pré-visualização da imagem" style="max-width: 200px; display: none; border-radius: 8px; margin-top: 10px;">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -158,6 +166,7 @@ $produto = $bd->query($buscaProdutos);
                     <thead>
                         <tr>
                             <th><input type="checkbox" /></th>
+                            <th>Foto</th>
                             <th>Produto</th>
                             <th>ID</th>
                             <th>Descrição</th>
@@ -169,8 +178,9 @@ $produto = $bd->query($buscaProdutos);
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- <tr>
+                        <tr>
                             <td><input type="checkbox" /></td>
+                            <td><img src="funcoes/uploads/produto_68def7d3ab2cd.png" class="rounded me-2" style="width:100px; height:100px; object-fit:cover;" /></td>
                             <td>
                                 <strong>Fone de Ouvido Sem Fio</strong><br>
                                 <small>Adicionado: 15 Jun 2023</small>
@@ -180,12 +190,12 @@ $produto = $bd->query($buscaProdutos);
                             <td>R$ 89,99</td>
                             <td>15</td>
                             <td><span class="badge bg-success">Em Estoque</span></td>
-                            <td><img src="img1.png" width="20" /></td>
+                            <td><img src="funcoes/uploads/produto_68def7d3ab2cd.png" class="rounded me-2" style="width:100px; height:100px; object-fit:cover;" /></td>
                             <td>
                                 <button class="btn btn-dark btn-sm"><i class="bi bi-pencil"></i></button>
                                 <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
                             </td>
-                        </tr> -->
+                        </tr>
                     </tbody>
                 </table>
 
@@ -200,42 +210,29 @@ $produto = $bd->query($buscaProdutos);
                     </ul>
                 </nav>
             </div>
-
-            <div class="border-top mt-4 pt-3">
-                <h6 class="text-muted">Adicionar novo produto</h6>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th><input type="checkbox" /></th>
-                            <th>Nome</th>
-                            <th>ID</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
         </main>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script>
-    // Script para mostrar a imagem carregada
-    document.getElementById('imagemProduto').addEventListener('change', function (event) {
-        const arquivo = event.target.files[0];
-        const preview = document.getElementById('previewImagem');
+            // Script para mostrar a imagem carregada
+            document.getElementById('imagemProduto').addEventListener('change', function(event) {
+                const arquivo = event.target.files[0];
+                const preview = document.getElementById('previewImagem');
 
-        if (arquivo) {
-            const leitor = new FileReader();
-            leitor.onload = function (e) {
-                preview.src = e.target.result;
-                preview.style.display = 'block';
-            }
-            leitor.readAsDataURL(arquivo);
-        } else {
-            preview.src = '';
-            preview.style.display = 'none';
-        }
-    });
-</script>
+                if (arquivo) {
+                    const leitor = new FileReader();
+                    leitor.onload = function(e) {
+                        preview.src = e.target.result;
+                        preview.style.display = 'block';
+                    }
+                    leitor.readAsDataURL(arquivo);
+                } else {
+                    preview.src = '';
+                    preview.style.display = 'none';
+                }
+            });
+        </script>
 </body>
 
 

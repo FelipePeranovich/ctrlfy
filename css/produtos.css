@@ -4,17 +4,20 @@ body {
 }
 
 .sidebar {
-  position: fixed; /* Faz a sidebar ficar fixa na lateral */
+  position: fixed;
+  /* Faz a sidebar ficar fixa na lateral */
   top: 0;
   left: 0;
   width: 220px;
-  height: 100vh; /* 100% da altura da tela */
+  height: 100vh;
+  /* 100% da altura da tela */
   background-color: #1f252f;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  z-index: 1000; /* Garante que ela fique acima do conteúdo */
+  z-index: 1000;
+  /* Garante que ela fique acima do conteúdo */
 }
 
 .sidebar .logo {
@@ -47,10 +50,14 @@ body {
 
 /* Estilo para o sidebar mobile */
 .sidebar-mobile {
-  background-color: #1f252f;
+  min-height: 100vh;          /* força ocupar a tela toda */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background-color: #1f252f;
+  padding: 1rem;
+}
+.sidebar-mobile .nav {
+  flex-grow: 1;               /* empurra o botão e nome para baixo */
 }
 
 .sidebar-mobile .nav-link {
@@ -89,22 +96,23 @@ body {
 }
 
 .table td button {
-    width: 36px;
-    height: 36px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    margin-right: 4px;
-    font-size: 16px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  margin-right: 4px;
+  font-size: 16px;
 }
 
 .table td button i {
-    margin: 0;
+  margin: 0;
 }
 
 .main-content {
-  margin-left: 220px; /* ou padding-left, dependendo do layout */
+  margin-left: 220px;
+  /* ou padding-left, dependendo do layout */
   padding: 20px;
 }
 
@@ -112,8 +120,10 @@ body {
   .sidebar {
     display: none !important;
   }
+
   .main-content {
-    margin-left: 0; /* ou padding-left, dependendo do layout */
+    margin-left: 0;
+    /* ou padding-left, dependendo do layout */
     padding: 0;
   }
 }
