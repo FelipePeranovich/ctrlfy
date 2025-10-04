@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+session_start();
+if(empty($_SESSION['nome'])){
+        header("location:index.php");
+    }
+
+?>
 <html lang="pt-br">
 
 <head>
@@ -26,7 +33,6 @@
             <div class="mt-auto text-center">
                 <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
                 <?php
-                session_start();
                 echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
                 ?>
             </div>

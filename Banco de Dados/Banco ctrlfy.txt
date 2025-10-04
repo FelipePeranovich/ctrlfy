@@ -1,16 +1,18 @@
-CREATE DATABASE ctrlfy;
+create database ctrlfy;
 use ctrlfy;
+
 /* MERBancoMarketPlace 1: */
 
 CREATE TABLE Produto (
     id_produto varchar(255) PRIMARY KEY,
-    titulo varchar(100),
     variacao varchar(255),
     custo float(10,2),
     qtdMin int,
-    fornecedor varchar(100),
     cor varchar(50),
-    url_imagem varchar(255)
+    url_imagem varchar(255),
+    quantidade int(10),
+    fk_fornecedor_id_fornecedor int,
+    titulo varchar(255)
 );
 
 CREATE TABLE Usuario (
@@ -26,7 +28,7 @@ CREATE TABLE Usuario (
 );
 
 CREATE TABLE Marketplace (
-    id_marketplace int PRIMARY KEY,
+    id_marketplace int PRIMARY KEY AUTO_INCREMENT,
     nome varchar(100),
     status bool,
     acess_token varchar(110),
@@ -55,9 +57,9 @@ CREATE TABLE Anuncio (
 );
 
 CREATE TABLE Estoque (
-    id_estoque int PRIMARY KEY,
-    quantidade float,
-    fk_Produto_id_produto varchar(255)
+    id_estoque int PRIMARY KEY AUTO_INCREMENT,
+    fk_Produto_id_produto varchar(255),
+    fk_marketplace_id_marketplace int
 );
 
 CREATE TABLE Produto_Anuncio (
@@ -69,6 +71,17 @@ CREATE TABLE Anuncio_Marketplace (
     fk_Anuncio_id_anuncio int,
     fk_Marketplace_id_marketplace int
 );
+
+CREATE TABLE Fornecedor (
+    id_fornecedor int PRIMARY KEY AUTO_INCREMENT,
+    nome_fornecedor varchar(100)
+);
+ 
+
+ 
+ALTER TABLE Produto ADD CONSTRAINT FK_Produto_3
+    FOREIGN KEY (fk_fornecedor_id_fornecedor)
+    REFERENCES Fornecedor (id_fornecedor);
  
 ALTER TABLE Pedidos ADD CONSTRAINT FK_Pedidos_2
     FOREIGN KEY (fk_Anuncio_id_anuncio)
@@ -79,6 +92,10 @@ ALTER TABLE Estoque ADD CONSTRAINT FK_Estoque_2
     FOREIGN KEY (fk_Produto_id_produto)
     REFERENCES Produto (id_produto)
     ON DELETE RESTRICT;
+ 
+ALTER TABLE Estoque ADD CONSTRAINT FK_Estoque_3
+    FOREIGN KEY (fk_marketplace_id_marketplace)
+    REFERENCES Marketplace (id_marketplace);
  
 ALTER TABLE Produto_Anuncio ADD CONSTRAINT FK_Produto_Anuncio_1
     FOREIGN KEY (fk_Produto_id_produto)

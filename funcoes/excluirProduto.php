@@ -17,3 +17,4 @@ catch (Exception $e){
   die();
 }
 header("location:../produtos.php");
+?>

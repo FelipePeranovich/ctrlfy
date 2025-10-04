@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <?php
+session_start();
+    if(empty($_SESSION['nome'])){
+        header("location:index.php");
+    }
+
     include_once 'funcoes/banco.php';
+    include_once 'funcoes/listarProdutos.php';
     $bd = conectar();
     $buscaProdutos = "Select * from produto";
     $produto = $bd->query($buscaProdutos);
     $buscaFornecedor = "select * from fornecedor order by nome_fornecedor";
-    $resFornecedor = $bd->query($consulta);
+    $resFornecedor = $bd->query($buscaFornecedor);
 ?>
 
 <html lang="pt-br">
@@ -36,7 +42,7 @@
                 <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
                 <?php
-                session_start();
+                
                 echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
                 ?>
             </div>
@@ -104,25 +110,28 @@
                                         <input type="number" class="form-control" id="precoProduto" name="custo" step="0.01" required>
                                     </div>
                                     <div class="mb-3">
+                                        <label for="estoqueProduto" class="form-label">Quantidade total</label>
+                                        <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+                                    </div>
+                                    <div class="mb-3">
                                         <label for="estoqueProduto" class="form-label">Quantidade Minima</label>
                                         <input type="number" class="form-control" id="estoqueProduto" name="qtdmin" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="Fornecedor" class="form-label">Fornecedor</label>
-                                        <select name="fornecedor"class="form-control" id="fornecedor" >
-                                            <option value=""></option>
+                                        <label for="id_fornecedor" class="form-label">Fornecedor</label>
+                                        <select name="id_fornecedor"class="form-control" id="id_fornecedor" >
                                             <?php
                                             while($for = $resFornecedor->fetch()){
                                                 echo "<option value=".$for["id_fornecedor"].">".$for['nome_fornecedor']."</option>";
                                             }
-                                            $resFornecedor = null;
-                                            $bd=null;
                                             ?>
-
-                                        </select>
-                                         
+                                            <option value="novo">+ Cadastrar novo fornecedor</option>
+                                        </select>    
                                     </div>
-
+                                     <div class="mb-3">
+                                        <label for="estoqueProduto" class="form-label">Cor</label>
+                                        <input type="text" class="form-control" id="cor" name="cor" required>
+                                    </div>           
                                     <div class="mb-3">
                                         <label for="imagemProduto" class="form-label">Capa do Produto</label>
                                         <input type="file" class="form-control" id="imagemProduto" name="imagem" accept="image/*">
@@ -143,9 +152,9 @@
                 </div>
 
             </div>
-
+                             
             <!-- Filtros -->
-            <form action="funcoes/listarprodutos.php" method="post">
+            <form action="funcoes/listarProdutos.php" method="post">
             <div class="bg-white p-4 rounded shadow-sm mb-4">
                 <div class="row g-3">
                     <div class="col-md-4">
@@ -153,18 +162,18 @@
                     </div>
                     <div class="col-md-3">
                         <select class="form-select" name="fornecedor">
-                            <option>Todos os Fornecedores</option>
+                            <option value="">Todos os Fornecedores</option>
                         </select>
                     </div>
                     <div class="col-md-2">
                         <select class="form-select" name="ordem">
-                            <option>Nome A-Z</option>
-                            <option>Nome Z-A</option>
+                            <option value="a_z">Nome A-Z</option>
+                            <option value="z_a">Nome Z-A</option>
                         </select>
                     </div>
                 </div>
             </div>
-            <button type="submit">Atualizar</button>
+            <a href="produtos.php"><button type="submit">Atualizar</button></a>
             </form>
 
 
@@ -180,28 +189,34 @@
                             <th>Descrição</th>
                             <th>Custo</th>
                             <th>Estoque</th>
-                            <th>Marketplaces</th>
+                            <th>Fornecedor</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php 
+                        if (count($result) > 0): ?>
+                        <?php foreach ($result as $row): ?>
                         <tr>
                             <td><input type="checkbox" /></td>
-                            <td><img src="funcoes/uploads/produto_68def7d3ab2cd.png" class="rounded me-2" style="width:100px; height:100px; object-fit:cover;" /></td>
+                            <td><img src="funcoes/<?php echo $row["url_imagem"]?>" class="rounded me-2" style="width:100px; height:100px; object-fit:cover;" /></td>
                             <td>
-                                <strong>Fone de Ouvido Sem Fio</strong><br>
-                                <small>Adicionado: 15 Jun 2023</small>
+                                <strong><?php echo $row["titulo"]?></strong><br>
                             </td>
-                            <td>WH-001</td>
-                            <td>Eletrônicos</td>
-                            <td>R$ 89,99</td>
-                            <td>15</td>
-                            <td><img src="funcoes/uploads/produto_68def7d3ab2cd.png" class="rounded me-2" style="width:100px; height:100px; object-fit:cover;" /></td>
+                            <td><?php echo $row["id_produto"] ?></td>
+                            <td><?php echo $row["variacao"] ?></td>
+                            <td><?php echo $row["custo"] ?></td>
+                            <td><?php echo $row["quantidade"] ?></td>
+                            <td><?php echo $row["nome_fornecedor"] ?></td>
                             <td>
-                                <button class="btn btn-dark btn-sm"><i class="bi bi-pencil"></i></button>
-                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                               <?php echo" <a href='funcoes/editarProduto.php?id_produto=" .$row['id_produto']."'><button class='btn btn-dark btn-sm'><i class='bi bi-pencil'></i></button></a>"?>
+                               <?php echo" <a href='funcoes/excluirProduto.php?id_produto=" .$row['id_produto']."'><button class='btn btn-danger btn-sm'><i class='bi bi-trash'></i></button></a>"?>
+                            
                             </td>
                         </tr>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <?php endif; ?>
                     </tbody>
                 </table>
 
@@ -237,6 +252,12 @@
                     preview.src = '';
                     preview.style.display = 'none';
                 }
+            });
+
+            document.getElementById('id_fornecedor').addEventListener('change', function() {
+            if (this.value === 'novo') {
+            window.open('fornecedor.php', '_blank');
+            }
             });
         </script>
 </body>
