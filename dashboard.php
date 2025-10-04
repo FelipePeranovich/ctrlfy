@@ -26,7 +26,7 @@
         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
       </ul>
       <div class="mt-auto text-center">
-        <button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+        <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
         <?php
         session_start();
@@ -54,7 +54,7 @@
             <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
           </ul>
           <div class="mt-auto text-center">
-            <button class="btn btn-outline-light w-100 mt-5"><i class="bi bi-box-arrow-left"></i> Sair</button>
+          <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
             <?php
             session_start();
             echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';

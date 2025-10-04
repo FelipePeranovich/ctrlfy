@@ -54,9 +54,8 @@ $url= $client->createAuthUrl();
       <input type="password" class="form-control mb-3" placeholder="Senha" name="senha" required>
       <button type="submit" class="btn btn-orange">Cadastrar</button>
     </form>
-    <a href="<?= $url ?>"> <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" 
+      <a href="<?= $url ?>"> <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" 
          alt="Entrar com Google"></a>
-
   </div>
 
   <div class="logo-panel right" id="logoPanel">

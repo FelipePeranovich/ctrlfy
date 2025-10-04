@@ -24,7 +24,7 @@
         <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
       </ul>
       <div class="mt-auto text-center">
-        <button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+        <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
         <?php
         session_start();
@@ -67,69 +67,7 @@
     <main class="main-content p-4 flex-grow-1">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h3 class="text-orange fw-bold">Marketplace</h3>
-      </div>
-
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <button class="btn btn-warning text-white">+ Cadastrar novo Marketplace</button>
-      </div>
-
-
-      <div class="table-responsive">
-        <table class="table table-bordered bg-white">
-          <thead class="table-light">
-            <tr>
-              <th>Marketplace</th>
-              <th>Status</th>
-              <th>Conexão</th>
-              <th>Produtos</th>
-              <th>Ação</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Amazon</td>
-              <td><span class="badge bg-success">Ativo</span></td>
-              <td>20/08/2024</td>
-              <td>155</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Editar</button>
-                <button class="btn btn-danger btn-sm">Excluir</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Mercado Livre</td>
-              <td><span class="badge bg-success">Ativo</span></td>
-              <td>04/08/2024</td>
-              <td>145</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Editar</button>
-                <button class="btn btn-danger btn-sm">Excluir</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Shopify</td>
-              <td><span class="badge bg-warning text-dark">Inativo</span></td>
-              <td>22/07/2024</td>
-              <td>100</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Editar</button>
-                <button class="btn btn-danger btn-sm">Excluir</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Magalu</td>
-              <td><span class="badge bg-warning text-dark">Inativo</span></td>
-              <td>12/07/2024</td>
-              <td>85</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Editar</button>
-                <button class="btn btn-danger btn-sm">Excluir</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+      </div>      
       <div class="row mt-4">
         <div class="col-md-6">
           <h6>Marketplaces disponíveis</h6>
@@ -148,28 +86,58 @@
             </li>
           </ul>
         </div>
-
-        <div class="col-md-6 mt-4 mt-md-0">
-          <h6>Últimos 30 dias</h6>
-          <div class="card mb-2">
-            <div class="card-body">
-              <h6>Amazon</h6>
-              <p>Total de vendas: <strong>500</strong></p>
-              <p>Receita: <strong>R$5.250</strong></p>
-              <p class="mb-0"><small>Produto mais vendido:</small><br><strong>Fone de Ouvido Bluetooth com Cancelamento de Ruído</strong></p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h6>Mercado Livre</h6>
-              <p>Total de vendas: <strong>450</strong></p>
-              <p>Receita: <strong>R$4.800</strong></p>
-              <p class="mb-0"><small>Produto mais vendido:</small><br><strong>Smartwatch com Monitor de Frequência Cardíaca</strong></p>
-            </div>
-          </div>
+        <div class="col-md-6 mt-4">
+        <table class="table table-bordered bg-white" style="border-radius: 12px; overflow: hidden; border: 2px solid #dee2e6; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+          <thead class="table-light">
+            <tr>
+              <th>Marketplace</th>
+              <th>Status</th>
+              <th>Produtos</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Amazon</td>
+              <td><span class="badge bg-success">Ativo</span></td>
+              <td>155</td>
+              <td>
+                <button class="btn btn-warning btn-sm">Ativar</button>
+                <button class="btn btn-danger btn-sm">Desativar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Mercado Livre</td>
+              <td><span class="badge bg-success">Ativo</span></td>
+              <td>145</td>
+              <td>
+                <button class="btn btn-warning btn-sm">Ativar</button>
+                <button class="btn btn-danger btn-sm">Desativar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Shopify</td>
+              <td><span class="badge bg-warning text-dark">Inativo</span></td>
+              <td>100</td>
+              <td>
+                <button class="btn btn-warning btn-sm">Ativar</button>
+                <button class="btn btn-danger btn-sm">Desativar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Magalu</td>
+              <td><span class="badge bg-warning text-dark">Inativo</span></td>
+              <td>85</td>
+              <td>
+                <button class="btn btn-warning btn-sm">Ativar</button>
+                <button class="btn btn-danger btn-sm">Desativar</button>
+              </td>
+            </tr>
+          </tbody>
+          </table>
         </div>
       </div>
+    </div>
     </main>
   </div>
 

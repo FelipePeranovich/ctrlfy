@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <?php
-include_once 'funcoes/banco.php';
-$bd = conectar();
-$buscaProdutos = "Select * from produto";
-$produto = $bd->query($buscaProdutos);
-
+    include_once 'funcoes/banco.php';
+    $bd = conectar();
+    $buscaProdutos = "Select * from produto";
+    $produto = $bd->query($buscaProdutos);
+    $buscaFornecedor = "select * from fornecedor order by nome_fornecedor";
+    $resFornecedor = $bd->query($consulta);
 ?>
 
-
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +33,7 @@ $produto = $bd->query($buscaProdutos);
                 <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
             </ul>
             <div class="mt-auto text-center">
-                <button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+                <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
                 <?php
                 session_start();
@@ -62,7 +61,7 @@ $produto = $bd->query($buscaProdutos);
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                     </ul>
                     <div class="mt-auto text-center">
-                        <button class="btn btn-outline-light w-100 mt-5 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+                        <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
                         <?php
                         session_start();
@@ -110,7 +109,18 @@ $produto = $bd->query($buscaProdutos);
                                     </div>
                                     <div class="mb-3">
                                         <label for="Fornecedor" class="form-label">Fornecedor</label>
-                                        <input type="text" class="form-control" id="Fornecedor" name="fornecedor" required>
+                                        <select name="fornecedor"class="form-control" id="fornecedor" >
+                                            <option value=""></option>
+                                            <?php
+                                            while($for = $resFornecedor->fetch()){
+                                                echo "<option value=".$for["id_fornecedor"].">".$for['nome_fornecedor']."</option>";
+                                            }
+                                            $resFornecedor = null;
+                                            $bd=null;
+                                            ?>
+
+                                        </select>
+                                         
                                     </div>
 
                                     <div class="mb-3">
@@ -135,29 +145,27 @@ $produto = $bd->query($buscaProdutos);
             </div>
 
             <!-- Filtros -->
+            <form action="funcoes/listarprodutos.php" method="post">
             <div class="bg-white p-4 rounded shadow-sm mb-4">
                 <div class="row g-3">
                     <div class="col-md-4">
-                        <input type="text" class="form-control" placeholder="Buscar por nome, SKU ou descrição..." />
+                        <input type="text" class="form-control" placeholder="Buscar por nome, SKU ou descrição..." name="busca" />
                     </div>
                     <div class="col-md-3">
-                        <select class="form-select">
+                        <select class="form-select" name="fornecedor">
                             <option>Todos os Fornecedores</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
-                        <select class="form-select">
-                            <option>Todos os Marketplaces</option>
-                        </select>
-                    </div>
                     <div class="col-md-2">
-                        <select class="form-select">
+                        <select class="form-select" name="ordem">
                             <option>Nome A-Z</option>
                             <option>Nome Z-A</option>
                         </select>
                     </div>
                 </div>
             </div>
+            <button type="submit">Atualizar</button>
+            </form>
 
 
             <!-- Tabela de produtos -->
@@ -172,7 +180,6 @@ $produto = $bd->query($buscaProdutos);
                             <th>Descrição</th>
                             <th>Custo</th>
                             <th>Estoque</th>
-                            <th>Status</th>
                             <th>Marketplaces</th>
                             <th>Ações</th>
                         </tr>
@@ -189,7 +196,6 @@ $produto = $bd->query($buscaProdutos);
                             <td>Eletrônicos</td>
                             <td>R$ 89,99</td>
                             <td>15</td>
-                            <td><span class="badge bg-success">Em Estoque</span></td>
                             <td><img src="funcoes/uploads/produto_68def7d3ab2cd.png" class="rounded me-2" style="width:100px; height:100px; object-fit:cover;" /></td>
                             <td>
                                 <button class="btn btn-dark btn-sm"><i class="bi bi-pencil"></i></button>
@@ -234,6 +240,4 @@ $produto = $bd->query($buscaProdutos);
             });
         </script>
 </body>
-
-
 </html>
