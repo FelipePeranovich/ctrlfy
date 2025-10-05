@@ -99,7 +99,7 @@ session_start();
                                     </div>
                                     <div class="mb-3">
                                         <label for="idProduto" class="form-label">ID / SKU</label>
-                                        <input type="text" class="form-control" id="idProduto" name="id_produto" required>
+                                        <input type="text" class="form-control" id="idProduto" name="id_produto" required >
                                     </div>
                                     <div class="mb-3">
                                         <label for="categoriaProduto" class="form-label">Descrição</label>
@@ -114,8 +114,8 @@ session_start();
                                         <input type="number" class="form-control" id="quantidade" name="quantidade" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="estoqueProduto" class="form-label">Quantidade Minima</label>
-                                        <input type="number" class="form-control" id="estoqueProduto" name="qtdmin" required>
+                                        <label for="qtdmin" class="form-label">Quantidade Minima</label>
+                                        <input type="number" class="form-control" id="qtdmin" name="qtdmin" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="id_fornecedor" class="form-label">Fornecedor</label>
@@ -142,6 +142,7 @@ session_start();
                                         <img id="previewImagem" src="" alt="Pré-visualização da imagem" style="max-width: 200px; display: none; border-radius: 8px; margin-top: 10px;">
                                     </div>
                                 </div>
+                                <input type="hidden" id="modoEdicao" name="modoEdicao" value="novo">
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-success">Salvar Produto</button>
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -205,11 +206,24 @@ session_start();
                             </td>
                             <td><?php echo $row["id_produto"] ?></td>
                             <td><?php echo $row["variacao"] ?></td>
-                            <td><?php echo $row["custo"] ?></td>
+                            <td>R$ <?php echo number_format($row["custo"],2,',','.') ?></td>
                             <td><?php echo $row["quantidade"] ?></td>
                             <td><?php echo $row["nome_fornecedor"] ?></td>
                             <td>
-                               <?php echo" <a href='funcoes/editarProduto.php?id_produto=" .$row['id_produto']."'><button class='btn btn-dark btn-sm'><i class='bi bi-pencil'></i></button></a>"?>
+                               <button 
+                                class='btn btn-dark btn-sm btn-editar' 
+                                data-id='<?php echo $row["id_produto"]; ?>'
+                                data-titulo='<?php echo $row["titulo"]; ?>'
+                                data-variacao='<?php echo $row["variacao"]; ?>'
+                                data-custo='<?php echo $row["custo"]; ?>'
+                                data-quantidade='<?php echo $row["quantidade"]; ?>'
+                                data-qtdmin='<?php echo $row["qtdmin"]; ?>'
+                                data-idfornecedor='<?php echo $row["id_fornecedor"]; ?>'
+                                data-cor='<?php echo $row["cor"]; ?>'
+                                data-imagem='funcoes/<?php echo $row["url_imagem"]; ?>'
+                                >
+                                <i class='bi bi-pencil'></i>
+                                </button>
                                <?php echo" <a href='funcoes/excluirProduto.php?id_produto=" .$row['id_produto']."'><button class='btn btn-danger btn-sm'><i class='bi bi-trash'></i></button></a>"?>
                             
                             </td>
@@ -258,6 +272,61 @@ session_start();
             if (this.value === 'novo') {
             window.open('fornecedor.php', '_blank');
             }
+            });
+            // Script edição do produto
+            document.querySelectorAll('.btn-editar').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Pegar dados do botão
+                const id = this.dataset.id;
+                const titulo = this.dataset.titulo;
+                const variacao = this.dataset.variacao;
+                const custo = this.dataset.custo;
+                const quantidade = this.dataset.quantidade;
+                const qtdmin = this.dataset.qtdmin;
+                const idfornecedor = this.dataset.idfornecedor;
+                const cor = this.dataset.cor;
+                const imagem = this.dataset.imagem;
+
+                // Preencher os campos
+                document.getElementById('nomeProduto').value = titulo;
+                document.getElementById('idProduto').value = id;
+                document.getElementById('categoriaProduto').value = variacao;
+                document.getElementById('precoProduto').value = custo;
+                document.getElementById('quantidade').value = quantidade;
+                document.getElementById('qtdmin').value = qtdmin;
+                document.getElementById('id_fornecedor').value = idfornecedor;
+                document.getElementById('cor').value = cor;
+                
+                document.getElementById('idProduto').value = id;
+                document.getElementById('idProduto').readOnly = true;
+                document.getElementById('idProduto').readOnly = false;
+                btn.addEventListener("click", function () {
+                const id = this.dataset.id;
+                document.getElementById('idProduto').value = id;
+                document.getElementById('idProduto').readOnly = true;
+                });
+
+                // Ao clicar em "Adicionar Produto"
+                function abrirModalCadastro() {
+                document.getElementById('idProduto').value = "";
+                document.getElementById('idProduto').readOnly = false;
+                }
+
+                // Mostrar imagem atual
+                const preview = document.getElementById('previewImagem');
+                preview.src = imagem;
+                preview.style.display = 'block';
+
+                // Mudar o título e ação do form
+                document.getElementById('modalAdicionarProdutoLabel').innerText = 'Editar Produto';
+                const form = document.querySelector('#modalAdicionarProduto form');
+                form.action = 'funcoes/atualizarProduto.php'; // endpoint de update
+                document.getElementById('modoEdicao').value = 'editar';
+
+                // Abrir modal
+                const modal = new bootstrap.Modal(document.getElementById('modalAdicionarProduto'));
+                modal.show();
+            });
             });
         </script>
 </body>
