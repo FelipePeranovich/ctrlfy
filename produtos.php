@@ -39,7 +39,7 @@ session_start();
                 <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
             </ul>
             <div class="mt-auto text-center">
-                <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
+                <a href="funcoes/sair.php" onclick= "return confirm('Tem certeza que deseja sair?');"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
                 <?php
                 
@@ -82,7 +82,7 @@ session_start();
         <main class="main-content p-4 flex-grow-1">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h3 class="text-orange fw-bold">Produtos</h3>
-                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalAdicionarProduto">+ Adicionar Produto</button>
+               <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalAdicionarProduto">+ Adicionar Produto</button>
 
                 <div class="modal fade" id="modalAdicionarProduto" tabindex="-1" aria-labelledby="modalAdicionarProdutoLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -142,7 +142,6 @@ session_start();
                                         <img id="previewImagem" src="" alt="Pré-visualização da imagem" style="max-width: 200px; display: none; border-radius: 8px; margin-top: 10px;">
                                     </div>
                                 </div>
-                                <input type="hidden" id="modoEdicao" name="modoEdicao" value="novo">
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-success">Salvar Produto</button>
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -172,6 +171,7 @@ session_start();
                             <option value="z_a">Nome Z-A</option>
                         </select>
                     </div>
+                    
                 </div>
             </div>
             <a href="produtos.php"><button type="submit">Atualizar</button></a>
@@ -210,22 +210,8 @@ session_start();
                             <td><?php echo $row["quantidade"] ?></td>
                             <td><?php echo $row["nome_fornecedor"] ?></td>
                             <td>
-                               <button 
-                                class='btn btn-dark btn-sm btn-editar' 
-                                data-id='<?php echo $row["id_produto"]; ?>'
-                                data-titulo='<?php echo $row["titulo"]; ?>'
-                                data-variacao='<?php echo $row["variacao"]; ?>'
-                                data-custo='<?php echo $row["custo"]; ?>'
-                                data-quantidade='<?php echo $row["quantidade"]; ?>'
-                                data-qtdmin='<?php echo $row["qtdmin"]; ?>'
-                                data-idfornecedor='<?php echo $row["id_fornecedor"]; ?>'
-                                data-cor='<?php echo $row["cor"]; ?>'
-                                data-imagem='funcoes/<?php echo $row["url_imagem"]; ?>'
-                                >
-                                <i class='bi bi-pencil'></i>
-                                </button>
-                               <?php echo" <a href='funcoes/excluirProduto.php?id_produto=" .$row['id_produto']."'><button class='btn btn-danger btn-sm'><i class='bi bi-trash'></i></button></a>"?>
-                            
+                                <?php echo" <a href='edicao.php?id_produto=".$row['id_produto']."' ><button class='btn btn-dark btn-sm'><i class='bi bi-pencil' '></i></button></a>"?> 
+                                <?php echo" <a href='funcoes/excluirProduto.php?id_produto=" .$row['id_produto']."' onclick=\"return confirm('Tem certeza que deseja excluir este produto?');\" ><button class='btn btn-danger btn-sm'><i class='bi bi-trash'></i></button></a>"?>
                             </td>
                         </tr>
                         <?php endforeach; ?>
@@ -273,61 +259,7 @@ session_start();
             window.open('fornecedor.php', '_blank');
             }
             });
-            // Script edição do produto
-            document.querySelectorAll('.btn-editar').forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Pegar dados do botão
-                const id = this.dataset.id;
-                const titulo = this.dataset.titulo;
-                const variacao = this.dataset.variacao;
-                const custo = this.dataset.custo;
-                const quantidade = this.dataset.quantidade;
-                const qtdmin = this.dataset.qtdmin;
-                const idfornecedor = this.dataset.idfornecedor;
-                const cor = this.dataset.cor;
-                const imagem = this.dataset.imagem;
-
-                // Preencher os campos
-                document.getElementById('nomeProduto').value = titulo;
-                document.getElementById('idProduto').value = id;
-                document.getElementById('categoriaProduto').value = variacao;
-                document.getElementById('precoProduto').value = custo;
-                document.getElementById('quantidade').value = quantidade;
-                document.getElementById('qtdmin').value = qtdmin;
-                document.getElementById('id_fornecedor').value = idfornecedor;
-                document.getElementById('cor').value = cor;
-                
-                document.getElementById('idProduto').value = id;
-                document.getElementById('idProduto').readOnly = true;
-                document.getElementById('idProduto').readOnly = false;
-                btn.addEventListener("click", function () {
-                const id = this.dataset.id;
-                document.getElementById('idProduto').value = id;
-                document.getElementById('idProduto').readOnly = true;
-                });
-
-                // Ao clicar em "Adicionar Produto"
-                function abrirModalCadastro() {
-                document.getElementById('idProduto').value = "";
-                document.getElementById('idProduto').readOnly = false;
-                }
-
-                // Mostrar imagem atual
-                const preview = document.getElementById('previewImagem');
-                preview.src = imagem;
-                preview.style.display = 'block';
-
-                // Mudar o título e ação do form
-                document.getElementById('modalAdicionarProdutoLabel').innerText = 'Editar Produto';
-                const form = document.querySelector('#modalAdicionarProduto form');
-                form.action = 'funcoes/atualizarProduto.php'; // endpoint de update
-                document.getElementById('modoEdicao').value = 'editar';
-
-                // Abrir modal
-                const modal = new bootstrap.Modal(document.getElementById('modalAdicionarProduto'));
-                modal.show();
-            });
-            });
+            
         </script>
 </body>
 </html>

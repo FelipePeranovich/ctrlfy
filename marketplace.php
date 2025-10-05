@@ -31,7 +31,7 @@ if(empty($_SESSION['nome'])){
         <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
       </ul>
       <div class="mt-auto text-center">
-        <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
+        <a href="funcoes/sair.php" onclick= "return confirm('Tem certeza que deseja sair?');"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
         <?php
         echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
