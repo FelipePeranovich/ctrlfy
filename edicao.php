@@ -88,7 +88,7 @@ $resFornecedor = $bd->query($buscaFornecedor);
                               <h3 class="text-orange fw-bold">Edição</h3>
                         </div>
                     </div>
-                    <form action="funcoes/cadastrarProduto.php" method="POST" enctype="multipart/form-data">
+                    <form action="funcoes/atualizarProduto.php" method="POST" enctype="multipart/form-data">
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="nomeProduto" class="form-label">Nome do Produto</label>
@@ -131,17 +131,18 @@ $resFornecedor = $bd->query($buscaFornecedor);
                                     </div>           
                                     <div class="mb-3">
                                         <label for="imagemProduto" class="form-label">Capa do Produto</label>
-                                        <input type="file" class="form-control" id="imagemProduto" name="imagem" file_exists="<?=$res['url_imagem']?>" accept="image/*">
+                                        <input type="file" class="form-control" id="imagemProduto" name="novaimagem" accept="image/*">
                                     </div>
+                                    <input type="hidden" name="imagem" value="<?=$res['url_imagem']?>">
 
                                     <!-- Pré-visualização da imagem -->
                                     <div class="mb-3 text-center">
                                         <img id="previewImagem" 
-                                            src="<?= $res['url_imagem'] ?>" 
+                                            src="funcoes/<?= $res['url_imagem'] ?>" 
                                             alt="Pré-visualização da imagem" 
                                             style="max-width: 200px; border-radius: 8px; margin-top: 10px;"
                                             <?= $res['url_imagem'] ? '' : 'style="display:none;"' ?>>
-                                    </div>>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-success">Salvar Produto</button>
@@ -158,24 +159,17 @@ $resFornecedor = $bd->query($buscaFornecedor);
         <script>
             // Script para mostrar a imagem carregada
            document.getElementById('imagemProduto').addEventListener('change', function(event) {
-                const arquivo = event.target.files[0];
-                const preview = document.getElementById('previewImagem');
+            const arquivo = event.target.files[0];
+            const preview = document.getElementById('previewImagem');
 
-                if (arquivo) {
-                    const leitor = new FileReader();
-                    leitor.onload = function(e) {
-                        preview.src = e.target.result;
-                        preview.style.display = 'block';
-                    }
-                    leitor.readAsDataURL(arquivo);
-                } else if ('<?= $res['url_imagem'] ?>') {
-                    // Se não selecionar nova imagem, mantém a existente
-                    preview.src = '<?= $res['url_imagem'] ?>';
-                    preview.style.display = 'block';
-                } else {
-                    preview.src = '';
-                    preview.style.display = 'none';
+            if (arquivo) {
+                const leitor = new FileReader();
+                leitor.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
                 }
+                leitor.readAsDataURL(arquivo);
+            }
             });
 
             document.getElementById('id_fornecedor').addEventListener('change', function() {
