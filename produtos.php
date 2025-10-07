@@ -147,8 +147,9 @@ session_start();
                                                 echo "<option value=".$for["id_fornecedor"].">".$for['nome_fornecedor']."</option>";
                                             }
                                             ?>
-                                            <option value="novo">+ Cadastrar novo fornecedor</option>
-                                        </select>    
+                                            <!-- <option value="novo" id="id_forncedor">+ Cadastrar novo fornecedor</option> -->
+                                        </select> 
+                                        <a href="fornecedor.php">Cadastrar Fornecedor</a>   
                                     </div>
                                      <div class="mb-3">
                                         <label for="estoqueProduto" class="form-label">Cor</label>

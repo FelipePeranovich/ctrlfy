@@ -24,9 +24,10 @@ $bd->beginTransaction();
         }
     else {  
         $bd->commit();       
-        echo "<script>
-  window.close();
-</script>";
+//         echo "<script>
+//   window.close();
+// </script>";
+    header("locatio:../produtos.php");
     }
 
 
