@@ -4,12 +4,34 @@ session_start();
     if(empty($_SESSION['nome'])){
         header("location:index.php");
     }
-
     include_once 'funcoes/banco.php';
-    include_once 'funcoes/listarProdutos.php';
+    //include_once 'funcoes/listarProdutos.php';
     $bd = conectar();
-    $buscaProdutos = "Select * from produto";
-    $produto = $bd->query($buscaProdutos);
+    //teste filtro
+    $busca = filter_input(INPUT_GET,"busca",FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $fornecedor = filter_input(INPUT_GET,"fornecedor",FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $ordem = filter_input(INPUT_GET,"ordem",FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+   
+    $sql = "select * from produto p join fornecedor f ON p.fk_fornecedor_id_fornecedor = f.id_fornecedor";
+
+    if(!empty($busca)){
+        $sql .=" WHERE ( p.titulo LIKE '%$busca%' OR p.id_produto LIKE '%$busca%' OR p.variacao LIKE '%$busca%')";     
+        
+    }
+    if(!empty($fornecedor)){
+        $sql = "select * from produto p join fornecedor f where p.fk_fornecedor_id_fornecedor = $fornecedor AND f.id_fornecedor = $fornecedor";
+        
+     }
+    $sql .= " ORDER BY titulo";
+    switch($ordem){
+        case 'a_z': $sql .= " ASC"; break;
+        case 'z_a': $sql .= " DESC"; break;
+    }
+    // echo $sql;
+    // die;
+    $stmt = $bd->query($sql);
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
     $buscaFornecedor = "select * from fornecedor order by nome_fornecedor";
     $resFornecedor = $bd->query($buscaFornecedor);
 ?>
@@ -154,7 +176,7 @@ session_start();
             </div>
                              
             <!-- Filtros -->
-            <form action="funcoes/listarProdutos.php" method="post">
+            <form action="produtos.php" method="GET">
             <div class="bg-white p-4 rounded shadow-sm mb-4">
                 <div class="row g-3">
                     <div class="col-md-4">
@@ -163,6 +185,12 @@ session_start();
                     <div class="col-md-3">
                         <select class="form-select" name="fornecedor">
                             <option value="">Todos os Fornecedores</option>
+                            <?php
+                             $resFornecedor = $bd->query($buscaFornecedor);
+                                while($for = $resFornecedor->fetch()){
+                                echo "<option value=".$for["id_fornecedor"].">".$for['nome_fornecedor']."</option>";
+                                }
+                             ?>
                         </select>
                     </div>
                     <div class="col-md-2">
@@ -215,7 +243,7 @@ session_start();
                             </td>
                         </tr>
                         <?php endforeach; ?>
-                    <?php else: ?>
+                    <?php else: echo"Nenhum produto encontrado"; ?>
                         <?php endif; ?>
                     </tbody>
                 </table>
