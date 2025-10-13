@@ -87,7 +87,7 @@ session_start();
                                    
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-success">Salvar Fornecedor</button>
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-secondary" onclick="confirmarVoltar()">Cancelar</button>
                                 </div>
                 </form>
 
@@ -95,4 +95,11 @@ session_start();
         </main>
 
 </body>
+<script>
+function confirmarVoltar() {
+    if (confirm('Tem certeza que deseja cancelar e voltar à página anterior?')) {
+        history.back();
+    }
+}
+</script>
 </html>
