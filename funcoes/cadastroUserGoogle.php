@@ -55,7 +55,7 @@ if($testeId -> rowCount() == 0){
             $_SESSION['sobrenome'] = $sobrenome;
             $_SESSION['permissao'] = "usuario";
             $bd->commit();       
-            header("location:../dashboard.php");
+            header("location:https://floppily-sightless-zayden.ngrok-free.dev/ctrlfy/dashboard.php");
         }
     }
 $login = $testeId->fetch();
@@ -64,7 +64,7 @@ if($login['id_oauth'] == $id){
             $_SESSION['nome'] = $nome;
             $_SESSION['sobrenome'] = $sobrenome;
             $_SESSION['permissao'] = "usuario";      
-            header("location:../dashboard.php");
+            header("location:https://floppily-sightless-zayden.ngrok-free.dev/ctrlfy/dashboard.php");
 }else{
     echo "<script>alert('ERRO AO ENTRAR! TENTE NOVAMENTE!');javascript:history.go(-1)</script>";
         die();

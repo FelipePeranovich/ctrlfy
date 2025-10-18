@@ -5,6 +5,7 @@ if(empty($_SESSION['nome'])){
         header("location:index.php");
     }
 
+
 ?>
 <html lang="pt-br">
 
@@ -79,7 +80,9 @@ if(empty($_SESSION['nome'])){
           <h6>Marketplaces disponíveis</h6>
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Ebay <button class="btn btn-orange btn-sm">+ Conectar</button>
+              Mercado Livre <button class="btn btn-orange btn-sm" onclick="window.location.href='configapi/meliAuth.php'">
+  + Conectar
+</button>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
               Casas Bahia <button class="btn btn-orange btn-sm">+ Conectar</button>
@@ -117,8 +120,8 @@ if(empty($_SESSION['nome'])){
               <td><span class="badge bg-success">Ativo</span></td>
               <td>145</td>
               <td>
-                <button class="btn btn-warning btn-sm">Ativar</button>
-                <button class="btn btn-danger btn-sm">Desativar</button>
+                <button class="btn btn-warning btn-sm"></button>
+                <button class="btn btn-success btn-sm"><a href="configapi/meliGetData.php" class="btn">Ver Dados</a></td></button>
               </td>
             </tr>
             <tr>

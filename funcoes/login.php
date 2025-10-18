@@ -5,12 +5,14 @@
     $email = filter_input(INPUT_POST,"email",FILTER_SANITIZE_EMAIL);
     $senha = filter_input(INPUT_POST,"senha",FILTER_SANITIZE_SPECIAL_CHARS);
     
+
     $sql = "SELECT nome,sobrenome,email,senha,cpf FROM `usuario` WHERE email='$email'";
  
     $resultado = $bd->query($sql);       
     $login = $resultado->fetch();
     $senha_bd = $login['senha'];
-    if(password_verify($senha, $senha_bd)){
+
+    if(password_verify($senha, $senha_bd)){   
         $_SESSION['nome'] = $login['nome'];
         $_SESSION['sobrenome'] = $login['sobrenome'];
         $_SESSION['permissao'] = "usuario";

@@ -9,6 +9,7 @@ $sobrenome = filter_input(INPUT_POST,"sobrenome",FILTER_SANITIZE_SPECIAL_CHARS);
 
 $senhaHash = password_hash($senha,PASSWORD_DEFAULT);
 
+
 include_once '../funcoes/banco.php';
 $bd = conectar();
 $sql = "insert into usuario (`id_usuario`, `nome`, `sobrenome`, `email`, `senha`, `telefone`, `nivel_acesso`, `cpf`) values "
