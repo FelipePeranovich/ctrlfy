@@ -38,6 +38,15 @@ body {
   color: #ff8c00;
 }
 
+.btn-success {
+    background-color: #ff8c00;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #e67800;
+}
+
 .user {
   color: #fff;
   padding: 10px 0;
@@ -93,7 +102,6 @@ body {
 }
 
 .table td button {
-  width: 36px;
   height: 36px;
   display: inline-flex;
   justify-content: center;

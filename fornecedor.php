@@ -18,8 +18,7 @@ session_start();
     <title>Fornecedores - Ctrlfy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/produtos.css" />
-    <link rel="stylesheet" href="css/modais.css" />
+    <link rel="stylesheet" href="css/fornecedor.css" />
 </head>
 
 <body class="bg-light">
@@ -75,24 +74,74 @@ session_start();
             </div>
         </nav>
 
-        <!-- Conteúdo principal -->
         <main class="main-content p-4 flex-grow-1">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3 class="text-orange fw-bold">Fornecedores</h3>
-                <form action="funcoes/cadastrarFornecedor.php" method="POST" enctype="multipart/form-data">
-                                    <div class="mb-3">
-                                        <label for="nomeFornecedor" class="form-label">Nome Fornecedor</label>
-                                        <input type="text" class="form-control" id="nomeFornecedor" name="nomeFornecedor" required>
-                                    </div>
-                                   
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-success">Salvar Fornecedor</button>
-                                    <button type="button" class="btn btn-secondary" onclick="confirmarVoltar()">Cancelar</button>
-                                </div>
-                </form>
+  <div class="container-fluid">
 
-            </div>
-        </main>
+    <!-- Título -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="text-orange fw-bold">Fornecedores</h3>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <div class="card shadow-sm mb-4 p-3">
+      <form action="funcoes/cadastrarFornecedor.php" method="POST" enctype="multipart/form-data">
+        <div class="row align-items-end">
+          <div class="col-md-6">
+            <label for="nomeFornecedor" class="form-label">Nome Fornecedor</label>
+            <input type="text" class="form-control" id="nomeFornecedor" name="nomeFornecedor" required>
+          </div>
+
+          <div class="col-md-6 text-end mt-3">
+            <button type="submit" class="btn btn-success">Salvar Fornecedor</button>
+            <button type="button" class="btn btn-secondary" onclick="confirmarVoltar()">Cancelar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Tabela de fornecedores -->
+            <div class="bg-white p-3 rounded shadow-sm table-responsive" style="border-radius: 12px; overflow: hidden; border: 2px solid #dee2e6; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th>Fornecedor</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                        <tr>
+                        <td>Amazon</td>
+                        <td><span class="badge bg-success">Ativo</span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Mercado Livre</td>
+                        <td><span class="badge bg-success">Ativo</span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Shopify</td>
+                        <td><span class="badge bg-warning text-dark">Inativo</span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Magalu</td>
+                        <td><span class="badge bg-warning text-dark">Inativo</span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Excluir</button>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+  </div>
+</main>
 
 </body>
 <script>

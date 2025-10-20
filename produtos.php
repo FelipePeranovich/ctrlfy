@@ -149,7 +149,7 @@ session_start();
                                             ?>
                                             <!-- <option value="novo" id="id_forncedor">+ Cadastrar novo fornecedor</option> -->
                                         </select> 
-                                        <a href="fornecedor.php">Cadastrar Fornecedor</a>   
+                                        <a href="fornecedor.php" class="mt-2" style="display:inline-block; background-color:#ff8c00; color:white; padding:6px 12px; border-radius:8px; text-decoration:none; transition:background-color 0.3s;">Cadastrar Fornecedor</a>   
                                     </div>
                                      <div class="mb-3">
                                         <label for="estoqueProduto" class="form-label">Cor</label>
@@ -202,8 +202,13 @@ session_start();
                     </div>
                     
                 </div>
-            </div>
-            <a href="produtos.php"><button type="submit">Atualizar</button></a>
+                </div>
+                <div class="mb-3">
+                    <a href="produtos.php">
+                        <button class="btn btn-warning" type="submit">Atualizar</button>
+                    </a>
+                </div>
+            
             </form>
 
 
