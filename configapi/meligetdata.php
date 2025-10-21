@@ -41,7 +41,7 @@ $ordersResp = meli_get("https://api.mercadolibre.com/orders/search?seller={$user
 echo '<h2>Vendas / Pedidos</h2>';
 if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) {
     echo '<table border="1" cellpadding="6" cellspacing="0">';
-    echo '<tr><th>Pedido</th><th>Data</th><th>Status</th><th>Itens</th><th>Total</th></tr>';
+    echo '<tr><th>Pedido</th><th>Data</th><th>Status</th><th>Itens</th><th>Total</th><th>Link</th></tr>';
 
     foreach ($ordersResp['body']['results'] as $order) {
         $id = $order['id'];
@@ -54,7 +54,6 @@ if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) 
         $statusOriginal = $body['status'] ?? '';
         $trackingNumber = $body['shipping']['tracking_number'] ?? '';
 
-        // Traduz status para amigável
         if (!empty($trackingNumber)) {
             $statusAmigavel = 'Enviado';
         } elseif (in_array($statusOriginal, ['paid', 'payment_in_process'])) {
@@ -77,6 +76,7 @@ if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) 
                 <td>{$statusAmigavel}</td>
                 <td>" . implode('<br>', $itemsHtml) . "</td>
                 <td>R$ {$total}</td>
+                <td><a target='_blank' href='https://www.mercadolivre.com.br/vendas/$id/detalhe?callbackUrl=https%3A%2F%2Fwww.mercadolivre.com.br%2Fvendas%2Fomni%2Flista%3Fplatform.id%3DML%26channel%3Dmarketshops%26filters%3DTAB_IN_THE_WAY%26sort%3D%26page%3D1%26search%3D%26startPeriod%3D%26toCurrent%3D%26fromCurrent%3D'> ver venda </a></td>
               </tr>";
     }
 

@@ -1,5 +1,10 @@
 <?php
 
+session_start();
+if(!empty($_SESSION['nome'])){
+        header("location:dashboard.php");
+    }
+
 require __DIR__ . "/vendor/autoload.php";
 
 $client = new Google\Client;
