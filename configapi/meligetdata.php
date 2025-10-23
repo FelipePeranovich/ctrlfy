@@ -90,14 +90,22 @@ $ordersResp = meli_get("https://api.mercadolibre.com/orders/search?seller={$user
 
 echo '<h2>📦 Vendas pendentes de envio</h2>';
 
+
 if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) {
     $pendentes = [];
+    // var_dump($ordersResp['body']['results']);
+    // die;
 
     // Filtra apenas pedidos pagos que ainda não foram enviados
     foreach ($ordersResp['body']['results'] as $order) {
-        $shippingStatus = $order['shipping']['status'] ?? null;
+        // $shippingStatus = $order['shipping']['status'] ?? null;
+       // $shippingStatus = $order['tags'];
+       $shippingStatus = end($order['tags']);
+        
+        
+        
 
-        if ($shippingStatus !== 'shipped' && $shippingStatus !== 'delivered' && $shippingStatus == 'not_delivered') {
+        if ($shippingStatus == "not_delivered") {
             $pendentes[] = $order;
         }
     }
