@@ -5,6 +5,9 @@ if(empty($_SESSION['nome'])){
         header("location:index.php");
     }
 
+include_once ('configapi/meligetdata.php');
+
+
 ?>
 <html lang="pt-br">
 
@@ -85,65 +88,67 @@ if(empty($_SESSION['nome'])){
             </div>
 
             <!-- Lista de vendas -->
-            <div class="venda-card bg-white rounded shadow-sm p-3 mb-3">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="badge bg-warning text-dark">Etiqueta impressa</span>
-                        <p class="mb-1 small">Você deve despachar o pacote hoje ou amanhã em Correios.</p>
-                        <div class="d-flex align-items-center">
-                            <img src="" class="rounded me-2 venda-img" />
-                            <div>
-                                <p class="mb-0 fw-bold">Lixeira com Sensor Automático 14L</p>
-                                <small class="text-muted">Cor: Branco | SKU: 1014</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-end">
-                        <p class="fw-bold text-orange mb-1">R$ 135</p>
-                        <button class="btn-warning btn">Reimprimir Etiqueta</button>
-                    </div>
-                </div>
-            </div>
+             <?php
+             if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) {
+                foreach ($ordersResp['body']['results'] as $order) {
+                    $id = $order['id'];
+                    $date = date('d/m/Y H:i', strtotime($order['date_created'] ?? ''));
+                    $total = number_format($order['total_amount'] ?? 0, 2, ',', '.');
 
-            <div class="venda-card bg-white rounded shadow-sm p-3 mb-3">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="badge bg-warning text-dark">Etiqueta impressa</span>
-                        <p class="mb-1 small">Você deve despachar o pacote hoje ou amanhã em Correios.</p>
-                        <div class="d-flex align-items-center">
-                            <img src="" class="rounded me-2 venda-img" />
-                            <div>
-                                <p class="mb-0 fw-bold">Smartwatch com Monitor Cardíaco</p>
-                                <small class="text-muted">Cor: Preto | SKU: 2323</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-end">
-                        <p class="fw-bold text-orange mb-1">R$ 250</p>
-                        <button class="btn-warning btn">Reimprimir Etiqueta</button>
-                    </div>
-                </div>
-            </div>
+                    // 🔍 Busca detalhes completos do pedido (inclui shipping)
+                    $detail = meli_get("https://api.mercadolibre.com/orders/$id", $access_token);
+                    $shippingType = '—';
+                    $shippingStatus = '—';
 
-            <div class="venda-card bg-white rounded shadow-sm p-3 mb-3">
-                <div class="d-flex justify-content-between align-items-center">
+                    if ($detail['http_code'] === 200) {
+                        $ship = $detail['body']['shipping'] ?? [];
+                        $shippingType = $ship['logistic_type'] ?? 'não informado';
+                        $shippingStatus = $ship['status'] ?? 'sem status';
+
+                    }
+
+                    // $itemResp = meli_get("https://api.mercadolibre.com/items/$itemId", $access_token);
+                    // $imageUrl = null;
+                    // if ($itemResp['http_code'] === 200 && !empty($itemResp['body']['pictures'])) {
+                    //     $imageUrl = $itemResp['body']['pictures'][0]['url']; // primeira imagem
+                    // }
+
+                    // Lista dos produtos do pedido
+                    $itemsHtml = [];
+                    foreach ($order['order_items'] as $oi) {
+                        $itemsHtml[] = ($oi['item']['title'] ?? '—') . ' x' . ($oi['quantity'] ?? 1);
+                    }?>
+
+                    <!-- Lista de Vendas -->
+                    <div class="venda-card bg-white rounded shadow-sm p-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
                     <div>
-                        <span class="badge bg-warning text-dark">Etiqueta impressa</span>
-                        <p class="mb-1 small">Você deve despachar o pacote hoje ou amanhã em Correios.</p>
+                        <span class="badge bg-warning text-dark">Id da venda #<?=$id?></span>
+                        <p class="mb-1 small">Você deve despachar o pacote hoje em Correios.</p>
                         <div class="d-flex align-items-center">
-                            <img src="" class="rounded me-2 venda-img" />
+                            <!-- <img src=<?=$imageUrl?> class="rounded me-2 venda-img" /> -->
                             <div>
-                                <p class="mb-0 fw-bold">Caixa de Som Portátil</p>
-                                <small class="text-muted">Cor: Azul | SKU: 5464</small>
+                                <p class="mb-0 fw-bold"><?= implode('. <br> .', $itemsHtml) ?></p>
+                                <small class="text-muted"></small>
                             </div>
                         </div>
                     </div>
                     <div class="text-end">
-                        <p class="fw-bold text-orange mb-1">R$ 180</p>
-                        <button class="btn-warning btn">Reimprimir Etiqueta</button>
+                        <p class="fw-bold text-orange mb-1">R$ <?=$total?></p>
+                        <a target='_blank' href='https://www.mercadolivre.com.br/vendas/<?=$id?>/detalhe'><button class="btn-warning btn">Ver Venda</button></a>
                     </div>
-                </div>
-            </div>
+                    </div>
+                    </div>
+
+
+                    <?php
+                    
+                }
+            } else {
+                echo 'Nenhuma venda encontrada.';
+            }
+             ?>
+            
 
         </div>
     </div>

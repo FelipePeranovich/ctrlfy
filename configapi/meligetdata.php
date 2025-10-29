@@ -15,131 +15,72 @@ if (!$user_id) {
     exit;
 }
 
-// === PRODUTOS ===
-// $itemsResp = meli_get("https://api.mercadolibre.com/users/{$user_id}/items/search", $access_token);
-
-// echo '<h2>Produtos vinculados</h2>';
-// if ($itemsResp['http_code'] === 200 && !empty($itemsResp['body']['results'])) {
-//     echo '<ul>';
-//     foreach ($itemsResp['body']['results'] as $item_id) {
-//         $det = meli_get("https://api.mercadolibre.com/items/{$item_id}", $access_token);
-//         if ($det['http_code'] === 200) {
-//             $title = htmlspecialchars($det['body']['title'] ?? '—');
-//             $avail = intval($det['body']['available_quantity'] ?? 0);
-//             $sold = intval($det['body']['sold_quantity'] ?? 0);
-//             echo "<li><b>{$title}</b> — Estoque: {$avail} — Vendidos: {$sold}</li>";
-//         }
-//     }
-//     echo '</ul>';
-// } else {
-//     echo 'Nenhum item encontrado.';
-// }
-
-// === VENDAS ===
-// $ordersResp = meli_get("https://api.mercadolibre.com/orders/search?seller={$user_id}&sort=date_desc", $access_token);
-
-// echo '<h2>Vendas / Pedidos</h2>';
-// if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) {
-//     echo '<table border="1" cellpadding="6" cellspacing="0">';
-//     echo '<tr><th>Pedido</th><th>Data</th><th>Status</th><th>Itens</th><th>Total</th><th>Link</th></tr>';
-
-//     foreach ($ordersResp['body']['results'] as $order) {
-//         $id = $order['id'];
-//         $date = date('d/m/Y H:i', strtotime($order['date_created'] ?? ''));
-
-//         // Busca detalhes do pedido
-//         $orderDetail = meli_get("https://api.mercadolibre.com/orders/{$id}", $access_token);
-//         $body = $orderDetail['body'] ?? [];
-
-//         $statusOriginal = $body['status'] ?? '';
-//         $trackingNumber = $body['shipping']['tracking_number'] ?? '';
-
-//         if (!empty($trackingNumber)) {
-//             $statusAmigavel = 'Enviado';
-//         } elseif (in_array($statusOriginal, ['paid', 'payment_in_process'])) {
-//             $statusAmigavel = 'Pago';
-//         } elseif (in_array($statusOriginal, ['cancelled', 'cancelled_by_seller', 'cancelled_by_buyer', 'in_process'])) {
-//             $statusAmigavel = 'Cancelado';
-//         } else {
-//             $statusAmigavel = ucfirst($statusOriginal);
-//         }
-
-//         $total = number_format($order['total_amount'] ?? 0, 2, ',', '.');
-//         $itemsHtml = [];
-//         foreach ($order['order_items'] as $oi) {
-//             $itemsHtml[] = ($oi['item']['title'] ?? '') . ' x' . ($oi['quantity'] ?? 1);
-//         }
-
-//         echo "<tr>
-//                 <td>#{$id}</td>
-//                 <td>{$date}</td>
-//                 <td>{$statusAmigavel}</td>
-//                 <td>" . implode('<br>', $itemsHtml) . "</td>
-//                 <td>R$ {$total}</td>
-//                 <td><a target='_blank' href='https://www.mercadolivre.com.br/vendas/$id/detalhe?callbackUrl=https%3A%2F%2Fwww.mercadolivre.com.br%2Fvendas%2Fomni%2Flista%3Fplatform.id%3DML%26channel%3Dmarketshops%26filters%3DTAB_IN_THE_WAY%26sort%3D%26page%3D1%26search%3D%26startPeriod%3D%26toCurrent%3D%26fromCurrent%3D'> ver venda </a></td>
-//               </tr>";
-//     }
-
-//     echo '</table>';
-// } else {
-//     echo 'Nenhuma venda encontrada.';
-// }
-
-// === VENDAS PENDENTES DE ENVIO ===
-$ordersResp = meli_get("https://api.mercadolibre.com/orders/search?seller={$user_id}&order.status=paid&sort=date_desc", $access_token);
+// Busca pedidos pagos e prontos para envio
+$ordersResp = meli_get("https://api.mercadolibre.com/orders/search?seller=$user_id&order.status=paid&shipping.status=ready_to_ship&sort=date_desc", $access_token);
 
 echo '<h2>📦 Vendas pendentes de envio</h2>';
 
-
 if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) {
-    $pendentes = [];
-    // var_dump($ordersResp['body']['results']);
-    // die;
+    echo '<table border="1" cellpadding="6" cellspacing="0">';
+    echo '<tr>
+            <th>Imagem</th>
+            <th>Pedido</th>
+            <th>Data</th>
+            <th>Tipo de Envio</th>
+            <th>Status</th>
+            <th>Itens</th>
+            <th>Total</th>
+            <th>Link</th>
+          </tr>';
 
-    // Filtra apenas pedidos pagos que ainda não foram enviados
     foreach ($ordersResp['body']['results'] as $order) {
-        // $shippingStatus = $order['shipping']['status'] ?? null;
-       // $shippingStatus = $order['tags'];
-       $shippingStatus = end($order['tags']);
-        
-        
-        
+        $id = $order['id'];
+        $date = date('d/m/Y H:i', strtotime($order['date_created'] ?? ''));
+        $total = number_format($order['total_amount'] ?? 0, 2, ',', '.');
 
-        if ($shippingStatus == "not_delivered") {
-            $pendentes[] = $order;
-        }
-    }
+        // --- CAPTURA TIPO DE ENVIO ---
+        $shipping_id = $order['shipping']['id'] ?? null;
+        $shippingType = 'não informado';
+        $shippingStatus = 'sem status';
 
-    if (empty($pendentes)) {
-        echo "<p>Todas as vendas foram enviadas ✅</p>";
-    } else {
-        echo '<table border="1" cellpadding="6" cellspacing="0">';
-        echo '<tr><th>Pedido</th><th>Data</th><th>Status Envio</th><th>Itens</th><th>Total</th><th>Link</th></tr>';
-
-        foreach ($pendentes as $order) {
-            $id = $order['id'];
-            $date = date('d/m/Y H:i', strtotime($order['date_created'] ?? ''));
-            $total = number_format($order['total_amount'] ?? 0, 2, ',', '.');
-            $shippingStatus = ucfirst($order['shipping']['status'] ?? 'sem envio');
-
-            // Lista dos produtos do pedido
-            $itemsHtml = [];
-            foreach ($order['order_items'] as $oi) {
-                $itemsHtml[] = ($oi['item']['title'] ?? '—') . ' x' . ($oi['quantity'] ?? 1);
+        if ($shipping_id) {
+            $shipDetail = meli_get("https://api.mercadolibre.com/shipments/$shipping_id", $access_token);
+            if ($shipDetail['http_code'] === 200) {
+                $shippingType = $shipDetail['body']['logistic_type'] ?? 'não informado';
+                $shippingStatus = $shipDetail['body']['status'] ?? 'sem status';
             }
-
-            echo "<tr>
-                    <td>#{$id}</td>
-                    <td>{$date}</td>
-                    <td>{$shippingStatus}</td>
-                    <td>" . implode('<br>', $itemsHtml) . "</td>
-                    <td>R$ {$total}</td>
-                    <td><a target='_blank' href='https://www.mercadolivre.com.br/vendas/{$id}/detalhe'>ver venda</a></td>
-                  </tr>";
         }
 
-        echo '</table>';
+        // --- PEGA IMAGEM DO PRIMEIRO PRODUTO DO PEDIDO ---
+        $firstItem = $order['order_items'][0]['item']['id'] ?? null;
+        $imageUrl = null;
+
+        if ($firstItem) {
+            $itemResp = meli_get("https://api.mercadolibre.com/items/$firstItem?attributes=pictures", $access_token);
+            if ($itemResp['http_code'] === 200 && !empty($itemResp['body']['pictures'][0]['url'])) {
+                $imageUrl = $itemResp['body']['pictures'][0]['url'];
+            }
+        }
+
+        // Lista dos produtos do pedido
+        $itemsHtml = [];
+        foreach ($order['order_items'] as $oi) {
+            $itemsHtml[] = ($oi['item']['title'] ?? '—') . ' x' . ($oi['quantity'] ?? 1);
+        }
+
+        echo "<tr>
+                <td align='center'>" . ($imageUrl ? "<img src='$imageUrl' width='70'>" : '—') . "</td>
+                <td>#{$id}</td>
+                <td>{$date}</td>
+                <td>{$shippingType}</td>
+                <td>{$shippingStatus}</td>
+                <td>" . implode('<br>', $itemsHtml) . "</td>
+                <td>R$ {$total}</td>
+                <td><a target='_blank' href='https://www.mercadolivre.com.br/vendas/{$id}/detalhe'>ver venda</a></td>
+              </tr>";
     }
+
+    echo '</table>';
 } else {
     echo 'Nenhuma venda encontrada.';
 }
