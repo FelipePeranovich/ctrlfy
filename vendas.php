@@ -90,34 +90,42 @@ include_once ('configapi/meligetdata.php');
             <!-- Lista de vendas -->
              <?php
              if ($ordersResp['http_code'] === 200 && !empty($ordersResp['body']['results'])) {
-                foreach ($ordersResp['body']['results'] as $order) {
-                    $id = $order['id'];
-                    $date = date('d/m/Y H:i', strtotime($order['date_created'] ?? ''));
-                    $total = number_format($order['total_amount'] ?? 0, 2, ',', '.');
 
-                    // 🔍 Busca detalhes completos do pedido (inclui shipping)
-                    $detail = meli_get("https://api.mercadolibre.com/orders/$id", $access_token);
-                    $shippingType = '—';
-                    $shippingStatus = '—';
+            foreach ($ordersResp['body']['results'] as $order) {
+                $id = $order['id'];
+                $date = date('d/m/Y H:i', strtotime($order['date_created'] ?? ''));
+                $total = number_format($order['total_amount'] ?? 0, 2, ',', '.');
 
-                    if ($detail['http_code'] === 200) {
-                        $ship = $detail['body']['shipping'] ?? [];
-                        $shippingType = $ship['logistic_type'] ?? 'não informado';
-                        $shippingStatus = $ship['status'] ?? 'sem status';
+                // --- CAPTURA TIPO DE ENVIO ---
+                $shipping_id = $order['shipping']['id'] ?? null;
+                $shippingType = 'não informado';
+                $shippingStatus = 'sem status';
 
+                if ($shipping_id) {
+                    $shipDetail = meli_get("https://api.mercadolibre.com/shipments/$shipping_id", $access_token);
+                    if ($shipDetail['http_code'] === 200) {
+                        $shippingType = $shipDetail['body']['logistic_type'] ?? 'não informado';
+                        $shippingStatus = $shipDetail['body']['status'] ?? 'sem status';
                     }
+                }
 
-                    // $itemResp = meli_get("https://api.mercadolibre.com/items/$itemId", $access_token);
-                    // $imageUrl = null;
-                    // if ($itemResp['http_code'] === 200 && !empty($itemResp['body']['pictures'])) {
-                    //     $imageUrl = $itemResp['body']['pictures'][0]['url']; // primeira imagem
-                    // }
+                // --- PEGA IMAGEM DO PRIMEIRO PRODUTO DO PEDIDO ---
+                $firstItem = $order['order_items'][0]['item']['id'] ?? null;
+                $imageUrl = null;
 
-                    // Lista dos produtos do pedido
-                    $itemsHtml = [];
-                    foreach ($order['order_items'] as $oi) {
-                        $itemsHtml[] = ($oi['item']['title'] ?? '—') . ' x' . ($oi['quantity'] ?? 1);
-                    }?>
+                if ($firstItem) {
+                    $itemResp = meli_get("https://api.mercadolibre.com/items/$firstItem?attributes=pictures", $access_token);
+                    if ($itemResp['http_code'] === 200 && !empty($itemResp['body']['pictures'][0]['url'])) {
+                        $imageUrl = $itemResp['body']['pictures'][0]['url'];
+                    }
+                }
+
+                // Lista dos produtos do pedido
+                $itemsHtml = [];
+                foreach ($order['order_items'] as $oi) {
+                    $itemsHtml[] = ($oi['item']['title'] ?? '—') . ' x' . ($oi['quantity'] ?? 1);
+            }
+        ?>
 
                     <!-- Lista de Vendas -->
                     <div class="venda-card bg-white rounded shadow-sm p-3 mb-3">
@@ -126,10 +134,10 @@ include_once ('configapi/meligetdata.php');
                         <span class="badge bg-warning text-dark">Id da venda #<?=$id?></span>
                         <p class="mb-1 small">Você deve despachar o pacote hoje em Correios.</p>
                         <div class="d-flex align-items-center">
-                            <!-- <img src=<?=$imageUrl?> class="rounded me-2 venda-img" /> -->
+                            <img src=<?=$imageUrl?> class="rounded me-2 venda-img" />
                             <div>
                                 <p class="mb-0 fw-bold"><?= implode('. <br> .', $itemsHtml) ?></p>
-                                <small class="text-muted"></small>
+                                <small class="text-muted"><?= $shippingType?> | <?= $shippingStatus?></td></small>
                             </div>
                         </div>
                     </div>
