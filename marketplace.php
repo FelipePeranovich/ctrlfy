@@ -26,10 +26,11 @@ if(empty($_SESSION['nome'])){
       <h4 class="logo">Ctrlfy</h4>
       <ul class="nav flex-column mt-4">
         <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
-        <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
-        <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
-        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="marketplace.php">Marketplaces</a></li>
       </ul>
       <div class="mt-auto text-center">
         <a href="funcoes/sair.php" onclick= "return confirm('Tem certeza que deseja sair?');"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
@@ -56,6 +57,7 @@ if(empty($_SESSION['nome'])){
             <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
             <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
             <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+            <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
             <li class="nav-item"><a class="nav-link active" href="#">Marketplaces</a></li>
           </ul>
           <div class="mt-auto text-center">
@@ -80,23 +82,26 @@ if(empty($_SESSION['nome'])){
           <h6>Marketplaces disponíveis</h6>
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Mercado Livre <button class="btn btn-orange btn-sm" onclick="window.location.href='configapi/meliAuth.php'">
-  + Conectar
-</button>
+              Mercado Livre 
+              <?php if(empty($_SESSION['meli_user_id'])):?>
+                      <a href="configapi/meliAuth.php" ><button class="btn btn-orange btn-sm" >+ Conectar</button></a>
+                <?php else: ?>
+                      <a href="configapi/melilogout.php" onclick= "return confirm('Tem certeza que deseja sair?');"><button class="btn btn-orange btn-sm">- Sair</button></a>
+              <?php endif ?>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Casas Bahia <button class="btn btn-orange btn-sm">+ Conectar</button>
+              Shopee <button class="btn btn-orange btn-sm">+ Conectar</button>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Fast <button class="btn btn-orange btn-sm">+ Conectar</button>
+              Amazon <button class="btn btn-orange btn-sm">+ Conectar</button>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Carrefour <button class="btn btn-orange btn-sm">+ Conectar</button>
+              TikTokshop <button class="btn btn-orange btn-sm">+ Conectar</button>
             </li>
           </ul>
         </div>
         <div class="col-md-6 mt-4">
-        <table class="table table-bordered bg-white" style="border-radius: 12px; overflow: hidden; border: 2px solid #dee2e6; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <!-- <table class="table table-bordered bg-white" style="border-radius: 12px; overflow: hidden; border: 2px solid #dee2e6; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
           <thead class="table-light">
             <tr>
               <th>Marketplace</th>
@@ -143,7 +148,7 @@ if(empty($_SESSION['nome'])){
               </td>
             </tr>
           </tbody>
-          </table>
+          </table> -->
         </div>
       </div>
     </div>

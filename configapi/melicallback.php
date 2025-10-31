@@ -57,7 +57,7 @@ VALUES ( null,'Mercado Livre','Ativo','$acess_token','$id')";
             $_SESSION['meli_access_token'] = $data['access_token'];
             $_SESSION['meli_user_id'] = $data['user_id'];
             $bd->commit();       
-            header('Location: https://floppily-sightless-zayden.ngrok-free.dev/ctrlfy/dashboard.php');
+            header('Location: https://floppily-sightless-zayden.ngrok-free.dev/ctrlfy/marketplace.php');
         }
 
 exit;

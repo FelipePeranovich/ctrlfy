@@ -29,10 +29,11 @@ session_start();
             <h4 class="logo">Ctrlfy</h4>
             <ul class="nav flex-column mt-4">
                 <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">Produtos</a></li>
-                <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
-                <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
-                <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="produtos.php">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
             </ul>
             <div class="mt-auto text-center">
                 <a href="funcoes/sair.php"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
@@ -60,6 +61,7 @@ session_start();
                         <li class="nav-item"><a class="nav-link active" href="#">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
                         <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
                         <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
                     </ul>
                     <div class="mt-auto text-center">
