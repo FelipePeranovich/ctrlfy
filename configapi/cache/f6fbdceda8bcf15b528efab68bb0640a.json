@@ -1,0 +1,42 @@
+{
+    "time": 1763420711,
+    "content": {
+        "http_code": 200,
+        "body": {
+            "pictures": [
+                {
+                    "quality": "",
+                    "id": "653517-MLB96748420595_102025",
+                    "url": "http:\/\/http2.mlstatic.com\/D_653517-MLB96748420595_102025-O.jpg",
+                    "secure_url": "https:\/\/http2.mlstatic.com\/D_653517-MLB96748420595_102025-O.jpg",
+                    "size": "470x500",
+                    "max_size": "1129x1200"
+                },
+                {
+                    "quality": "",
+                    "id": "917964-MLB96299101228_102025",
+                    "url": "http:\/\/http2.mlstatic.com\/D_917964-MLB96299101228_102025-O.jpg",
+                    "secure_url": "https:\/\/http2.mlstatic.com\/D_917964-MLB96299101228_102025-O.jpg",
+                    "size": "500x413",
+                    "max_size": "1185x980"
+                },
+                {
+                    "secure_url": "https:\/\/http2.mlstatic.com\/D_881370-MLB96748705689_102025-O.jpg",
+                    "size": "500x500",
+                    "max_size": "1200x1200",
+                    "quality": "",
+                    "id": "881370-MLB96748705689_102025",
+                    "url": "http:\/\/http2.mlstatic.com\/D_881370-MLB96748705689_102025-O.jpg"
+                },
+                {
+                    "size": "406x500",
+                    "max_size": "975x1200",
+                    "quality": "",
+                    "id": "649242-MLB96299130952_102025",
+                    "url": "http:\/\/http2.mlstatic.com\/D_649242-MLB96299130952_102025-O.jpg",
+                    "secure_url": "https:\/\/http2.mlstatic.com\/D_649242-MLB96299130952_102025-O.jpg"
+                }
+            ]
+        }
+    }
+}

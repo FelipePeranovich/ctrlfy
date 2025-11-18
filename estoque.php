@@ -6,18 +6,21 @@ if (empty($_SESSION['nome'])) {
     exit;
 }
 
-require_once('configapi/meliHelper.php');
+include_once ('configapi/meligetdata.php');
+
+//require_once('configapi/meliHelper.php');
+
 
 // === TOKEN ===
-$access_token = meli_get_valid_token();
-if (!$access_token) {
-    die("Token do Mercado Livre inválido. <a href='configapi/meliAuth.php'>Conectar Mercado Livre</a>");
-}
+// $access_token = meli_get_valid_token();
+// if (!$access_token) {
+//     die("Token do Mercado Livre inválido. <a href='configapi/meliAuth.php'>Conectar Mercado Livre</a>");
+// }
 
-// === USER ID ===
-$tokens = meli_load_tokens();
-$user_id = $tokens['user_id'] ?? null;
-if (!$user_id) die("Usuário do Mercado Livre não identificado.");
+// // === USER ID ===
+// $tokens = meli_load_tokens();
+// $user_id = $tokens['user_id'] ?? null;
+// if (!$user_id) die("Usuário do Mercado Livre não identificado.");
 
 // === PAGINAÇÃO ===
 $limit = 15;
@@ -84,7 +87,6 @@ $produtos = array_slice($produtos, ($page - 1) * $limit, $limit);
         <h4 class="logo">Ctrlfy</h4>
         <ul class="nav flex-column mt-4">
             <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link active" href="estoque.php">Estoque</a></li>
                         <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                         <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>

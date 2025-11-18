@@ -1,0 +1,12 @@
+{
+    "time": 1763423522,
+    "content": {
+        "http_code": 400,
+        "body": {
+            "message": "Limit must be a lower or equal than 51",
+            "error": "limit.maximum_exceeded",
+            "status": 400,
+            "cause": []
+        }
+    }
+}

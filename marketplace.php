@@ -26,7 +26,6 @@ if(empty($_SESSION['nome'])){
       <h4 class="logo">Ctrlfy</h4>
       <ul class="nav flex-column mt-4">
         <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
                         <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
                         <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
@@ -54,7 +53,6 @@ if(empty($_SESSION['nome'])){
         <div class="sidebar-mobile p-5 align-items-center justify-content-center">
           <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
-            <li class="nav-item"><a class="nav-link" href="produtos.php">Produtos</a></li>
             <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
             <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
             <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>

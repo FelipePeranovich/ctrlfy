@@ -1,0 +1,1468 @@
+{
+    "time": 1763423455,
+    "content": {
+        "http_code": 200,
+        "body": {
+            "query": "",
+            "results": [
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 765.9,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 765.9,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-03T12:13:34.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 132328890718,
+                            "date_last_modified": "2025-11-03T12:13:34.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-03T12:13:34.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 13444886,
+                            "order_id": 2000013650616576,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-01T12:13:34.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45793760227
+                    },
+                    "date_closed": "2025-11-03T12:13:34.000-04:00",
+                    "id": 2000013650616576,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4102021047",
+                                "title": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": "I014"
+                            },
+                            "quantity": 1,
+                            "unit_price": 765.9,
+                            "full_unit_price": 765.9,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 137.86,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1,
+                            "stock": {
+                                "node_id": "BRSP11",
+                                "store_id": null
+                            }
+                        }
+                    ],
+                    "date_last_updated": "2025-11-05T19:24:58+00:00",
+                    "last_updated": "2025-11-05T15:24:56.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009824405741,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-03T12:12:53.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 13444886,
+                        "nickname": "ANDREA.SOUZA2018"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 765.9,
+                    "paid_amount": 765.9,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Organizador De Canto Para Prateleira E Arm\u00e1rios De Cozinha Branco",
+                            "status_code": null,
+                            "total_paid_amount": 36.09,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 27.1,
+                            "transaction_amount_refunded": 36.09,
+                            "date_approved": "2025-11-01T21:27:00.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 132167633668,
+                            "date_last_modified": "2025-11-08T21:47:01.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                ""
+                            ],
+                            "shipping_cost": 8.99,
+                            "installment_amount": null,
+                            "date_created": "2025-11-01T21:26:15.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "bpp_covered",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 117404446,
+                            "order_id": 2000013633527458,
+                            "currency_id": "BRL",
+                            "status": "refunded",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": false,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-29T21:27:00.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45786519244
+                    },
+                    "date_closed": "2025-11-01T21:27:00.000-04:00",
+                    "id": 2000013633527458,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4029461169",
+                                "title": "Organizador De Canto Para Prateleira E Arm\u00e1rios De Cozinha Branco",
+                                "category_id": "MLB277460",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": "I011B"
+                            },
+                            "quantity": 1,
+                            "unit_price": 27.1,
+                            "full_unit_price": 27.1,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 9.37,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-09T01:51:12+00:00",
+                    "last_updated": "2025-11-08T21:47:03.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-01T21:26:14.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "delivered",
+                        "not_paid"
+                    ],
+                    "buyer": {
+                        "id": 117404446,
+                        "nickname": "PAZTATIANE59"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 27.1,
+                    "paid_amount": 0,
+                    "mediations": [
+                        {
+                            "id": 5429526745
+                        }
+                    ],
+                    "currency_id": "BRL",
+                    "status": "cancelled",
+                    "cancel_detail": {
+                        "group": "mediations",
+                        "code": "mediations",
+                        "description": "Mediations cancel the order",
+                        "requested_by": "meli",
+                        "date": "2025-11-08T21:47:02.000-04:00",
+                        "application_id": "2945779824588159"
+                    },
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                            "status_code": null,
+                            "total_paid_amount": 32.4,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 32.4,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-01T20:21:28.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 132160645426,
+                            "date_last_modified": "2025-11-01T20:21:28.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-01T20:20:41.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 659318893,
+                            "order_id": 2000013633008612,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-29T20:21:28.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45786024465
+                    },
+                    "date_closed": "2025-11-01T20:21:28.000-04:00",
+                    "id": 2000013633008612,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5345500474",
+                                "title": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                                "category_id": "MLB277460",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 32.4,
+                            "full_unit_price": 32.4,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 10.23,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-05T21:37:50+00:00",
+                    "last_updated": "2025-11-05T17:37:48.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009804834293,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-01T20:20:41.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "one_shot",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 659318893,
+                        "nickname": "KAISERKETHY20221115163928"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 32.4,
+                    "paid_amount": 32.4,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                            "status_code": null,
+                            "total_paid_amount": 32.4,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 32.4,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-01T09:20:13.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 131480297949,
+                            "date_last_modified": "2025-11-01T09:20:13.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-01T09:20:13.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 119348781,
+                            "order_id": 2000013626816598,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-29T09:20:14.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45783209007
+                    },
+                    "date_closed": "2025-11-01T09:20:14.000-04:00",
+                    "id": 2000013626816598,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5345500474",
+                                "title": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                                "category_id": "MLB277460",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 32.4,
+                            "full_unit_price": 32.4,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 10.23,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-06T16:35:09+00:00",
+                    "last_updated": "2025-11-06T12:35:06.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009797778327,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-01T09:19:30.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 119348781,
+                        "nickname": "ELIANARAMTHUN"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 32.4,
+                    "paid_amount": 32.4,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Kit 2 Organizadores De Canto Para Prateleira De Cozinha - Branco",
+                            "status_code": null,
+                            "total_paid_amount": 50.75,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 50.75,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-31T19:45:49.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 131435144119,
+                            "date_last_modified": "2025-10-31T19:45:49.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-31T19:45:49.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 275744840,
+                            "order_id": 2000013623185508,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-28T19:45:50.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45781514869
+                    },
+                    "date_closed": "2025-10-31T19:45:50.000-04:00",
+                    "id": 2000013623185508,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5351064166",
+                                "title": "Kit 2 Organizadores De Canto Para Prateleira De Cozinha - Branco",
+                                "category_id": "MLB277460",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": "I011B"
+                            },
+                            "quantity": 1,
+                            "unit_price": 50.75,
+                            "full_unit_price": 50.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 12.59,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-06T13:08:09+00:00",
+                    "last_updated": "2025-11-06T09:08:08.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009793638285,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-31T19:45:08.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 275744840,
+                        "nickname": "PRECOUNICO.COM"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 50.75,
+                    "paid_amount": 50.75,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Cortador De Frios Profissional A\u00e7o Inox 127\/220v 250mm 150w - Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 3900,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 3900,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-31T17:07:41.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 12,
+                            "authorization_code": "DJY85E",
+                            "taxes_amount": 0,
+                            "id": 131412338493,
+                            "date_last_modified": "2025-11-17T17:05:02.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "cancel"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 325,
+                            "date_created": "2025-10-31T17:07:40.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9216829610,
+                            "status_detail": "pending",
+                            "issuer_id": "12510",
+                            "payment_method_id": "visa",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 419330425,
+                            "order_id": 2000013621649020,
+                            "currency_id": "BRL",
+                            "status": "in_mediation",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-28T17:07:42.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45781074798
+                    },
+                    "date_closed": "2025-10-31T17:07:42.000-04:00",
+                    "id": 2000013621649020,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4232670345",
+                                "title": "Cortador De Frios Profissional A\u00e7o Inox 127\/220v 250mm 150w - Prateado",
+                                "category_id": "MLB120238",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 90 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 3900,
+                            "full_unit_price": 3900,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 663,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-17T21:09:11+00:00",
+                    "last_updated": "2025-11-17T17:05:04.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-31T17:07:39.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "b2b",
+                        "order_has_discount",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 419330425,
+                        "nickname": "ANGLICADASILVAJOANA"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 3900,
+                    "paid_amount": 3900,
+                    "mediations": [
+                        {
+                            "id": 5433207290
+                        }
+                    ],
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "b2b"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Kit 5 Exaustores Para Banheiro Ventilador 15cm - 12w 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 338,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 338,
+                            "transaction_amount_refunded": 338,
+                            "date_approved": "2025-10-31T16:21:45.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 132002913856,
+                            "date_last_modified": "2025-11-10T15:52:03.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                ""
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-31T16:21:13.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "bpp_refunded",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 29127655,
+                            "order_id": 2000013621177944,
+                            "currency_id": "BRL",
+                            "status": "refunded",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": false,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-28T16:21:45.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45780859284
+                    },
+                    "date_closed": "2025-10-31T16:21:45.000-04:00",
+                    "id": 2000013621177944,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4081340649",
+                                "title": "Kit 5 Exaustores Para Banheiro Ventilador 15cm - 12w 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": "I020"
+                            },
+                            "quantity": 1,
+                            "unit_price": 338,
+                            "full_unit_price": 338,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 38.87,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-14T19:23:30+00:00",
+                    "last_updated": "2025-11-10T15:52:04.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009791342917,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-31T16:21:12.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "one_shot",
+                        "delivered",
+                        "not_paid"
+                    ],
+                    "buyer": {
+                        "id": 29127655,
+                        "nickname": "JOAOIURY_COS"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 338,
+                    "paid_amount": 0,
+                    "mediations": [
+                        {
+                            "id": 5430084692
+                        }
+                    ],
+                    "currency_id": "BRL",
+                    "status": "cancelled",
+                    "cancel_detail": {
+                        "group": "mediations",
+                        "code": "mediations",
+                        "description": "Mediations cancel the order",
+                        "requested_by": "meli",
+                        "date": "2025-11-10T15:52:04.000-04:00",
+                        "application_id": "2945779824588159"
+                    },
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                            "status_code": null,
+                            "total_paid_amount": 28.7,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 28.7,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-31T13:54:05.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 131985500184,
+                            "date_last_modified": "2025-10-31T13:54:05.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-31T13:54:05.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 193225088,
+                            "order_id": 2000013619622964,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-28T13:54:06.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45779822163
+                    },
+                    "date_closed": "2025-10-31T13:54:06.000-04:00",
+                    "id": 2000013619622964,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5345500474",
+                                "title": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                                "category_id": "MLB277460",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 28.7,
+                            "full_unit_price": 28.7,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 9.55,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-04T19:30:31+00:00",
+                    "last_updated": "2025-11-04T15:30:28.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009789543791,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-31T13:54:03.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 193225088,
+                        "nickname": "ELISANGELARAIODESOL"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 28.7,
+                    "paid_amount": 28.7,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                            "status_code": null,
+                            "total_paid_amount": 28.7,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 28.7,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-31T12:48:59.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": "016907",
+                            "taxes_amount": 0,
+                            "id": 131977902668,
+                            "date_last_modified": "2025-10-31T12:48:59.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 28.7,
+                            "date_created": "2025-10-31T12:48:57.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9654060825,
+                            "status_detail": "accredited",
+                            "issuer_id": "24",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 120560501,
+                            "order_id": 2000013618872226,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-28T12:49:00.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45779713448
+                    },
+                    "date_closed": "2025-10-31T12:49:00.000-04:00",
+                    "id": 2000013618872226,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5345500474",
+                                "title": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                                "category_id": "MLB277460",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 28.7,
+                            "full_unit_price": 28.7,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 9.55,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-13T14:57:54+00:00",
+                    "last_updated": "2025-11-13T10:57:53.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009788701473,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-31T12:48:56.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "one_shot",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 120560501,
+                        "nickname": "LENILTONSOUZA"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 28.7,
+                    "paid_amount": 28.7,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                            "status_code": null,
+                            "total_paid_amount": 28.7,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 28.7,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-31T11:04:37.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 131366226313,
+                            "date_last_modified": "2025-10-31T11:04:37.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-31T11:03:42.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 366902968,
+                            "order_id": 2000013617614834,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-28T11:04:37.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45778864915
+                    },
+                    "date_closed": "2025-10-31T11:04:37.000-04:00",
+                    "id": 2000013617614834,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5345500474",
+                                "title": "Organizador De Pratos Divisor 3 N\u00edveis Rack Aramado Cozinha Cor Branco",
+                                "category_id": "MLB277460",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 28.7,
+                            "full_unit_price": 28.7,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 9.55,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-08T16:34:42+00:00",
+                    "last_updated": "2025-11-08T12:34:41.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009787290701,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-31T11:03:41.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "one_shot",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 366902968,
+                        "nickname": "CLAUDIANSANTINI"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 28.7,
+                    "paid_amount": 28.7,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                }
+            ],
+            "sort": {
+                "id": "date_desc",
+                "name": "Date descending"
+            },
+            "available_sorts": [
+                {
+                    "id": "date_asc",
+                    "name": "Date ascending"
+                }
+            ],
+            "filters": [],
+            "paging": {
+                "total": 655,
+                "offset": 70,
+                "limit": 10
+            },
+            "display": "partial"
+        }
+    }
+}
