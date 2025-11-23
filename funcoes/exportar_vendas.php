@@ -1,62 +1,103 @@
 <?php
 session_start();
 
+// ==============================================
+// VERIFICA LOGIN
+// ==============================================
 if (empty($_SESSION['nome'])) {
     header("location:index.php");
     exit;
 }
 
-include_once('../configapi/meligetdata.php');
-include_once('../configapi/meliCache.php');
+// ==============================================
+// IMPORTA APENAS O NECESSÁRIO
+// (mas impede qualquer saída antes do CSV)
+// ==============================================
+ob_clean(); // limpa qualquer saída acidental
 
-// ============================
-// BUSCA TODAS AS VENDAS (SEM PAGINAÇÃO DA TELA)
-// ============================
+require_once('../configapi/meliHelper.php');  // contém meli_get_valid_token()
+require_once('../configapi/meliCache.php');    // contém meli_load_tokens()
+
+// ==============================================
+// TOKEN + USER_ID
+// ==============================================
+$access_token = meli_get_valid_token();
+if (!$access_token) {
+    die("Token inválido. Refaça a conexão com o Mercado Livre.");
+}
+
+$tokens = meli_load_tokens();
+$user_id = $tokens['user_id'] ?? null;
+
+if (!$user_id) {
+    die("Erro: user_id não encontrado. Refaça a conexão com o Mercado Livre.");
+}
+
+// ==============================================
+// FUNÇÃO DE CHAMADA DIRETA (SEM CACHE)
+// ==============================================
+function ml_call($url, $token) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        "Authorization: Bearer $token"
+    ]);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $body = curl_exec($ch);
+    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    curl_close($ch);
+
+    return [
+        "code" => $code,
+        "body" => json_decode($body, true)
+    ];
+}
+
+// ==============================================
+// BUSCA TODAS AS VENDAS SEM CACHE
+// ==============================================
 $limite = 50;
 $offset = 0;
-
 $todas = [];
 
 do {
-    $url = "https://api.mercadolibre.com/orders/search?seller=$user_id&sort=date_desc&limit=$limite&offset=$offset";
+    $url = "https://api.mercadolibre.com/orders/search?seller={$user_id}"
+         . "&sort=date_desc&limit={$limite}&offset={$offset}";
 
-    $resp = meli_cached_get($url, $access_token, 3);
+    $resp = ml_call($url, $access_token);
 
-    if (!$resp || $resp["http_code"] !== 200) break;
+    if ($resp["code"] !== 200) {
+        break;
+    }
 
     $lista = $resp["body"]["results"] ?? [];
     $todas = array_merge($todas, $lista);
 
-    $offset += $limite;
-
     $total = $resp["body"]["paging"]["total"] ?? 0;
+    $offset += $limite;
 
 } while ($offset < $total);
 
-
-// ============================
-// GERAR CSV PURO
-// ============================
-
-// Nome do arquivo
+// ==============================================
+// GERA CSV
+// ==============================================
 $arquivo = "vendas_" . date("Y-m-d_H-i") . ".csv";
 
-// Cabeçalhos para baixar
 header("Content-Type: text/csv; charset=UTF-8");
 header("Content-Disposition: attachment; filename=\"$arquivo\"");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-// Abre saída do PHP como arquivo
+// CSV direto pro navegador
 $fp = fopen("php://output", "w");
 
-// Força Excel a abrir com UTF-8 corretamente
+// Excel UTF-8
 fprintf($fp, chr(0xEF).chr(0xBB).chr(0xBF));
 
-// Cabeçalho do CSV
 fputcsv($fp, ["ID Venda", "Data", "Produto", "Quantidade", "Total (R$)"], ';');
 
-// Preenche linhas
 foreach ($todas as $venda) {
 
     $id = $venda["id"];
@@ -64,15 +105,11 @@ foreach ($todas as $venda) {
     $total = number_format($venda["total_amount"], 2, ',', '.');
 
     foreach ($venda["order_items"] as $item) {
-
-        $titulo = $item["item"]["title"] ?? "—";
-        $qtd = $item["quantity"] ?? 1;
-
         fputcsv($fp, [
             $id,
             $data,
-            $titulo,
-            $qtd,
+            $item["item"]["title"] ?? "—",
+            $item["quantity"] ?? 1,
             $total
         ], ';');
     }
@@ -80,4 +117,3 @@ foreach ($todas as $venda) {
 
 fclose($fp);
 exit;
-?>
