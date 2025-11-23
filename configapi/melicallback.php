@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/meliConfig.php';
-
+require __DIR__ . '/melihelper.php';
 
 if (!isset($_GET['code'])) {
     echo 'Autorização não concedida.';

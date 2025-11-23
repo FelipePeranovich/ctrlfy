@@ -12,7 +12,7 @@ include_once('configapi/meliCache.php');
 // PAGINAÇÃO
 // =============================
 $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-$limite = 10;
+$limite = 20;
 $offset = ($pagina - 1) * $limite;
 
 // =============================
@@ -53,7 +53,6 @@ $ordersResp = meli_cached_get($ordersUrl, $access_token, 30);
 .venda-card { transition: all 0.2s ease-in-out; }
 .venda-card:hover { transform: translateY(-4px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); cursor: pointer; }
 .venda-img { width: 55px; height: 55px; object-fit: cover; }
-.text-orange { color: #ff6600; }
 .filter-form input[type="month"] { border-radius: 6px; border: 1px solid #ddd; padding: 6px 10px; }
 .filter-form button { border-radius: 6px; }
 .table .btn { padding: 4px 10px; font-size: 0.85rem; }
@@ -94,11 +93,14 @@ $ordersResp = meli_cached_get($ordersUrl, $access_token, 30);
         <h3 class="text-orange fw-bold mb-4">Vendas</h3>
 
         <!-- FILTRO POR MÊS -->
-        <form id="filtroMesForm" class="mb-4 d-flex gap-2 filter-form">
+        <!-- <form id="filtroMesForm" class="mb-4 d-flex gap-2 filter-form">
             <input type="month" id="mesFiltro" class="form-control w-auto" value="<?= htmlspecialchars($filtro_mes) ?>">
             <button type="button" id="btnFiltrar" class="btn btn-warning">Filtrar</button>
             <a href="vendas.php" class="btn btn-secondary">Limpar</a>
-        </form>
+        </form> -->
+        <a href="funcoes/exportar_vendas.php" class="btn btn-success mb-3">
+        <i class="bi bi-file-earmark-excel"></i> Exportar vendas para Excel
+        </a>
 
         <?php
         if ($ordersResp && isset($ordersResp["http_code"]) && $ordersResp["http_code"] === 200 && !empty($ordersResp["body"]["results"])) {
@@ -122,14 +124,27 @@ $ordersResp = meli_cached_get($ordersUrl, $access_token, 30);
                 $dataVenda = isset($order['date_created']) ? gmdate('d/m/Y H:i', strtotime($order['date_created']) - 10800) : "Data indisponível";
 
                 // IMAGEM VIA CACHE
-                $firstItem = $order["order_items"][0]["item"]["id"] ?? null;
-                $imageUrl = "img/no-image.png";
-                if ($firstItem) {
-                    $itemResp = meli_cached_get("https://api.mercadolibre.com/items/$firstItem?attributes=pictures",$access_token,1440);
-                    if ($itemResp && $itemResp["http_code"] === 200 && !empty($itemResp["body"]["pictures"][0]["url"])) {
-                        $imageUrl = $itemResp["body"]["pictures"][0]["url"];
-                    }
-                }
+                // --- PEGA IMAGEM DO PRIMEIRO PRODUTO DO PEDIDO ---
+$firstItem = $order['order_items'][0]['item']['id'] ?? null;
+$imageUrl = null;
+
+if ($firstItem) {
+
+    // Requisição correta (SEM attributes)
+    $itemResp = meli_get("https://api.mercadolibre.com/items/$firstItem", $access_token);
+
+    if ($itemResp['http_code'] === 200 
+        && !empty($itemResp['body']['pictures'][0]['secure_url'])) {
+
+        // use secure_url sempre que existir
+        $imageUrl = $itemResp['body']['pictures'][0]['secure_url'];
+
+    } elseif (!empty($itemResp['body']['pictures'][0]['url'])) {
+
+        $imageUrl = $itemResp['body']['pictures'][0]['url'];
+    }
+}
+
 
                 $itemsHtml = [];
                 foreach ($order["order_items"] as $oi) {
