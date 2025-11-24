@@ -89,3 +89,16 @@ body {
     padding: 0;
   }
 }
+
+.pagination .page-item.active .page-link {
+    background-color: #ff6600;
+    color: #fff;
+    border-color: #ff6600;
+}
+
+.pagination .page-item .page-link {
+    color: #ff6600;
+    border-radius: 6px;
+    transition: all 0.2s 
+ease;
+}

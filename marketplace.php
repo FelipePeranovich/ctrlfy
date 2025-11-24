@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <?php
 session_start();
-if(empty($_SESSION['nome'])){
-        header("location:index.php");
-    }
+if (empty($_SESSION['nome'])) {
+  header("location:index.php");
+}
 
 
 ?>
@@ -26,13 +26,13 @@ if(empty($_SESSION['nome'])){
       <h4 class="logo">Ctrlfy</h4>
       <ul class="nav flex-column mt-4">
         <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
-                        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="marketplace.php">Marketplaces</a></li>
+        <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+        <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
+        <li class="nav-item"><a class="nav-link active" href="marketplace.php">Marketplaces</a></li>
       </ul>
       <div class="mt-auto text-center">
-        <a href="funcoes/sair.php" onclick= "return confirm('Tem certeza que deseja sair?');"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
+        <a href="funcoes/sair.php" onclick="return confirm('Tem certeza que deseja sair?');"><button class="btn btn-outline-light w-100 mb-4 "><i class="bi bi-box-arrow-left"></i> Sair</button></a>
 
         <?php
         echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
@@ -74,83 +74,120 @@ if(empty($_SESSION['nome'])){
     <main class="main-content p-4 flex-grow-1">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h3 class="text-orange fw-bold">Marketplace</h3>
-      </div>      
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <h6>Marketplaces disponíveis</h6>
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Mercado Livre 
-              <?php if(empty($_SESSION['meli_user_id'])):?>
-                      <a href="configapi/meliAuth.php" ><button class="btn btn-orange btn-sm" >+ Conectar</button></a>
-                <?php else: ?>
-                      <a href="configapi/melilogout.php" onclick= "return confirm('Tem certeza que deseja sair?');"><button class="btn btn-orange btn-sm">- Sair</button></a>
-              <?php endif ?>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Shopee <button class="btn btn-orange btn-sm">+ Conectar</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Amazon <button class="btn btn-orange btn-sm">+ Conectar</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              TikTokshop <button class="btn btn-orange btn-sm">+ Conectar</button>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6 mt-4">
-        <!-- <table class="table table-bordered bg-white" style="border-radius: 12px; overflow: hidden; border: 2px solid #dee2e6; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-          <thead class="table-light">
-            <tr>
-              <th>Marketplace</th>
-              <th>Status</th>
-              <th>Produtos</th>
-              <th>Ação</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Amazon</td>
-              <td><span class="badge bg-success">Ativo</span></td>
-              <td>155</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Ativar</button>
-                <button class="btn btn-danger btn-sm">Desativar</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Mercado Livre</td>
-              <td><span class="badge bg-success">Ativo</span></td>
-              <td>145</td>
-              <td>
-                <button class="btn btn-warning btn-sm"></button>
-                <button class="btn btn-success btn-sm"><a href="configapi/meliGetData.php" class="btn">Ver Dados</a></td></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Shopify</td>
-              <td><span class="badge bg-warning text-dark">Inativo</span></td>
-              <td>100</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Ativar</button>
-                <button class="btn btn-danger btn-sm">Desativar</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Magalu</td>
-              <td><span class="badge bg-warning text-dark">Inativo</span></td>
-              <td>85</td>
-              <td>
-                <button class="btn btn-warning btn-sm">Ativar</button>
-                <button class="btn btn-danger btn-sm">Desativar</button>
-              </td>
-            </tr>
-          </tbody>
-          </table> -->
+      </div>
+      <div class="col-12 mt-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/meli.png" class="img-fluid mb-2" style="height: 80px;" alt="Mercado Livre">
+              <ul class="list-group">
+               <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  Mercado Livre
+                  <?php if (empty($_SESSION['meli_user_id'])): ?>
+                    <a href="configapi/meliAuth.php">
+                      <button class="btn btn-orange btn-sm">+ Conectar</button>
+                    </a>
+                  <?php else: ?>
+                    <a href="configapi/melilogout.php" onclick="return confirm('Tem certeza que deseja sair?');">
+                      <button class="btn btn-orange btn-sm">- Sair</button>
+                    </a>
+                  <?php endif ?>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/shopee.png" class="img-fluid mb-2" style="height: 80px;" alt="Shopee">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  Shopee
+                  <button class="btn btn-orange btn-sm">+ Conectar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/amazon.png" class="img-fluid mb-2" style="height: 80px;" alt="Amazon">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  Amazon
+                  <button class="btn btn-orange btn-sm">+ Conectar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/tiktok.png" class="img-fluid mb-2" style="height: 80px;" alt="TikTok Shop">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  TikTokShop
+                  <button class="btn btn-orange btn-sm">+ Conectar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/shein.png" class="img-fluid mb-2" style="height: 80px;" alt="Shein">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  Shein
+                  <button class="btn btn-orange btn-sm">+ Conectar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/aliexpress.png" class="img-fluid mb-2" style="height: 80px;" alt="AliExpress">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  AliExpress
+                  <button class="btn btn-orange btn-sm">+ Conectar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/shopify.png" class="img-fluid mb-2" style="height: 80px;" alt="Shopify">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  Shopify
+                  <button class="btn btn-orange btn-sm">+ Conectar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-3 rounded shadow-sm h-100">
+              <img src="img/ebay.png" class="img-fluid mb-2" style="height: 80px;" alt="Ebay">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap text-break px-2">
+                  Ebay
+                  <button class="btn btn-orange btn-sm">+ Conectar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-    </main>
+
+
+  </div>
+  </main>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

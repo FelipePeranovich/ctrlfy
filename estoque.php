@@ -70,6 +70,126 @@ $total_pages = ceil($total / $limit);
 $produtos = array_slice($produtos, ($page - 1) * $limit, $limit);
 ?>
 <html lang="pt-br">
+
+<style>
+body {
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* SIDEBAR DESKTOP */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #1f252f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  z-index: 1000;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff8c00;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  padding: 8px 0;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.text-orange {
+  color: #ff8c00;
+}
+
+.user {
+  color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+/* SIDEBAR MOBILE */
+.sidebar-mobile {
+  background-color: #1f252f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-mobile .nav-link {
+  color: #fff;
+  padding: 8px 0;
+}
+
+.sidebar-mobile .nav-link:hover,
+.sidebar-mobile .nav-link.active {
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.sidebar-mobile .user {
+  color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+/* TABELA */
+.table thead {
+  background-color: #f9f9f9;
+}
+
+/* Desktop – sidebar visível */
+@media (min-width: 768px) {
+    .sidebar {
+        display: flex !important;
+    }
+
+    .main-content {
+        margin-left: 220px !important;
+    }
+}
+
+/* Mobile – sidebar escondida */
+@media (max-width: 767px) {
+    .sidebar {
+        display: none !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        padding: 0;
+    }
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ff6600;
+    color: #fff;
+    border-color: #ff6600;
+}
+
+.pagination .page-item .page-link {
+    color: #ff6600;
+    border-radius: 6px;
+    transition: all 0.2s 
+ease;
+}
+
+</style>
+
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -104,6 +224,36 @@ $produtos = array_slice($produtos, ($page - 1) * $limit, $limit);
         </div>
     </div>
 
+    <!-- Sidebar mobile colapsável -->
+        <nav class="navbar navbar-dark d-md-none" style="background-color: #1f252f;">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h4 text-orange">Ctrlfy</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse" id="mobileSidebar">
+                <div class="sidebar-mobile p-5 align-items-center justify-content-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="estoque.php">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
+                    </ul>
+                    <div class="mt-auto text-center">
+                        <button class="btn btn-outline-light w-100 mt-5 "><i class="bi bi-box-arrow-left"></i> Sair</button>
+
+                        <?php
+                        session_start();
+                        echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
     <!-- Conteúdo principal -->
     <div class="main-content flex-grow-1 ps-md-2 pt-4">
         <div class="container-fluid">
@@ -111,7 +261,6 @@ $produtos = array_slice($produtos, ($page - 1) * $limit, $limit);
                 <h3 class="text-orange fw-bold">Estoque</h3>
                 <div class="mt-2 mt-md-0">
                     <button class="btn btn-secondary me-2">Exportar</button>
-                    <button class="btn btn-warning text-white">+ Inserir novo produto</button>
                 </div>
             </div>
 
@@ -174,7 +323,7 @@ $produtos = array_slice($produtos, ($page - 1) * $limit, $limit);
                 <nav class="mt-3">
                     <ul class="pagination justify-content-center">
                         <?php for ($i = 1; $i <= $total_pages; $i++): ?>
-                            <li class="page-item <?= $i === $page ? 'active' : '' ?>">
+                            <li class="page-item p-1 <?= $i === $page ? 'active' : '' ?>">
                                 <a class="page-link" href="?page=<?= $i ?>"><?= $i ?></a>
                             </li>
                         <?php endfor; ?>

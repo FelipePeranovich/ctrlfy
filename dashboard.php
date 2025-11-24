@@ -80,7 +80,6 @@ if (empty($_SESSION['meli_user_id'])) {
 
         $ordersOffset += $ordersLimit;
         $totalApi = $ordersResp['body']['paging']['total'] ?? 0;
-
     } while ($ordersOffset < $totalApi);
 
     $ticketMedio = $totalPedidos > 0 ? ($totalVendasAmount / $totalPedidos) : 0;
@@ -149,148 +148,179 @@ if (empty($_SESSION['meli_user_id'])) {
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard - Ctrlfy</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="css/dashboard.css" />
-<link rel="stylesheet" href="css/modais.css" />
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Ctrlfy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/modais.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="bg-light">
 
-<!-- SIDEBAR + TOPO IGUAL AO SEU — NÃO ALTEREI NADA -->
+    <!-- SIDEBAR + TOPO IGUAL AO SEU — NÃO ALTEREI NADA -->
 
-<div class="d-flex flex-column flex-md-row">
+    <div class="d-flex flex-column flex-md-row">
 
-<div class="sidebar d-none d-md-flex flex-column text-white p-3" style="width:220px;height:100vh;">
-<h4 class="logo">Ctrlfy</h4>
-<ul class="nav flex-column mt-4">
-<li class="nav-item"><a class="nav-link active" href="dashboard.php">Dashboard</a></li>
-<li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
-<li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
-<li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
-<li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
-</ul>
+        <div class="sidebar d-none d-md-flex flex-column text-white p-3" style="width:220px;height:100vh;">
+            <h4 class="logo">Ctrlfy</h4>
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item"><a class="nav-link active" href="dashboard.php">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+                <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+                <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
+                <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
+            </ul>
 
-<div class="mt-auto text-center">
-<a href="funcoes/sair.php" onclick="return confirm('Tem certeza que deseja sair?');">
-<button class="btn btn-outline-light w-100 mb-4"><i class="bi bi-box-arrow-left"></i> Sair</button>
-</a>
-<div class="user mt-auto pt-3">
-<?= $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"]; ?>
-</div>
-</div>
-</div>
+            <div class="mt-auto text-center">
+                <a href="funcoes/sair.php" onclick="return confirm('Tem certeza que deseja sair?');">
+                    <button class="btn btn-outline-light w-100 mb-4"><i class="bi bi-box-arrow-left"></i> Sair</button>
+                </a>
+                <div class="user mt-auto pt-3">
+                    <?= $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"]; ?>
+                </div>
+            </div>
+        </div>
 
-<!-- CONTEÚDO PRINCIPAL -->
-<div class="main-content flex-grow-1 p-4">
+        <!-- Sidebar mobile colapsável -->
+        <nav class="navbar navbar-dark d-md-none" style="background-color: #1f252f;">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h4 text-orange">Ctrlfy</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-<h3 class="text-orange fw-bold">Dashboard</h3>
+            <div class="collapse" id="mobileSidebar">
+                <div class="sidebar-mobile p-5 align-items-center justify-content-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link active" href="dashboard.php">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estoque.php">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="vendas.php">Vendas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="etiquetas.php">Etiquetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="marketplace.php">Marketplaces</a></li>
+                    </ul>
+                    <div class="mt-auto text-center">
+                        <button class="btn btn-outline-light w-100 mt-5 "><i class="bi bi-box-arrow-left"></i> Sair</button>
 
-<!-- Cards de KPIs (não mexi no seu HTML) -->
-<div class="row text-center mt-4 mb-4 g-3">
-    <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
-        <h5 class="text-orange"><?= $totalProdutos ?></h5>
-        <p class="mb-0">Total de produtos</p>
-    </div>
+                        <?php
+                        session_start();
+                        echo '<div class="user mt-auto pt-3">' . $_SESSION["nome"] . ' ' . $_SESSION["sobrenome"] . '</div>';
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
-        <h5 class="text-success"><?= $produtosEstoque ?></h5>
-        <p class="mb-0">Produtos em estoque</p>
-    </div>
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="main-content flex-grow-1 p-4">
 
-    <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
-        <h5 class="text-primary">R$
-        <?= number_format($totalVendasAmount, 2, ',', '.') ?></h5>
-        <p class="mb-0">Total de vendas</p>
-    </div>
+            <h3 class="text-orange fw-bold">Dashboard</h3>
 
-    <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
-        <h5 class="text-danger"><?= $produtosFaltando ?></h5>
-        <p class="mb-0">Produtos faltando</p>
-    </div>
+            <!-- Cards de KPIs (não mexi no seu HTML) -->
+            <div class="row text-center mt-4 mb-4 g-3">
+                <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
+                    <h5 class="text-orange"><?= $totalProdutos ?></h5>
+                    <p class="mb-0">Total de produtos</p>
+                </div>
 
-    <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
-        <h5 class="text-info"><?= $totalPedidos ?></h5>
-        <p class="mb-0">Pedidos realizados</p>
-    </div>
+                <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
+                    <h5 class="text-success"><?= $produtosEstoque ?></h5>
+                    <p class="mb-0">Produtos em estoque</p>
+                </div>
 
-    <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
-        <h5 class="text-warning">R$
-        <?= number_format($ticketMedio, 2, ',', '.') ?></h5>
-        <p class="mb-0">Ticket médio</p>
-    </div>
-</div>
+                <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
+                    <h5 class="text-primary">R$
+                        <?= number_format($totalVendasAmount, 2, ',', '.') ?></h5>
+                    <p class="mb-0">Total de vendas</p>
+                </div>
 
-<!-- GRÁFICOS -->
-<div class="row mb-4 g-3">
-    <div class="col-md-6 bg-white p-3 rounded shadow-sm">
-        <h6 class="fw-bold mb-3">Desempenho de Vendas (últimos 6 meses)</h6>
-        <canvas id="lineChart" height="140"></canvas>
-    </div>
+                <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
+                    <h5 class="text-danger"><?= $produtosFaltando ?></h5>
+                    <p class="mb-0">Produtos faltando</p>
+                </div>
 
-    <div class="col-md-6 bg-white p-3 rounded shadow-sm">
-        <h6 class="fw-bold mb-3">Vendas últimos 30 dias</h6>
-        <canvas id="lineChart30" height="140"></canvas>
-    </div>
-</div>
+                <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
+                    <h5 class="text-info"><?= $totalPedidos ?></h5>
+                    <p class="mb-0">Pedidos realizados</p>
+                </div>
 
-<!-- TABELA DE PRODUTOS CRÍTICOS -->
-<div class="bg-white p-3 rounded shadow-sm mb-4">
-<div class="d-flex justify-content-between align-items-center mb-2">
-<h6 class="fw-bold">Produtos críticos e médios no estoque</h6>
-<button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalVejaTudo">Veja tudo</button>
-</div>
+                <div class="col-6 col-md bg-white py-3 rounded shadow-sm">
+                    <h5 class="text-warning">R$
+                        <?= number_format($ticketMedio, 2, ',', '.') ?></h5>
+                    <p class="mb-0">Ticket médio</p>
+                </div>
+            </div>
 
-<div class="table-responsive">
+            <!-- GRÁFICOS -->
+            <div class="row mb-4 g-3">
+                <div class="col-md-6 bg-white p-3 rounded shadow-sm">
+                    <h6 class="fw-bold mb-3">Desempenho de Vendas (últimos 6 meses)</h6>
+                    <canvas id="lineChart" height="140"></canvas>
+                </div>
 
-<table class="table align-middle mb-0" id="produtosTable">
-<thead>
-<tr>
-<th>Produto</th>
-<th>ID</th>
-<th>Estoque</th>
-<th>Limite</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
+                <div class="col-md-6 bg-white p-3 rounded shadow-sm">
+                    <h6 class="fw-bold mb-3">Vendas últimos 30 dias</h6>
+                    <canvas id="lineChart30" height="140"></canvas>
+                </div>
+            </div>
 
-<br>
-<nav>
-<ul class="pagination justify-content-center" id="pagination"></ul>
-</nav>
+            <!-- TABELA DE PRODUTOS CRÍTICOS -->
+            <div class="bg-white p-3 rounded shadow-sm mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h6 class="fw-bold">Produtos críticos e médios no estoque</h6>
+                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalVejaTudo">Veja tudo</button>
+                </div>
 
-</div>
-</div>
+                <div class="table-responsive">
 
-<script>
-// Dados PHP -> JS
-const produtos = <?= json_encode(array_values($produtosCriticosMedios)) ?>;
+                    <table class="table align-middle mb-0" id="produtosTable">
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>ID</th>
+                                <th>Estoque</th>
+                                <th>Limite</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
 
-let currentPage = 1;
-const perPage = 4;
-const totalPages = Math.ceil(produtos.length / perPage);
+                    <br>
+                    <nav>
+                        <ul class="pagination justify-content-center" id="pagination"></ul>
+                    </nav>
 
-// Renderizar tabela
-function renderTable() {
-    const tbody = document.querySelector('#produtosTable tbody');
-    tbody.innerHTML = '';
+                </div>
+            </div>
 
-    const start = (currentPage - 1) * perPage;
-    const end = start + perPage;
+            <script>
+                // Dados PHP -> JS
+                const produtos = <?= json_encode(array_values($produtosCriticosMedios)) ?>;
 
-    produtos.slice(start, end).forEach(p => {
-        const badge = p.qty == 0 ? 'bg-danger' : 'bg-warning text-dark';
-        const status = p.qty == 0 ? 'Crítico' : 'Médio';
+                let currentPage = 1;
+                const perPage = 4;
+                const totalPages = Math.ceil(produtos.length / perPage);
 
-        tbody.innerHTML += `
+                // Renderizar tabela
+                function renderTable() {
+                    const tbody = document.querySelector('#produtosTable tbody');
+                    tbody.innerHTML = '';
+
+                    const start = (currentPage - 1) * perPage;
+                    const end = start + perPage;
+
+                    produtos.slice(start, end).forEach(p => {
+                        const badge = p.qty == 0 ? 'bg-danger' : 'bg-warning text-dark';
+                        const status = p.qty == 0 ? 'Crítico' : 'Médio';
+
+                        tbody.innerHTML += `
             <tr>
                 <td>${p.title}</td>
                 <td>${p.id}</td>
@@ -299,75 +329,84 @@ function renderTable() {
                 <td><span class="badge ${badge}">${status}</span></td>
             </tr>
         `;
-    });
+                    });
 
-    // Paginação
-    const pagination = document.getElementById('pagination');
-    pagination.innerHTML = '';
+                    // Paginação
+                    const pagination = document.getElementById('pagination');
+                    pagination.innerHTML = '';
 
-    for (let i = 1; i <= totalPages; i++) {
-        const active = i === currentPage ? 'active' : '';
-        pagination.innerHTML += `
-            <li class="page-item ${active}">
+                    for (let i = 1; i <= totalPages; i++) {
+                        const active = i === currentPage ? 'active' : '';
+                        pagination.innerHTML += `
+            <li class="page-item p-1 ${active}">
                 <a class="page-link" href="#">${i}</a>
             </li>
         `;
-    }
+                    }
 
-    document.querySelectorAll('#pagination .page-link').forEach(link => {
-        link.addEventListener('click', e => {
-            e.preventDefault();
-            currentPage = parseInt(link.textContent);
-            renderTable();
-        });
-    });
-}
+                    document.querySelectorAll('#pagination .page-link').forEach(link => {
+                        link.addEventListener('click', e => {
+                            e.preventDefault();
+                            currentPage = parseInt(link.textContent);
+                            renderTable();
+                        });
+                    });
+                }
 
-renderTable();
-</script>
+                renderTable();
+            </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- GRÁFICOS -->
-<script>
-new Chart(document.getElementById('lineChart'), {
-    type: 'line',
-    data: {
-        labels: <?= json_encode($labelsChart) ?>,
-        datasets: [{
-            label: 'Vendas (R$)',
-            data: <?= json_encode($dataChart) ?>,
-            borderColor: '#00b894',
-            backgroundColor: 'rgba(0,184,148,0.2)',
-            fill: true,
-            tension: 0.3
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: { legend: { position: 'bottom' } }
-    }
-});
+            <!-- GRÁFICOS -->
+            <script>
+                new Chart(document.getElementById('lineChart'), {
+                    type: 'line',
+                    data: {
+                        labels: <?= json_encode($labelsChart) ?>,
+                        datasets: [{
+                            label: 'Vendas (R$)',
+                            data: <?= json_encode($dataChart) ?>,
+                            borderColor: '#00b894',
+                            backgroundColor: 'rgba(0,184,148,0.2)',
+                            fill: true,
+                            tension: 0.3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
 
-new Chart(document.getElementById('lineChart30'), {
-    type: 'line',
-    data: {
-        labels: <?= json_encode($labels30Dias) ?>,
-        datasets: [{
-            label: 'Vendas (R$)',
-            data: <?= json_encode($data30Dias) ?>,
-            borderColor: '#ff7675',
-            backgroundColor: 'rgba(255,118,117,0.2)',
-            fill: true,
-            tension: 0.3
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: { legend: { position: 'bottom' } }
-    }
-});
-</script>
+                new Chart(document.getElementById('lineChart30'), {
+                    type: 'line',
+                    data: {
+                        labels: <?= json_encode($labels30Dias) ?>,
+                        datasets: [{
+                            label: 'Vendas (R$)',
+                            data: <?= json_encode($data30Dias) ?>,
+                            borderColor: '#ff7675',
+                            backgroundColor: 'rgba(255,118,117,0.2)',
+                            fill: true,
+                            tension: 0.3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            </script>
 
 </body>
+
 </html>
