@@ -1,10 +1,1079 @@
 {
-    "time": 1763940376,
+    "time": 1764036185,
     "content": {
         "http_code": 200,
         "body": {
             "query": "",
             "results": [
+                {
+                    "payments": [
+                        {
+                            "reason": "Kit 7 Exaustores Para Banheiro Ventilador 15cm - 12w 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 435,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 435,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": null,
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 8,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 134496806747,
+                            "date_last_modified": "2025-11-24T17:47:50.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                ""
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 54.38,
+                            "date_created": "2025-11-24T17:47:48.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9508688134,
+                            "status_detail": "cc_rejected_insufficient_amount",
+                            "issuer_id": "12518",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 44941890,
+                            "order_id": 2000013967067656,
+                            "currency_id": "BRL",
+                            "status": "rejected",
+                            "transaction_order_id": null
+                        },
+                        {
+                            "reason": "Kit 7 Exaustores Para Banheiro Ventilador 15cm - 12w 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 435,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 435,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-24T17:52:55.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 8,
+                            "authorization_code": "086092",
+                            "taxes_amount": 0,
+                            "id": 134497422577,
+                            "date_last_modified": "2025-11-24T17:52:55.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 54.38,
+                            "date_created": "2025-11-24T17:52:53.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9508688134,
+                            "status_detail": "accredited",
+                            "issuer_id": "12518",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 44941890,
+                            "order_id": 2000013967067656,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-22T17:52:56.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45936319724
+                    },
+                    "date_closed": "2025-11-24T17:52:56.000-04:00",
+                    "id": 2000013967067656,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4086788973",
+                                "title": "Kit 7 Exaustores Para Banheiro Ventilador 15cm - 12w 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": "I020"
+                            },
+                            "quantity": 1,
+                            "unit_price": 435,
+                            "full_unit_price": 435,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 71.78,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T21:54:30+00:00",
+                    "last_updated": "2025-11-24T17:54:29.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010180210725,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-24T17:47:48.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 44941890,
+                        "nickname": "BANDARRINHA"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 435,
+                    "paid_amount": 435,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox 4l Suspensa Premium - Cozinha Banheiro Bancada Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 279,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 279,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-24T12:27:09.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 135078582128,
+                            "date_last_modified": "2025-11-24T12:27:09.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-24T12:27:09.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 1140115522,
+                            "order_id": 2000013962247938,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-22T12:27:10.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45934001490
+                    },
+                    "date_closed": "2025-11-24T12:27:10.000-04:00",
+                    "id": 2000013962247938,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5656154748",
+                                "title": "Lixeira Inox 4l Suspensa Premium - Cozinha Banheiro Bancada Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 279,
+                            "full_unit_price": 279,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 50.22,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T16:29:28+00:00",
+                    "last_updated": "2025-11-24T12:28:43.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010174623793,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-24T12:27:08.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 1140115522,
+                        "nickname": "MARIADEJESUSDASERRADEASS"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 279,
+                    "paid_amount": 279,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                            "status_code": null,
+                            "total_paid_amount": 135,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 135,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-24T11:16:05.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": "550471",
+                            "taxes_amount": 0,
+                            "id": 134455354643,
+                            "date_last_modified": "2025-11-24T11:16:05.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 135,
+                            "date_created": "2025-11-24T11:16:03.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9718629208,
+                            "status_detail": "accredited",
+                            "issuer_id": "194",
+                            "payment_method_id": "visa",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 56467474,
+                            "order_id": 2000013961192844,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-22T11:16:06.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45933252029
+                    },
+                    "date_closed": "2025-11-24T11:16:06.000-04:00",
+                    "id": 2000013961192844,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5265269690",
+                                "title": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                                "category_id": "MLB33375",
+                                "variation_id": 182799389980,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [
+                                    {
+                                        "name": "Cor",
+                                        "id": "COLOR",
+                                        "value_id": "52049",
+                                        "value_name": "Preto"
+                                    }
+                                ],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": "I014"
+                            },
+                            "quantity": 1,
+                            "unit_price": 135,
+                            "full_unit_price": 135,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 17.55,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1,
+                            "stock": {
+                                "node_id": "BRSP04",
+                                "store_id": null
+                            }
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T21:11:53+00:00",
+                    "last_updated": "2025-11-24T11:17:41.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010173385073,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-24T11:16:02.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 56467474,
+                        "nickname": "ALEXANDRE.MARTINS57"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 135,
+                    "paid_amount": 135,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                            "status_code": null,
+                            "total_paid_amount": 135,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 135,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-23T23:28:21.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": "183397",
+                            "taxes_amount": 0,
+                            "id": 134415142165,
+                            "date_last_modified": "2025-11-23T23:28:21.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 135,
+                            "date_created": "2025-11-23T23:28:18.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9705945713,
+                            "status_detail": "accredited",
+                            "issuer_id": "687",
+                            "payment_method_id": "elo",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": "728750",
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 2213383634,
+                            "order_id": 2000013956651854,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-21T23:28:22.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45931118993
+                    },
+                    "date_closed": "2025-11-23T23:28:22.000-04:00",
+                    "id": 2000013956651854,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5265269690",
+                                "title": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                                "category_id": "MLB33375",
+                                "variation_id": 182799389980,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [
+                                    {
+                                        "name": "Cor",
+                                        "id": "COLOR",
+                                        "value_id": "52049",
+                                        "value_name": "Preto"
+                                    }
+                                ],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": "I014"
+                            },
+                            "quantity": 1,
+                            "unit_price": 135,
+                            "full_unit_price": 135,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 17.55,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1,
+                            "stock": {
+                                "node_id": "BRSP04",
+                                "store_id": null
+                            }
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T16:45:55+00:00",
+                    "last_updated": "2025-11-24T03:21:13.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010168155065,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-23T23:28:18.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 2213383634,
+                        "nickname": "LJ20250114125906"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 135,
+                    "paid_amount": 135,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                            "status_code": null,
+                            "total_paid_amount": 135,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 135,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-23T22:39:57.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": "T17121",
+                            "taxes_amount": 0,
+                            "id": 135026675078,
+                            "date_last_modified": "2025-11-23T22:39:57.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 135,
+                            "date_created": "2025-11-23T22:39:55.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9238277037,
+                            "status_detail": "accredited",
+                            "issuer_id": "24",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 396653131,
+                            "order_id": 2000013956253274,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-21T22:39:58.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45931210660
+                    },
+                    "date_closed": "2025-11-23T22:39:58.000-04:00",
+                    "id": 2000013956253274,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5265269690",
+                                "title": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                                "category_id": "MLB33375",
+                                "variation_id": 182799389980,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [
+                                    {
+                                        "name": "Cor",
+                                        "id": "COLOR",
+                                        "value_id": "52049",
+                                        "value_name": "Preto"
+                                    }
+                                ],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": "I014"
+                            },
+                            "quantity": 1,
+                            "unit_price": 135,
+                            "full_unit_price": 135,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 17.55,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1,
+                            "stock": {
+                                "node_id": "BRSC02",
+                                "store_id": null
+                            }
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T10:54:23+00:00",
+                    "last_updated": "2025-11-23T23:52:53.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010167681905,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-23T22:39:54.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 396653131,
+                        "nickname": "DEFRANCISCO20211106212607"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 135,
+                    "paid_amount": 135,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                            "status_code": null,
+                            "total_paid_amount": 152.02,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 135,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-23T22:10:47.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 3,
+                            "authorization_code": "604688",
+                            "taxes_amount": 0,
+                            "id": 135024733598,
+                            "date_last_modified": "2025-11-23T22:10:47.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 50.67,
+                            "date_created": "2025-11-23T22:10:45.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9610543314,
+                            "status_detail": "accredited",
+                            "issuer_id": "687",
+                            "payment_method_id": "elo",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": "233670342",
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 728548056,
+                            "order_id": 2000013955970808,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-21T22:10:47.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45931087834
+                    },
+                    "date_closed": "2025-11-23T22:10:47.000-04:00",
+                    "id": 2000013955970808,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5265269690",
+                                "title": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
+                                "category_id": "MLB33375",
+                                "variation_id": 182799389980,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [
+                                    {
+                                        "name": "Cor",
+                                        "id": "COLOR",
+                                        "value_id": "52049",
+                                        "value_name": "Preto"
+                                    }
+                                ],
+                                "warranty": "Garantia do vendedor: 7 dias",
+                                "condition": "new",
+                                "seller_sku": "I014"
+                            },
+                            "quantity": 1,
+                            "unit_price": 135,
+                            "full_unit_price": 135,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 17.55,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1,
+                            "stock": {
+                                "node_id": "BRSP18",
+                                "store_id": null
+                            }
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T17:23:00+00:00",
+                    "last_updated": "2025-11-23T23:52:43.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010167336933,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-23T22:10:44.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 728548056,
+                        "nickname": "TEREZINHAAPMOSSEPIOLLAPIOLL"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 135,
+                    "paid_amount": 135,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 765.9,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 765.9,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-23T20:11:04.000-04:00",
+                            "collector": {
+                                "id": 2148427138
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 135014617156,
+                            "date_last_modified": "2025-11-23T20:11:04.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-23T20:10:15.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 78587435,
+                            "order_id": 2000013954503578,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-21T20:11:04.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45930222393
+                    },
+                    "date_closed": "2025-11-23T20:11:04.000-04:00",
+                    "id": 2000013954503578,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4102021047",
+                                "title": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": "I014"
+                            },
+                            "quantity": 1,
+                            "unit_price": 765.9,
+                            "full_unit_price": 765.9,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 137.86,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1,
+                            "stock": {
+                                "node_id": "BRBA02",
+                                "store_id": null
+                            }
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T23:19:12+00:00",
+                    "last_updated": "2025-11-24T19:18:17.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010165640501,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-23T20:10:15.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 78587435,
+                        "nickname": "DDEVILIN"
+                    },
+                    "seller": {
+                        "id": 2148427138,
+                        "nickname": "INOVEX"
+                    },
+                    "total_amount": 765.9,
+                    "paid_amount": 765.9,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
                 {
                     "payments": [
                         {
@@ -407,7 +1476,7 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-23T19:36:07+00:00",
+                    "date_last_updated": "2025-11-24T03:23:24+00:00",
                     "last_updated": "2025-11-23T09:23:24.000-04:00",
                     "comment": null,
                     "pack_id": 2000010157075509,
@@ -558,8 +1627,8 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-22T22:46:01+00:00",
-                    "last_updated": "2025-11-22T18:46:00.000-04:00",
+                    "date_last_updated": "2025-11-24T07:04:19+00:00",
+                    "last_updated": "2025-11-24T03:04:16.000-04:00",
                     "comment": null,
                     "pack_id": 2000010151718437,
                     "coupon": {
@@ -702,7 +1771,7 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-23T07:09:06+00:00",
+                    "date_last_updated": "2025-11-24T06:46:12+00:00",
                     "last_updated": "2025-11-23T03:09:02.000-04:00",
                     "comment": null,
                     "pack_id": 2000010148785645,
@@ -787,7 +1856,7 @@
                             "transaction_order_id": null
                         }
                     ],
-                    "fulfilled": null,
+                    "fulfilled": true,
                     "taxes": {
                         "amount": null,
                         "currency_id": null,
@@ -852,8 +1921,8 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-23T21:30:57+00:00",
-                    "last_updated": "2025-11-22T14:23:22.000-04:00",
+                    "date_last_updated": "2025-11-25T02:02:26+00:00",
+                    "last_updated": "2025-11-24T22:02:24.000-04:00",
                     "comment": null,
                     "pack_id": 2000010148512041,
                     "coupon": {
@@ -870,7 +1939,7 @@
                         "pack_order",
                         "paid",
                         "one_shot",
-                        "not_delivered"
+                        "delivered"
                     ],
                     "buyer": {
                         "id": 485597932,
@@ -938,7 +2007,7 @@
                             "transaction_order_id": null
                         }
                     ],
-                    "fulfilled": null,
+                    "fulfilled": true,
                     "taxes": {
                         "amount": null,
                         "currency_id": null,
@@ -1003,8 +2072,8 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-23T18:53:06+00:00",
-                    "last_updated": "2025-11-22T14:09:49.000-04:00",
+                    "date_last_updated": "2025-11-24T18:36:13+00:00",
+                    "last_updated": "2025-11-24T14:36:11.000-04:00",
                     "comment": null,
                     "pack_id": 2000010148335839,
                     "coupon": {
@@ -1019,7 +2088,7 @@
                     "tags": [
                         "pack_order",
                         "paid",
-                        "not_delivered"
+                        "delivered"
                     ],
                     "buyer": {
                         "id": 424600303,
@@ -1141,8 +2210,8 @@
                             "element_id": 1
                         }
                     ],
-                    "date_last_updated": "2025-11-22T04:07:27+00:00",
-                    "last_updated": "2025-11-22T00:07:25.000-04:00",
+                    "date_last_updated": "2025-11-25T00:04:41+00:00",
+                    "last_updated": "2025-11-24T08:27:49.000-04:00",
                     "comment": null,
                     "pack_id": 2000010142361717,
                     "coupon": {
@@ -1870,7 +2939,7 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-23T20:18:57+00:00",
+                    "date_last_updated": "2025-11-24T03:39:28+00:00",
                     "last_updated": "2025-11-22T00:19:42.000-04:00",
                     "comment": null,
                     "pack_id": 2000010131339935,
@@ -2019,7 +3088,7 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-22T01:47:18+00:00",
+                    "date_last_updated": "2025-11-24T13:56:48+00:00",
                     "last_updated": "2025-11-21T10:13:05.000-04:00",
                     "comment": null,
                     "pack_id": 2000010130924105,
@@ -2452,7 +3521,7 @@
                             "element_id": 1
                         }
                     ],
-                    "date_last_updated": "2025-11-23T04:36:41+00:00",
+                    "date_last_updated": "2025-11-24T22:59:16+00:00",
                     "last_updated": "2025-11-21T10:30:49.000-04:00",
                     "comment": null,
                     "pack_id": 2000010124569657,
@@ -2661,10 +3730,10 @@
                             "authorization_code": "870691",
                             "taxes_amount": 0,
                             "id": 134021548731,
-                            "date_last_modified": "2025-11-20T15:38:53.000-04:00",
+                            "date_last_modified": "2025-11-24T16:45:13.000-04:00",
                             "coupon_amount": 20.25,
                             "available_actions": [
-                                "refund"
+                                "cancel"
                             ],
                             "shipping_cost": 0,
                             "installment_amount": 114.75,
@@ -2672,7 +3741,7 @@
                             "activation_uri": null,
                             "overpaid_amount": 0,
                             "card_id": 9519726508,
-                            "status_detail": "accredited",
+                            "status_detail": "pending",
                             "issuer_id": "25",
                             "payment_method_id": "visa",
                             "payment_type": "credit_card",
@@ -2685,7 +3754,7 @@
                             "payer_id": 181997510,
                             "order_id": 2000013916338212,
                             "currency_id": "BRL",
-                            "status": "approved",
+                            "status": "in_mediation",
                             "transaction_order_id": null
                         }
                     ],
@@ -2754,8 +3823,8 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-23T17:24:36+00:00",
-                    "last_updated": "2025-11-23T13:24:34.000-04:00",
+                    "date_last_updated": "2025-11-24T20:50:52+00:00",
+                    "last_updated": "2025-11-24T16:45:14.000-04:00",
                     "comment": null,
                     "pack_id": null,
                     "coupon": {
@@ -2782,6 +3851,11 @@
                     },
                     "total_amount": 135,
                     "paid_amount": 135,
+                    "mediations": [
+                        {
+                            "id": 5436177332
+                        }
+                    ],
                     "currency_id": "BRL",
                     "status": "paid",
                     "context": {
@@ -2987,7 +4061,7 @@
                             "transaction_order_id": null
                         }
                     ],
-                    "fulfilled": null,
+                    "fulfilled": true,
                     "taxes": {
                         "amount": null,
                         "currency_id": null,
@@ -3052,8 +4126,8 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-23T07:42:37+00:00",
-                    "last_updated": "2025-11-22T01:23:00.000-04:00",
+                    "date_last_updated": "2025-11-24T19:53:24+00:00",
+                    "last_updated": "2025-11-24T15:53:22.000-04:00",
                     "comment": null,
                     "pack_id": 2000010119656673,
                     "coupon": {
@@ -3070,7 +4144,7 @@
                         "pack_order",
                         "paid",
                         "one_shot",
-                        "not_delivered"
+                        "delivered"
                     ],
                     "buyer": {
                         "id": 104961290,
@@ -4954,7 +6028,7 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-20T19:38:24+00:00",
+                    "date_last_updated": "2025-11-24T13:20:16+00:00",
                     "last_updated": "2025-11-19T16:24:47.000-04:00",
                     "comment": null,
                     "pack_id": 2000010088553515,
@@ -5097,7 +6171,7 @@
                             }
                         }
                     ],
-                    "date_last_updated": "2025-11-20T19:38:22+00:00",
+                    "date_last_updated": "2025-11-24T13:20:14+00:00",
                     "last_updated": "2025-11-19T16:24:31.000-04:00",
                     "comment": null,
                     "pack_id": 2000010088553517,
@@ -6451,1097 +7525,6 @@
                         "site": "MLB",
                         "flows": []
                     }
-                },
-                {
-                    "payments": [
-                        {
-                            "reason": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
-                            "status_code": null,
-                            "total_paid_amount": 765.9,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 765.9,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": "2025-11-18T09:38:34.000-04:00",
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": null,
-                            "taxes_amount": 0,
-                            "id": 133707010477,
-                            "date_last_modified": "2025-11-18T09:38:34.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                "refund"
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": null,
-                            "date_created": "2025-11-18T09:38:34.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": null,
-                            "status_detail": "accredited",
-                            "issuer_id": "2007",
-                            "payment_method_id": "account_money",
-                            "payment_type": "account_money",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 50494940,
-                            "order_id": 2000013882558990,
-                            "currency_id": "BRL",
-                            "status": "approved",
-                            "transaction_order_id": null
-                        }
-                    ],
-                    "fulfilled": null,
-                    "taxes": {
-                        "amount": null,
-                        "currency_id": null,
-                        "id": null
-                    },
-                    "order_request": {
-                        "change": null,
-                        "return": null
-                    },
-                    "expiration_date": "2025-12-16T09:38:34.000-04:00",
-                    "feedback": {
-                        "buyer": null,
-                        "seller": null
-                    },
-                    "shipping": {
-                        "id": 45897410071
-                    },
-                    "date_closed": "2025-11-18T09:38:34.000-04:00",
-                    "id": 2000013882558990,
-                    "manufacturing_ending_date": null,
-                    "order_items": [
-                        {
-                            "item": {
-                                "id": "MLB4102021047",
-                                "title": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
-                                "category_id": "MLB33375",
-                                "variation_id": null,
-                                "seller_custom_field": null,
-                                "global_price": null,
-                                "net_weight": null,
-                                "variation_attributes": [],
-                                "warranty": "Garantia do vendedor: 30 dias",
-                                "condition": "new",
-                                "seller_sku": "I014"
-                            },
-                            "quantity": 1,
-                            "unit_price": 765.9,
-                            "full_unit_price": 765.9,
-                            "currency_id": "BRL",
-                            "manufacturing_days": null,
-                            "picked_quantity": null,
-                            "requested_quantity": {
-                                "measure": "unit",
-                                "value": 1
-                            },
-                            "sale_fee": 137.86,
-                            "listing_type_id": "gold_pro",
-                            "base_exchange_rate": null,
-                            "base_currency_id": null,
-                            "bundle": null,
-                            "element_id": 1,
-                            "stock": {
-                                "node_id": "BRSP11",
-                                "store_id": null
-                            }
-                        }
-                    ],
-                    "date_last_updated": "2025-11-19T09:59:00+00:00",
-                    "last_updated": "2025-11-18T09:38:53.000-04:00",
-                    "comment": null,
-                    "pack_id": 2000010080890271,
-                    "coupon": {
-                        "amount": 0,
-                        "id": null
-                    },
-                    "shipping_cost": null,
-                    "date_created": "2025-11-18T09:37:10.000-04:00",
-                    "date_created_ttl": null,
-                    "pickup_id": null,
-                    "status_detail": null,
-                    "tags": [
-                        "pack_order",
-                        "paid",
-                        "not_delivered"
-                    ],
-                    "buyer": {
-                        "id": 50494940,
-                        "nickname": "EKIUIIUYI"
-                    },
-                    "seller": {
-                        "id": 2148427138,
-                        "nickname": "INOVEX"
-                    },
-                    "total_amount": 765.9,
-                    "paid_amount": 765.9,
-                    "currency_id": "BRL",
-                    "status": "paid",
-                    "context": {
-                        "application": null,
-                        "product_id": null,
-                        "channel": "marketplace",
-                        "site": "MLB",
-                        "flows": []
-                    }
-                },
-                {
-                    "payments": [
-                        {
-                            "reason": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
-                            "status_code": null,
-                            "total_paid_amount": 765.9,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 765.9,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": "2025-11-18T09:37:51.000-04:00",
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": null,
-                            "taxes_amount": 0,
-                            "id": 134317064464,
-                            "date_last_modified": "2025-11-18T09:37:51.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                "refund"
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": null,
-                            "date_created": "2025-11-18T09:37:51.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": null,
-                            "status_detail": "accredited",
-                            "issuer_id": "2007",
-                            "payment_method_id": "account_money",
-                            "payment_type": "account_money",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 50494940,
-                            "order_id": 2000013882558954,
-                            "currency_id": "BRL",
-                            "status": "approved",
-                            "transaction_order_id": null
-                        }
-                    ],
-                    "fulfilled": null,
-                    "taxes": {
-                        "amount": null,
-                        "currency_id": null,
-                        "id": null
-                    },
-                    "order_request": {
-                        "change": null,
-                        "return": null
-                    },
-                    "expiration_date": "2025-12-16T09:37:52.000-04:00",
-                    "feedback": {
-                        "buyer": null,
-                        "seller": null
-                    },
-                    "shipping": {
-                        "id": 45897672844
-                    },
-                    "date_closed": "2025-11-18T09:37:52.000-04:00",
-                    "id": 2000013882558954,
-                    "manufacturing_ending_date": null,
-                    "order_items": [
-                        {
-                            "item": {
-                                "id": "MLB4102021047",
-                                "title": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
-                                "category_id": "MLB33375",
-                                "variation_id": null,
-                                "seller_custom_field": null,
-                                "global_price": null,
-                                "net_weight": null,
-                                "variation_attributes": [],
-                                "warranty": "Garantia do vendedor: 30 dias",
-                                "condition": "new",
-                                "seller_sku": "I014"
-                            },
-                            "quantity": 1,
-                            "unit_price": 765.9,
-                            "full_unit_price": 765.9,
-                            "currency_id": "BRL",
-                            "manufacturing_days": null,
-                            "picked_quantity": null,
-                            "requested_quantity": {
-                                "measure": "unit",
-                                "value": 1
-                            },
-                            "sale_fee": 137.86,
-                            "listing_type_id": "gold_pro",
-                            "base_exchange_rate": null,
-                            "base_currency_id": null,
-                            "bundle": null,
-                            "element_id": 1,
-                            "stock": {
-                                "node_id": "BRSP11",
-                                "store_id": null
-                            }
-                        }
-                    ],
-                    "date_last_updated": "2025-11-19T09:59:00+00:00",
-                    "last_updated": "2025-11-18T09:38:47.000-04:00",
-                    "comment": null,
-                    "pack_id": 2000010080890273,
-                    "coupon": {
-                        "amount": 0,
-                        "id": null
-                    },
-                    "shipping_cost": null,
-                    "date_created": "2025-11-18T09:37:09.000-04:00",
-                    "date_created_ttl": null,
-                    "pickup_id": null,
-                    "status_detail": null,
-                    "tags": [
-                        "pack_order",
-                        "paid",
-                        "not_delivered"
-                    ],
-                    "buyer": {
-                        "id": 50494940,
-                        "nickname": "EKIUIIUYI"
-                    },
-                    "seller": {
-                        "id": 2148427138,
-                        "nickname": "INOVEX"
-                    },
-                    "total_amount": 765.9,
-                    "paid_amount": 765.9,
-                    "currency_id": "BRL",
-                    "status": "paid",
-                    "context": {
-                        "application": null,
-                        "product_id": null,
-                        "channel": "marketplace",
-                        "site": "MLB",
-                        "flows": []
-                    }
-                },
-                {
-                    "payments": [
-                        {
-                            "reason": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
-                            "status_code": null,
-                            "total_paid_amount": 765.9,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 765.9,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": "2025-11-18T09:37:11.000-04:00",
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": null,
-                            "taxes_amount": 0,
-                            "id": 133706599227,
-                            "date_last_modified": "2025-11-18T09:37:11.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                "refund"
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": null,
-                            "date_created": "2025-11-18T09:37:11.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": null,
-                            "status_detail": "accredited",
-                            "issuer_id": "2007",
-                            "payment_method_id": "account_money",
-                            "payment_type": "account_money",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 50494940,
-                            "order_id": 2000013882553238,
-                            "currency_id": "BRL",
-                            "status": "approved",
-                            "transaction_order_id": null
-                        }
-                    ],
-                    "fulfilled": null,
-                    "taxes": {
-                        "amount": null,
-                        "currency_id": null,
-                        "id": null
-                    },
-                    "order_request": {
-                        "change": null,
-                        "return": null
-                    },
-                    "expiration_date": "2025-12-16T09:37:11.000-04:00",
-                    "feedback": {
-                        "buyer": null,
-                        "seller": null
-                    },
-                    "shipping": {
-                        "id": 45897409709
-                    },
-                    "date_closed": "2025-11-18T09:37:11.000-04:00",
-                    "id": 2000013882553238,
-                    "manufacturing_ending_date": null,
-                    "order_items": [
-                        {
-                            "item": {
-                                "id": "MLB4102021047",
-                                "title": "Lixeira Inox 30l Pedal Tampa Vedada Soft Close Premium Prateado",
-                                "category_id": "MLB33375",
-                                "variation_id": null,
-                                "seller_custom_field": null,
-                                "global_price": null,
-                                "net_weight": null,
-                                "variation_attributes": [],
-                                "warranty": "Garantia do vendedor: 30 dias",
-                                "condition": "new",
-                                "seller_sku": "I014"
-                            },
-                            "quantity": 1,
-                            "unit_price": 765.9,
-                            "full_unit_price": 765.9,
-                            "currency_id": "BRL",
-                            "manufacturing_days": null,
-                            "picked_quantity": null,
-                            "requested_quantity": {
-                                "measure": "unit",
-                                "value": 1
-                            },
-                            "sale_fee": 137.86,
-                            "listing_type_id": "gold_pro",
-                            "base_exchange_rate": null,
-                            "base_currency_id": null,
-                            "bundle": null,
-                            "element_id": 1,
-                            "stock": {
-                                "node_id": "BRSP11",
-                                "store_id": null
-                            }
-                        }
-                    ],
-                    "date_last_updated": "2025-11-19T12:01:59+00:00",
-                    "last_updated": "2025-11-18T09:38:43.000-04:00",
-                    "comment": null,
-                    "pack_id": 2000010080890275,
-                    "coupon": {
-                        "amount": 0,
-                        "id": null
-                    },
-                    "shipping_cost": null,
-                    "date_created": "2025-11-18T09:37:08.000-04:00",
-                    "date_created_ttl": null,
-                    "pickup_id": null,
-                    "status_detail": null,
-                    "tags": [
-                        "pack_order",
-                        "paid",
-                        "not_delivered"
-                    ],
-                    "buyer": {
-                        "id": 50494940,
-                        "nickname": "EKIUIIUYI"
-                    },
-                    "seller": {
-                        "id": 2148427138,
-                        "nickname": "INOVEX"
-                    },
-                    "total_amount": 765.9,
-                    "paid_amount": 765.9,
-                    "currency_id": "BRL",
-                    "status": "paid",
-                    "context": {
-                        "application": null,
-                        "product_id": null,
-                        "channel": "marketplace",
-                        "site": "MLB",
-                        "flows": []
-                    }
-                },
-                {
-                    "payments": [
-                        {
-                            "reason": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                            "status_code": null,
-                            "total_paid_amount": 79.57,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 68.58,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": null,
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": null,
-                            "taxes_amount": 0,
-                            "id": 134307155734,
-                            "date_last_modified": "2025-11-18T08:15:54.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                ""
-                            ],
-                            "shipping_cost": 10.99,
-                            "installment_amount": 79.57,
-                            "date_created": "2025-11-18T08:15:53.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": 9194777387,
-                            "status_detail": "cc_rejected_card_disabled",
-                            "issuer_id": "25",
-                            "payment_method_id": "visa",
-                            "payment_type": "credit_card",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 139057411,
-                            "order_id": 2000013881471304,
-                            "currency_id": "BRL",
-                            "status": "rejected",
-                            "transaction_order_id": null
-                        },
-                        {
-                            "reason": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                            "status_code": null,
-                            "total_paid_amount": 68.58,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 68.58,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": "2025-11-18T08:17:31.000-04:00",
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": "028187",
-                            "taxes_amount": 0,
-                            "id": 133697365897,
-                            "date_last_modified": "2025-11-18T08:17:31.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                "refund"
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": 68.58,
-                            "date_created": "2025-11-18T08:17:28.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": 9227942065,
-                            "status_detail": "accredited",
-                            "issuer_id": "24",
-                            "payment_method_id": "master",
-                            "payment_type": "credit_card",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 139057411,
-                            "order_id": 2000013881471304,
-                            "currency_id": "BRL",
-                            "status": "approved",
-                            "transaction_order_id": null
-                        }
-                    ],
-                    "fulfilled": true,
-                    "taxes": {
-                        "amount": null,
-                        "currency_id": null,
-                        "id": null
-                    },
-                    "order_request": {
-                        "change": null,
-                        "return": null
-                    },
-                    "expiration_date": "2025-12-16T08:17:31.000-04:00",
-                    "feedback": {
-                        "buyer": null,
-                        "seller": null
-                    },
-                    "shipping": {
-                        "id": 45896886363
-                    },
-                    "date_closed": "2025-11-18T08:17:31.000-04:00",
-                    "id": 2000013881471304,
-                    "manufacturing_ending_date": null,
-                    "order_items": [
-                        {
-                            "item": {
-                                "id": "MLB4053438129",
-                                "title": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                                "category_id": "MLB271571",
-                                "variation_id": null,
-                                "seller_custom_field": null,
-                                "global_price": null,
-                                "net_weight": null,
-                                "variation_attributes": [],
-                                "warranty": "Garantia do vendedor: 30 dias",
-                                "condition": "new",
-                                "seller_sku": "I020"
-                            },
-                            "quantity": 1,
-                            "unit_price": 68.58,
-                            "full_unit_price": 68.58,
-                            "currency_id": "BRL",
-                            "manufacturing_days": null,
-                            "picked_quantity": null,
-                            "requested_quantity": {
-                                "measure": "unit",
-                                "value": 1
-                            },
-                            "sale_fee": 14.64,
-                            "listing_type_id": "gold_special",
-                            "base_exchange_rate": null,
-                            "base_currency_id": null,
-                            "bundle": null,
-                            "element_id": 1,
-                            "stock": {
-                                "node_id": "BRPE01",
-                                "store_id": null
-                            }
-                        }
-                    ],
-                    "date_last_updated": "2025-11-22T18:13:26+00:00",
-                    "last_updated": "2025-11-22T14:13:24.000-04:00",
-                    "comment": null,
-                    "pack_id": null,
-                    "coupon": {
-                        "amount": 0,
-                        "id": null
-                    },
-                    "shipping_cost": null,
-                    "date_created": "2025-11-18T08:15:53.000-04:00",
-                    "date_created_ttl": null,
-                    "pickup_id": null,
-                    "status_detail": null,
-                    "tags": [
-                        "paid",
-                        "delivered"
-                    ],
-                    "buyer": {
-                        "id": 139057411,
-                        "nickname": "RB ALMEIDA"
-                    },
-                    "seller": {
-                        "id": 2148427138,
-                        "nickname": "INOVEX"
-                    },
-                    "total_amount": 68.58,
-                    "paid_amount": 68.58,
-                    "currency_id": "BRL",
-                    "status": "paid",
-                    "context": {
-                        "application": null,
-                        "product_id": null,
-                        "channel": "marketplace",
-                        "site": "MLB",
-                        "flows": []
-                    }
-                },
-                {
-                    "payments": [
-                        {
-                            "reason": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
-                            "status_code": null,
-                            "total_paid_amount": 135,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 135,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": "2025-11-18T07:50:05.000-04:00",
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": "073067",
-                            "taxes_amount": 0,
-                            "id": 134304501950,
-                            "date_last_modified": "2025-11-18T07:50:05.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                "refund"
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": 135,
-                            "date_created": "2025-11-18T07:50:04.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": 9530958546,
-                            "status_detail": "accredited",
-                            "issuer_id": "25",
-                            "payment_method_id": "visa",
-                            "payment_type": "credit_card",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 135369802,
-                            "order_id": 2000013881213976,
-                            "currency_id": "BRL",
-                            "status": "approved",
-                            "transaction_order_id": null
-                        }
-                    ],
-                    "fulfilled": true,
-                    "taxes": {
-                        "amount": null,
-                        "currency_id": null,
-                        "id": null
-                    },
-                    "order_request": {
-                        "change": null,
-                        "return": null
-                    },
-                    "expiration_date": "2025-12-16T07:50:06.000-04:00",
-                    "feedback": {
-                        "buyer": null,
-                        "seller": null
-                    },
-                    "shipping": {
-                        "id": 45897018774
-                    },
-                    "date_closed": "2025-11-18T07:50:06.000-04:00",
-                    "id": 2000013881213976,
-                    "manufacturing_ending_date": null,
-                    "order_items": [
-                        {
-                            "item": {
-                                "id": "MLB5265269690",
-                                "title": "Lixeira Com Sensor Autom\u00e1tico 14l Banheiro E Cozinha Premium",
-                                "category_id": "MLB33375",
-                                "variation_id": 182799389980,
-                                "seller_custom_field": null,
-                                "global_price": null,
-                                "net_weight": null,
-                                "variation_attributes": [
-                                    {
-                                        "name": "Cor",
-                                        "id": "COLOR",
-                                        "value_id": "52049",
-                                        "value_name": "Preto"
-                                    }
-                                ],
-                                "warranty": "Garantia do vendedor: 7 dias",
-                                "condition": "new",
-                                "seller_sku": "I014"
-                            },
-                            "quantity": 1,
-                            "unit_price": 135,
-                            "full_unit_price": 135,
-                            "currency_id": "BRL",
-                            "manufacturing_days": null,
-                            "picked_quantity": null,
-                            "requested_quantity": {
-                                "measure": "unit",
-                                "value": 1
-                            },
-                            "sale_fee": 17.55,
-                            "listing_type_id": "gold_special",
-                            "base_exchange_rate": null,
-                            "base_currency_id": null,
-                            "bundle": null,
-                            "element_id": 1,
-                            "stock": {
-                                "node_id": "BRSC02",
-                                "store_id": null
-                            }
-                        }
-                    ],
-                    "date_last_updated": "2025-11-21T14:46:37+00:00",
-                    "last_updated": "2025-11-21T10:46:36.000-04:00",
-                    "comment": null,
-                    "pack_id": 2000010079334425,
-                    "coupon": {
-                        "amount": 0,
-                        "id": null
-                    },
-                    "shipping_cost": null,
-                    "date_created": "2025-11-18T07:50:03.000-04:00",
-                    "date_created_ttl": null,
-                    "pickup_id": null,
-                    "status_detail": null,
-                    "tags": [
-                        "d2c",
-                        "pack_order",
-                        "paid",
-                        "one_shot",
-                        "delivered"
-                    ],
-                    "buyer": {
-                        "id": 135369802,
-                        "nickname": "RENATAPORTO152"
-                    },
-                    "seller": {
-                        "id": 2148427138,
-                        "nickname": "INOVEX"
-                    },
-                    "total_amount": 135,
-                    "paid_amount": 135,
-                    "currency_id": "BRL",
-                    "status": "paid",
-                    "context": {
-                        "application": null,
-                        "product_id": null,
-                        "channel": "marketplace",
-                        "site": "MLB",
-                        "flows": []
-                    }
-                },
-                {
-                    "payments": [
-                        {
-                            "reason": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                            "status_code": null,
-                            "total_paid_amount": 68.58,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 68.58,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": null,
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": null,
-                            "taxes_amount": 0,
-                            "id": 134267005722,
-                            "date_last_modified": "2025-11-17T21:18:36.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                ""
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": 68.58,
-                            "date_created": "2025-11-17T21:18:32.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": 9683688978,
-                            "status_detail": "cc_rejected_call_for_authorize",
-                            "issuer_id": "24",
-                            "payment_method_id": "master",
-                            "payment_type": "credit_card",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": "378728407",
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 269918481,
-                            "order_id": 2000013875304008,
-                            "currency_id": "BRL",
-                            "status": "rejected",
-                            "transaction_order_id": null
-                        },
-                        {
-                            "reason": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                            "status_code": null,
-                            "total_paid_amount": 68.58,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 68.58,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": "2025-11-17T21:20:09.000-04:00",
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": "T46013",
-                            "taxes_amount": 0,
-                            "id": 133658112799,
-                            "date_last_modified": "2025-11-17T21:20:09.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                "refund"
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": 68.58,
-                            "date_created": "2025-11-17T21:20:07.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": 9683688978,
-                            "status_detail": "accredited",
-                            "issuer_id": "24",
-                            "payment_method_id": "master",
-                            "payment_type": "credit_card",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 269918481,
-                            "order_id": 2000013875304008,
-                            "currency_id": "BRL",
-                            "status": "approved",
-                            "transaction_order_id": null
-                        }
-                    ],
-                    "fulfilled": null,
-                    "taxes": {
-                        "amount": null,
-                        "currency_id": null,
-                        "id": null
-                    },
-                    "order_request": {
-                        "change": null,
-                        "return": null
-                    },
-                    "expiration_date": "2025-12-15T21:20:10.000-04:00",
-                    "feedback": {
-                        "buyer": null,
-                        "seller": null
-                    },
-                    "shipping": {
-                        "id": 45894373509
-                    },
-                    "date_closed": "2025-11-17T21:20:10.000-04:00",
-                    "id": 2000013875304008,
-                    "manufacturing_ending_date": null,
-                    "order_items": [
-                        {
-                            "item": {
-                                "id": "MLB4053438129",
-                                "title": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                                "category_id": "MLB271571",
-                                "variation_id": null,
-                                "seller_custom_field": null,
-                                "global_price": null,
-                                "net_weight": null,
-                                "variation_attributes": [],
-                                "warranty": "Garantia do vendedor: 30 dias",
-                                "condition": "new",
-                                "seller_sku": "I020"
-                            },
-                            "quantity": 1,
-                            "unit_price": 68.58,
-                            "full_unit_price": 68.58,
-                            "currency_id": "BRL",
-                            "manufacturing_days": null,
-                            "picked_quantity": null,
-                            "requested_quantity": {
-                                "measure": "unit",
-                                "value": 1
-                            },
-                            "sale_fee": 14.64,
-                            "listing_type_id": "gold_special",
-                            "base_exchange_rate": null,
-                            "base_currency_id": null,
-                            "bundle": null,
-                            "element_id": 1,
-                            "stock": {
-                                "node_id": "BRSP14",
-                                "store_id": null
-                            }
-                        }
-                    ],
-                    "date_last_updated": "2025-11-18T01:21:54+00:00",
-                    "last_updated": "2025-11-17T21:21:46.000-04:00",
-                    "comment": null,
-                    "pack_id": 2000010072892269,
-                    "coupon": {
-                        "amount": 0,
-                        "id": null
-                    },
-                    "shipping_cost": null,
-                    "date_created": "2025-11-17T21:18:31.000-04:00",
-                    "date_created_ttl": null,
-                    "pickup_id": null,
-                    "status_detail": null,
-                    "tags": [
-                        "d2c",
-                        "pack_order",
-                        "paid",
-                        "one_shot",
-                        "not_delivered"
-                    ],
-                    "buyer": {
-                        "id": 269918481,
-                        "nickname": "BOCL8347590"
-                    },
-                    "seller": {
-                        "id": 2148427138,
-                        "nickname": "INOVEX"
-                    },
-                    "total_amount": 68.58,
-                    "paid_amount": 68.58,
-                    "currency_id": "BRL",
-                    "status": "paid",
-                    "context": {
-                        "application": null,
-                        "product_id": null,
-                        "channel": "marketplace",
-                        "site": "MLB",
-                        "flows": []
-                    }
-                },
-                {
-                    "payments": [
-                        {
-                            "reason": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                            "status_code": null,
-                            "total_paid_amount": 68.58,
-                            "operation_type": "regular_payment",
-                            "transaction_amount": 68.58,
-                            "transaction_amount_refunded": 0,
-                            "date_approved": "2025-11-17T18:43:17.000-04:00",
-                            "collector": {
-                                "id": 2148427138
-                            },
-                            "coupon_id": null,
-                            "installments": 1,
-                            "authorization_code": null,
-                            "taxes_amount": 0,
-                            "id": 133639518621,
-                            "date_last_modified": "2025-11-17T18:43:17.000-04:00",
-                            "coupon_amount": 0,
-                            "available_actions": [
-                                "refund"
-                            ],
-                            "shipping_cost": 0,
-                            "installment_amount": null,
-                            "date_created": "2025-11-17T18:43:17.000-04:00",
-                            "activation_uri": null,
-                            "overpaid_amount": 0,
-                            "card_id": null,
-                            "status_detail": "accredited",
-                            "issuer_id": "2007",
-                            "payment_method_id": "account_money",
-                            "payment_type": "account_money",
-                            "deferred_period": null,
-                            "atm_transfer_reference": {
-                                "transaction_id": null,
-                                "company_id": null
-                            },
-                            "site_id": "MLB",
-                            "payer_id": 1237807242,
-                            "order_id": 2000013872280340,
-                            "currency_id": "BRL",
-                            "status": "approved",
-                            "transaction_order_id": null
-                        }
-                    ],
-                    "fulfilled": true,
-                    "taxes": {
-                        "amount": null,
-                        "currency_id": null,
-                        "id": null
-                    },
-                    "order_request": {
-                        "change": null,
-                        "return": null
-                    },
-                    "expiration_date": "2025-12-15T18:43:18.000-04:00",
-                    "feedback": {
-                        "buyer": null,
-                        "seller": null
-                    },
-                    "shipping": {
-                        "id": 45893334506
-                    },
-                    "date_closed": "2025-11-17T18:43:18.000-04:00",
-                    "id": 2000013872280340,
-                    "manufacturing_ending_date": null,
-                    "order_items": [
-                        {
-                            "item": {
-                                "id": "MLB4053438129",
-                                "title": "Exaustor Para Banheiro Ventilador 15cm - 12w 220v Cor Branco - Branco",
-                                "category_id": "MLB271571",
-                                "variation_id": null,
-                                "seller_custom_field": null,
-                                "global_price": null,
-                                "net_weight": null,
-                                "variation_attributes": [],
-                                "warranty": "Garantia do vendedor: 30 dias",
-                                "condition": "new",
-                                "seller_sku": "I020"
-                            },
-                            "quantity": 1,
-                            "unit_price": 68.58,
-                            "full_unit_price": 68.58,
-                            "currency_id": "BRL",
-                            "manufacturing_days": null,
-                            "picked_quantity": null,
-                            "requested_quantity": {
-                                "measure": "unit",
-                                "value": 1
-                            },
-                            "sale_fee": 14.64,
-                            "listing_type_id": "gold_special",
-                            "base_exchange_rate": null,
-                            "base_currency_id": null,
-                            "bundle": null,
-                            "element_id": 1,
-                            "stock": {
-                                "node_id": "BRSP02",
-                                "store_id": null
-                            }
-                        }
-                    ],
-                    "date_last_updated": "2025-11-20T00:14:40+00:00",
-                    "last_updated": "2025-11-19T20:14:39.000-04:00",
-                    "comment": null,
-                    "pack_id": 2000010069340855,
-                    "coupon": {
-                        "amount": 0,
-                        "id": null
-                    },
-                    "shipping_cost": null,
-                    "date_created": "2025-11-17T18:43:15.000-04:00",
-                    "date_created_ttl": null,
-                    "pickup_id": null,
-                    "status_detail": null,
-                    "tags": [
-                        "pack_order",
-                        "order_has_discount",
-                        "paid",
-                        "delivered"
-                    ],
-                    "buyer": {
-                        "id": 1237807242,
-                        "nickname": "DIGITAL CHL"
-                    },
-                    "seller": {
-                        "id": 2148427138,
-                        "nickname": "INOVEX"
-                    },
-                    "total_amount": 68.58,
-                    "paid_amount": 68.58,
-                    "currency_id": "BRL",
-                    "status": "paid",
-                    "context": {
-                        "application": null,
-                        "product_id": null,
-                        "channel": "marketplace",
-                        "site": "MLB",
-                        "flows": []
-                    }
                 }
             ],
             "sort": {
@@ -7568,7 +7551,7 @@
                 }
             ],
             "paging": {
-                "total": 618,
+                "total": 625,
                 "offset": 0,
                 "limit": 51
             },

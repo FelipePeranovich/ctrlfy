@@ -11,8 +11,7 @@ $erroToken = null;
 $access_token = meli_get_valid_token();
 
 if (!$access_token) {
-    $erroToken = "<h5>Conecte a um Marketplece e suas vendas aparecerão aqui! 
-                  <a href='marketplace.php'>Conectar agora</a></h5>";
+    $erroToken = "Nenhuma etiqueta encontrada";
 }
 
 /* ============================================
@@ -28,8 +27,7 @@ if (!empty($tokens['user_id'])) {
 }
 
 if (!$user_id) {
-    $erroToken = "<h5>Conecte a um Marketplece e suas vendas aparecerão aqui! 
-                  <a href='marketplace.php'>Conectar agora</a></h5>";
+    $erroToken = "Nenhuma etiqueta encontrada";
 }
 
 /* ============================================
