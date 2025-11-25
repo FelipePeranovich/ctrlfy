@@ -260,7 +260,7 @@ ease;
             <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
                 <h3 class="text-orange fw-bold">Estoque</h3>
                 <div class="mt-2 mt-md-0">
-                    <button class="btn btn-secondary me-2">Exportar</button>
+                    <a href="funcoes/exportar_estoque.php" class="btn btn-secondary me-2">Exportar</a>
                 </div>
             </div>
 

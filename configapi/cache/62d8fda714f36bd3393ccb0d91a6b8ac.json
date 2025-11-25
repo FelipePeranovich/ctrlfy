@@ -1,0 +1,50 @@
+{
+    "time": 1764083630,
+    "content": {
+        "http_code": 200,
+        "body": {
+            "query": "",
+            "results": [],
+            "sort": {
+                "id": "date_desc",
+                "name": "Date descending"
+            },
+            "available_sorts": [
+                {
+                    "id": "date_asc",
+                    "name": "Date ascending"
+                }
+            ],
+            "filters": [
+                {
+                    "id": "order.status",
+                    "name": "Order Status",
+                    "type": "text",
+                    "values": [
+                        {
+                            "id": "paid",
+                            "name": "Order Paid"
+                        }
+                    ]
+                },
+                {
+                    "id": "shipping.status",
+                    "name": "Shipping Status",
+                    "type": "text",
+                    "values": [
+                        {
+                            "id": "ready_to_ship",
+                            "name": "Ready to ship"
+                        }
+                    ]
+                }
+            ],
+            "paging": {
+                "total": 0,
+                "offset": 0,
+                "limit": 51
+            },
+            "display": "complete"
+        }
+    }
+}

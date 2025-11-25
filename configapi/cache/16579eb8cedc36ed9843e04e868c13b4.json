@@ -1,0 +1,4159 @@
+{
+    "time": 1764083631,
+    "content": {
+        "http_code": 200,
+        "body": {
+            "query": "",
+            "results": [
+                {
+                    "payments": [
+                        {
+                            "reason": "Kit Indicador + 4 C\u00e9lulas De Carga I 2000kg + Cx De Jun\u00e7\u00e3o Preto",
+                            "status_code": null,
+                            "total_paid_amount": 1599,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 1599,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-24T13:20:56.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": "605578",
+                            "taxes_amount": 0,
+                            "id": 134469510543,
+                            "date_last_modified": "2025-11-24T13:20:56.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 1599,
+                            "date_created": "2025-11-24T13:20:53.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9501664737,
+                            "status_detail": "accredited",
+                            "issuer_id": "687",
+                            "payment_method_id": "elo",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": "145467164",
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 2037319971,
+                            "order_id": 2000013963060752,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-22T13:20:56.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45934122547
+                    },
+                    "date_closed": "2025-11-24T13:20:56.000-04:00",
+                    "id": 2000013963060752,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5929605026",
+                                "title": "Kit Indicador + 4 C\u00e9lulas De Carga I 2000kg + Cx De Jun\u00e7\u00e3o Preto",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 90 dias",
+                                "condition": "new",
+                                "seller_sku": "I049"
+                            },
+                            "quantity": 1,
+                            "unit_price": 1599,
+                            "full_unit_price": 1599,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 271.83,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T17:22:31+00:00",
+                    "last_updated": "2025-11-24T13:22:30.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-24T13:20:53.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "catalog",
+                        "paid",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 2037319971,
+                        "nickname": "PE20241015165232"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 1599,
+                    "paid_amount": 1599,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 129.5,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 129.5,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-23T20:54:41.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 134404449751,
+                            "date_last_modified": "2025-11-23T20:54:41.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-23T20:54:41.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 222855070,
+                            "order_id": 2000013955081312,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-21T20:54:42.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45930451665
+                    },
+                    "date_closed": "2025-11-23T20:54:42.000-04:00",
+                    "id": 2000013955081312,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 2,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 2
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T20:11:31+00:00",
+                    "last_updated": "2025-11-23T20:56:15.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010166255575,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-23T20:54:39.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 222855070,
+                        "nickname": "ZENICORDEIRODEMENJON"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 129.5,
+                    "paid_amount": 129.5,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox Pedal Tampa Vedada Soft Close Premium 30l Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 698,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 698,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-19T17:26:00.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 5,
+                            "authorization_code": "067158",
+                            "taxes_amount": 0,
+                            "id": 134512750318,
+                            "date_last_modified": "2025-11-19T17:26:00.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 139.6,
+                            "date_created": "2025-11-19T17:25:57.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9196402108,
+                            "status_detail": "accredited",
+                            "issuer_id": "12",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": "502703939",
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 189252922,
+                            "order_id": 2000013904448636,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-17T17:26:01.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45907967498
+                    },
+                    "date_closed": "2025-11-19T17:26:01.000-04:00",
+                    "id": 2000013904448636,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5830439204",
+                                "title": "Lixeira Inox Pedal Tampa Vedada Soft Close Premium 30l Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 698,
+                            "full_unit_price": 698,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 125.64,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-22T14:18:10+00:00",
+                    "last_updated": "2025-11-22T10:18:09.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010106581957,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-19T17:25:56.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 189252922,
+                        "nickname": "ALESSANDROCRISTAL"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 698,
+                    "paid_amount": 698,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Luva Removedora De Pelos - A Original Pet M\u00e1gica Roupa Sof\u00e1 - Preto",
+                            "status_code": null,
+                            "total_paid_amount": 88.89,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 49.9,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-18T15:06:45.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 6,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 134357984262,
+                            "date_last_modified": "2025-11-18T15:06:45.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 38.99,
+                            "installment_amount": null,
+                            "date_created": "2025-11-18T15:06:45.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": null,
+                            "payment_method_id": "consumer_credits",
+                            "payment_type": "digital_currency",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": "1212831496",
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 131689755,
+                            "order_id": 2000013887594844,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-16T15:06:46.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45900064814
+                    },
+                    "date_closed": "2025-11-18T15:06:46.000-04:00",
+                    "id": 2000013887594844,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4277199781",
+                                "title": "Luva Removedora De Pelos - A Original Pet M\u00e1gica Roupa Sof\u00e1 - Preto",
+                                "category_id": "MLB178925",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 49.9,
+                            "full_unit_price": 49.9,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 12.74,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T13:56:27+00:00",
+                    "last_updated": "2025-11-18T15:08:18.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-18T15:06:44.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "paid",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 131689755,
+                        "nickname": "NORTONAFONSO"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 49.9,
+                    "paid_amount": 88.89,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 112.74,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 64.75,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-18T09:31:01.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 134316241464,
+                            "date_last_modified": "2025-11-18T09:31:01.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 47.99,
+                            "installment_amount": null,
+                            "date_created": "2025-11-18T09:30:25.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 498272367,
+                            "order_id": 2000013882452530,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-16T09:31:02.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45897363221
+                    },
+                    "date_closed": "2025-11-18T09:31:02.000-04:00",
+                    "id": 2000013882452530,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-18T14:23:30+00:00",
+                    "last_updated": "2025-11-18T09:32:04.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-18T09:30:25.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "paid",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 498272367,
+                        "nickname": "CRISTIANAOLIVEIRAPLC"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 64.75,
+                    "paid_amount": 112.74,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox Pedal Tampa Vedada Soft Close Premium 30l - Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 698,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 698,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-16T11:35:30.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 13,
+                            "authorization_code": "353076",
+                            "taxes_amount": 0,
+                            "id": 134083616278,
+                            "date_last_modified": "2025-11-16T11:35:30.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 53.69,
+                            "date_created": "2025-11-16T11:35:27.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9568459703,
+                            "status_detail": "accredited",
+                            "issuer_id": "12749",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": "11697191",
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 253571901,
+                            "order_id": 2000013848086706,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-14T11:35:31.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45882687129
+                    },
+                    "date_closed": "2025-11-16T11:35:31.000-04:00",
+                    "id": 2000013848086706,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5830439204",
+                                "title": "Lixeira Inox Pedal Tampa Vedada Soft Close Premium 30l - Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 698,
+                            "full_unit_price": 698,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 125.64,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-18T14:16:55+00:00",
+                    "last_updated": "2025-11-16T11:37:07.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010042053697,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-16T11:35:27.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 253571901,
+                        "nickname": "FLAANDRADE_1"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 698,
+                    "paid_amount": 698,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                            "status_code": null,
+                            "total_paid_amount": 80.74,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 64.75,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-16T06:50:45.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": "087957",
+                            "taxes_amount": 0,
+                            "id": 133452833301,
+                            "date_last_modified": "2025-11-16T06:50:45.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 15.99,
+                            "installment_amount": 80.74,
+                            "date_created": "2025-11-16T06:50:43.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9436862414,
+                            "status_detail": "accredited",
+                            "issuer_id": "24",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 730873052,
+                            "order_id": 2000013845666600,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-14T06:50:45.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45881651347
+                    },
+                    "date_closed": "2025-11-16T06:50:45.000-04:00",
+                    "id": 2000013845666600,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-19T19:14:45+00:00",
+                    "last_updated": "2025-11-19T15:14:43.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-16T06:50:43.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 730873052,
+                        "nickname": "ALOISOPISSOLATO"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 64.75,
+                    "paid_amount": 80.74,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                            "status_code": null,
+                            "total_paid_amount": 129.5,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 129.5,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-15T19:47:26.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 133419258817,
+                            "date_last_modified": "2025-11-15T19:47:26.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-15T19:47:26.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 1072660441,
+                            "order_id": 2000013841375202,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-13T19:47:27.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45879988835
+                    },
+                    "date_closed": "2025-11-15T19:47:27.000-04:00",
+                    "id": 2000013841375202,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 2,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 2
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-17T18:54:50+00:00",
+                    "last_updated": "2025-11-15T19:49:03.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010034541429,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-15T19:47:25.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "b2b",
+                        "pack_order",
+                        "paid",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 1072660441,
+                        "nickname": "RECANTOCAIPIRARECANTOCAIPIRA"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 129.5,
+                    "paid_amount": 129.5,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "b2b"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                            "status_code": null,
+                            "total_paid_amount": 70.56,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 64.75,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-15T07:14:30.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 133329662113,
+                            "date_last_modified": "2025-11-15T07:14:30.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-15T07:14:30.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 476420018,
+                            "order_id": 2000013832558706,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-13T07:14:31.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45876477216
+                    },
+                    "date_closed": "2025-11-15T07:14:31.000-04:00",
+                    "id": 2000013832558706,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-21T23:10:54+00:00",
+                    "last_updated": "2025-11-21T19:10:52.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010024547037,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-15T07:13:46.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "b2b",
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 476420018,
+                        "nickname": "BARBEARIAZIMALOUNGEBAR"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 64.75,
+                    "paid_amount": 64.75,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "b2b"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                            "status_code": null,
+                            "total_paid_amount": 129.5,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 129.5,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-11-14T11:09:53.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 133218718859,
+                            "date_last_modified": "2025-11-14T11:09:53.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-11-14T11:09:52.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 276887725,
+                            "order_id": 2000013820134276,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": null,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-12-12T11:09:53.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45870858649
+                    },
+                    "date_closed": "2025-11-14T11:09:53.000-04:00",
+                    "id": 2000013820134276,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v - Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 2,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 2
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-17T18:39:35+00:00",
+                    "last_updated": "2025-11-14T11:11:26.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000010010740353,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-11-14T11:09:51.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "order_has_discount",
+                        "paid",
+                        "not_delivered"
+                    ],
+                    "buyer": {
+                        "id": 276887725,
+                        "nickname": "ZABOTCLAUDIA"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 129.5,
+                    "paid_amount": 129.5,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 906.5,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 906.5,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-27T17:36:12.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 131512726294,
+                            "date_last_modified": "2025-10-27T17:36:12.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-27T17:36:11.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 322177630,
+                            "order_id": 2000013571082030,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-24T17:36:12.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45757097414
+                    },
+                    "date_closed": "2025-10-27T17:36:12.000-04:00",
+                    "id": 2000013571082030,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 14,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 14
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-24T21:50:56+00:00",
+                    "last_updated": "2025-11-24T17:50:55.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009744009607,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-27T17:36:10.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "b2b",
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 322177630,
+                        "nickname": "JEFFERSOM01"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 906.5,
+                    "paid_amount": 906.5,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "b2b"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 1100.75,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 1100.75,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-22T09:37:28.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 130874868344,
+                            "date_last_modified": "2025-10-22T09:37:28.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-22T09:37:28.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 161769467,
+                            "order_id": 2000013507562102,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-19T09:37:29.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45727232339
+                    },
+                    "date_closed": "2025-10-22T09:37:29.000-04:00",
+                    "id": 2000013507562102,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 17,
+                            "unit_price": 64.75,
+                            "full_unit_price": 64.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 17
+                            },
+                            "sale_fee": 14.2,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-19T13:52:26+00:00",
+                    "last_updated": "2025-11-19T09:52:24.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009689537653,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-22T09:37:26.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 161769467,
+                        "nickname": "SABRINNASENA"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 1100.75,
+                    "paid_amount": 1100.75,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Kit 10 Bot\u00f5es De Emerg\u00eancia 1na C\/trava Girar P\/destravar Preto",
+                            "status_code": null,
+                            "total_paid_amount": 99.9,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 99.9,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-22T08:47:43.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": "220680",
+                            "taxes_amount": 0,
+                            "id": 130869220828,
+                            "date_last_modified": "2025-10-22T08:47:43.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 99.9,
+                            "date_created": "2025-10-22T08:47:41.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9498930667,
+                            "status_detail": "accredited",
+                            "issuer_id": "12518",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 174047792,
+                            "order_id": 2000013506932652,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-19T08:47:43.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45727177456
+                    },
+                    "date_closed": "2025-10-22T08:47:43.000-04:00",
+                    "id": 2000013506932652,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643050948",
+                                "title": "Kit 10 Bot\u00f5es De Emerg\u00eancia 1na C\/trava Girar P\/destravar Preto",
+                                "category_id": "MLB413560",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 99.9,
+                            "full_unit_price": 99.9,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 11.99,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-19T13:01:20+00:00",
+                    "last_updated": "2025-11-19T09:01:17.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009688952293,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-22T08:47:40.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "paid",
+                        "one_shot",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 174047792,
+                        "nickname": "EZEQUIELMARREIRO"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 99.9,
+                    "paid_amount": 99.9,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox 20l Sensor Tampa Autom\u00e1tica Antiodor Premium Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 459,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 459,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-19T19:29:10.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 130578609438,
+                            "date_last_modified": "2025-10-19T19:29:10.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-19T19:29:10.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 6622172,
+                            "order_id": 2000013477213280,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-16T19:29:10.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45713082519
+                    },
+                    "date_closed": "2025-10-19T19:29:10.000-04:00",
+                    "id": 2000013477213280,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5663197164",
+                                "title": "Lixeira Inox 20l Sensor Tampa Autom\u00e1tica Antiodor Premium Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 459,
+                            "full_unit_price": 459,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 59.67,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-17T00:20:16+00:00",
+                    "last_updated": "2025-11-16T20:20:16.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009662988681,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-19T19:27:40.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "splitted_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 6622172,
+                        "nickname": "CELSO2007D"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 459,
+                    "paid_amount": 459,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox 20l Sensor Tampa Autom\u00e1tica Antiodor Premium Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 459,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 459,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-19T19:28:24.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 130000015499,
+                            "date_last_modified": "2025-10-19T19:28:24.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-19T19:28:24.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 6622172,
+                            "order_id": 2000013477215078,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-16T19:28:24.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45713082537
+                    },
+                    "date_closed": "2025-10-19T19:28:24.000-04:00",
+                    "id": 2000013477215078,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5663197164",
+                                "title": "Lixeira Inox 20l Sensor Tampa Autom\u00e1tica Antiodor Premium Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 459,
+                            "full_unit_price": 459,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 59.67,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-17T00:20:21+00:00",
+                    "last_updated": "2025-11-16T20:20:19.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009662988683,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-19T19:27:41.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "splitted_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 6622172,
+                        "nickname": "CELSO2007D"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 459,
+                    "paid_amount": 459,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 123.5,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 123.5,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-18T08:02:52.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 130399249490,
+                            "date_last_modified": "2025-10-18T08:02:52.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-18T08:02:52.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 185314644,
+                            "order_id": 2000013461241338,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-15T08:02:52.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45706256402
+                    },
+                    "date_closed": "2025-10-18T08:02:52.000-04:00",
+                    "id": 2000013461241338,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 2,
+                            "unit_price": 61.75,
+                            "full_unit_price": 61.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 2
+                            },
+                            "sale_fee": 13.85,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-15T12:16:44+00:00",
+                    "last_updated": "2025-11-15T08:16:35.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009649427545,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-18T08:02:49.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 185314644,
+                        "nickname": "GERALDOBELLETTIBELLETTI"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 123.5,
+                    "paid_amount": 123.5,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 123.5,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 123.5,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-15T10:25:16.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 129439518421,
+                            "date_last_modified": "2025-10-15T10:25:16.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-15T10:25:16.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 152438288,
+                            "order_id": 2000013423901782,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-12T10:25:17.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45688437295
+                    },
+                    "date_closed": "2025-10-15T10:25:17.000-04:00",
+                    "id": 2000013423901782,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 2,
+                            "unit_price": 61.75,
+                            "full_unit_price": 61.75,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 2
+                            },
+                            "sale_fee": 13.85,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-12T14:40:23+00:00",
+                    "last_updated": "2025-11-12T10:40:22.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009615495101,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-15T10:25:14.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 152438288,
+                        "nickname": "EDUARDODROVETTE"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 123.5,
+                    "paid_amount": 123.5,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Autom\u00e1tica Sensor Banheiro Cozinha Lixo Inteligente",
+                            "status_code": null,
+                            "total_paid_amount": 254.86,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 230,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-12T10:33:26.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 129640397392,
+                            "date_last_modified": "2025-11-03T23:54:43.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-12T10:33:26.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 1280624336,
+                            "order_id": 2000013383654610,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-09T10:33:27.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45670249512
+                    },
+                    "date_closed": "2025-10-12T10:33:27.000-04:00",
+                    "id": 2000013383654610,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4196960155",
+                                "title": "Lixeira Autom\u00e1tica Sensor Banheiro Cozinha Lixo Inteligente",
+                                "category_id": "MLB439097",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": "I014"
+                            },
+                            "quantity": 2,
+                            "unit_price": 115,
+                            "full_unit_price": 115,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 2
+                            },
+                            "sale_fee": 14.95,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-11-09T14:47:44+00:00",
+                    "last_updated": "2025-11-09T10:47:43.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009571172747,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-12T10:33:25.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 1280624336,
+                        "nickname": "MARTINSFAGNER20230105210340"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 230,
+                    "paid_amount": 230,
+                    "mediations": [
+                        {
+                            "id": 5424891351
+                        }
+                    ],
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Lixeira Inox 20l Sensor Tampa Autom\u00e1tica Antiodor Premium Prateado",
+                            "status_code": null,
+                            "total_paid_amount": 459,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 459,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-09T10:16:58.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 128690964621,
+                            "date_last_modified": "2025-10-24T23:02:37.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-09T10:16:58.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 125319953,
+                            "order_id": 2000013346993424,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-06T10:16:59.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45653312433
+                    },
+                    "date_closed": "2025-10-09T10:16:59.000-04:00",
+                    "id": 2000013346993424,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5663197164",
+                                "title": "Lixeira Inox 20l Sensor Tampa Autom\u00e1tica Antiodor Premium Prateado",
+                                "category_id": "MLB33375",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 459,
+                            "full_unit_price": 459,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 59.67,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-10-27T23:55:40+00:00",
+                    "last_updated": "2025-10-24T23:02:37.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009531552549,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-09T10:16:15.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "splitted_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 125319953,
+                        "nickname": "CELINACUSTODIO"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 459,
+                    "paid_amount": 459,
+                    "mediations": [
+                        {
+                            "id": 5420456593
+                        }
+                    ],
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                            "status_code": null,
+                            "total_paid_amount": 598.95,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 598.95,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-06T19:32:45.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 128913449028,
+                            "date_last_modified": "2025-10-06T19:32:45.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-06T19:32:45.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 206876025,
+                            "order_id": 2000013307110414,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-11-03T19:32:46.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45635406640
+                    },
+                    "date_closed": "2025-10-06T19:32:46.000-04:00",
+                    "id": 2000013307110414,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5643187168",
+                                "title": "Exaustor Para Banheiro Ventilado 10cm De Profundidade - 220v Branco",
+                                "category_id": "MLB271571",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 11,
+                            "unit_price": 54.45,
+                            "full_unit_price": 54.45,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 11
+                            },
+                            "sale_fee": 13.01,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-10-15T13:22:34+00:00",
+                    "last_updated": "2025-10-15T09:22:33.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009488649885,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-06T19:32:43.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 206876025,
+                        "nickname": "SIQUEIRAPABLO20220507220103"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 598.95,
+                    "paid_amount": 598.95,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 790,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 790,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-03T08:40:30.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 128456187290,
+                            "date_last_modified": "2025-10-03T08:40:30.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-03T08:40:30.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 1152903959,
+                            "order_id": 2000013262922312,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-31T08:40:30.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45615816872
+                    },
+                    "date_closed": "2025-10-03T08:40:30.000-04:00",
+                    "id": 2000013262922312,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 790,
+                            "full_unit_price": 790,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 134.3,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-10-14T17:16:42+00:00",
+                    "last_updated": "2025-10-14T13:16:40.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009440381447,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-03T08:39:48.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "catalog",
+                        "splitted_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 1152903959,
+                        "nickname": "MELOEDUARDA20220701160335"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 790,
+                    "paid_amount": 790,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 790,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 790,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-03T08:39:50.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 128456133092,
+                            "date_last_modified": "2025-10-03T08:39:50.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-10-03T08:39:50.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 1152903959,
+                            "order_id": 2000013262919148,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-31T08:39:51.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45615816894
+                    },
+                    "date_closed": "2025-10-03T08:39:51.000-04:00",
+                    "id": 2000013262919148,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 790,
+                            "full_unit_price": 790,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 134.3,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-10-14T17:16:40+00:00",
+                    "last_updated": "2025-10-14T13:16:39.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009440381449,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-03T08:39:49.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "catalog",
+                        "splitted_order",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 1152903959,
+                        "nickname": "MELOEDUARDA20220701160335"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 790,
+                    "paid_amount": 790,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 790,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 790,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-02T11:45:05.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 6,
+                            "authorization_code": "650557",
+                            "taxes_amount": 0,
+                            "id": 128343758580,
+                            "date_last_modified": "2025-10-02T11:45:05.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 131.67,
+                            "date_created": "2025-10-02T11:45:04.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 8970640705,
+                            "status_detail": "accredited",
+                            "issuer_id": "25",
+                            "payment_method_id": "visa",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": "125429822",
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 262003163,
+                            "order_id": 2000013251631916,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-30T11:45:07.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45610608952
+                    },
+                    "date_closed": "2025-10-02T11:45:07.000-04:00",
+                    "id": 2000013251631916,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 790,
+                            "full_unit_price": 790,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 134.3,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-10-14T18:26:19+00:00",
+                    "last_updated": "2025-10-14T14:26:17.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009429226929,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-02T11:45:03.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "one_shot",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 262003163,
+                        "nickname": "FABRICIOBALISA"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 790,
+                    "paid_amount": 790,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 799,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 799,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-10-01T08:14:39.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 12,
+                            "authorization_code": "143960",
+                            "taxes_amount": 0,
+                            "id": 128180056966,
+                            "date_last_modified": "2025-10-01T08:14:39.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 66.58,
+                            "date_created": "2025-10-01T08:14:37.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9615399775,
+                            "status_detail": "accredited",
+                            "issuer_id": "12749",
+                            "payment_method_id": "master",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 372627771,
+                            "order_id": 2000013234619204,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-29T08:14:40.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45602470399
+                    },
+                    "date_closed": "2025-10-01T08:14:40.000-04:00",
+                    "id": 2000013234619204,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 799,
+                            "full_unit_price": 799,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 135.83,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-10-06T15:11:31+00:00",
+                    "last_updated": "2025-10-06T11:11:31.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009410547405,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-10-01T08:14:36.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "d2c",
+                        "pack_order",
+                        "catalog",
+                        "paid",
+                        "one_shot",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 372627771,
+                        "nickname": "EVERSON_JP"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 799,
+                    "paid_amount": 799,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 799,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 799,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-09-24T07:05:32.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 127351649302,
+                            "date_last_modified": "2025-09-24T07:05:32.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-09-24T07:05:00.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 327441206,
+                            "order_id": 2000013153187678,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-22T07:05:33.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45565283788
+                    },
+                    "date_closed": "2025-09-24T07:05:33.000-04:00",
+                    "id": 2000013153187678,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 799,
+                            "full_unit_price": 799,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 135.83,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-09-30T17:57:36+00:00",
+                    "last_updated": "2025-09-30T13:57:34.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-09-24T07:04:59.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "catalog",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 327441206,
+                        "nickname": "SOMA3492220"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 799,
+                    "paid_amount": 799,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 918.28,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 817.29,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-09-16T14:05:15.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 125861269359,
+                            "date_last_modified": "2025-09-16T14:05:15.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 100.99,
+                            "installment_amount": null,
+                            "date_created": "2025-09-16T14:04:30.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 322652886,
+                            "order_id": 2000013064665834,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-14T14:05:16.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45524368306
+                    },
+                    "date_closed": "2025-09-16T14:05:16.000-04:00",
+                    "id": 2000013064665834,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 817.29,
+                            "full_unit_price": 869,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 98.07,
+                            "listing_type_id": "gold_special",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-09-23T12:47:35+00:00",
+                    "last_updated": "2025-09-23T08:47:34.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-09-16T14:04:29.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "order_has_discount",
+                        "catalog",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 322652886,
+                        "nickname": "INAMARABARRETO"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 817.29,
+                    "paid_amount": 918.28,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 400.29,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 400.29,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-09-16T09:57:44.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 12,
+                            "authorization_code": "574157",
+                            "taxes_amount": 0,
+                            "id": 126386373256,
+                            "date_last_modified": "2025-09-16T09:57:44.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 33.36,
+                            "date_created": "2025-09-16T09:57:40.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9554169570,
+                            "status_detail": "accredited",
+                            "issuer_id": "12749",
+                            "payment_method_id": "visa",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 262367640,
+                            "order_id": 2000013061451850,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        },
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 417,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 417,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-09-16T09:57:44.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 18,
+                            "authorization_code": "N9553P",
+                            "taxes_amount": 0,
+                            "id": 126386395188,
+                            "date_last_modified": "2025-09-16T09:57:48.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": 23.17,
+                            "date_created": "2025-09-16T09:57:40.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": 9113338832,
+                            "status_detail": "accredited",
+                            "issuer_id": "12510",
+                            "payment_method_id": "visa",
+                            "payment_type": "credit_card",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 262367640,
+                            "order_id": 2000013061451850,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-14T09:57:45.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45522851494
+                    },
+                    "date_closed": "2025-09-16T09:57:45.000-04:00",
+                    "id": 2000013061451850,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 817.29,
+                            "full_unit_price": 869,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 138.94,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-09-19T17:39:53+00:00",
+                    "last_updated": "2025-09-19T13:39:50.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-09-16T09:57:39.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "order_has_discount",
+                        "catalog",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 262367640,
+                        "nickname": "LUCIANOFILGUEIRASGOMES"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 817.29,
+                    "paid_amount": 817.29,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 876.99,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 869,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-09-08T17:18:18.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 125414525890,
+                            "date_last_modified": "2025-09-08T17:18:18.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 7.99,
+                            "installment_amount": null,
+                            "date_created": "2025-09-08T17:17:51.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "12501",
+                            "payment_method_id": "pix",
+                            "payment_type": "bank_transfer",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": "1"
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 106468204,
+                            "order_id": 2000012968180142,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-10-06T17:18:19.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45479982462
+                    },
+                    "date_closed": "2025-09-08T17:18:19.000-04:00",
+                    "id": 2000012968180142,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB5632223178",
+                                "title": "Balan\u00e7a Pet Digital Veterin\u00e1ria 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": null,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 869,
+                            "full_unit_price": 869,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 147.73,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-09-17T17:10:39+00:00",
+                    "last_updated": "2025-09-17T13:10:39.000-04:00",
+                    "comment": null,
+                    "pack_id": null,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-09-08T17:17:51.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "catalog",
+                        "paid",
+                        "delivered"
+                    ],
+                    "buyer": {
+                        "id": 106468204,
+                        "nickname": "ACACIODINIZ"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 869,
+                    "paid_amount": 876.99,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": [
+                            "catalog"
+                        ]
+                    }
+                },
+                {
+                    "payments": [
+                        {
+                            "reason": "Balan\u00e7a Veterin\u00e1ria Digital 300kg 52x42cm Prato Inox",
+                            "status_code": null,
+                            "total_paid_amount": 879,
+                            "operation_type": "regular_payment",
+                            "transaction_amount": 879,
+                            "transaction_amount_refunded": 0,
+                            "date_approved": "2025-09-01T15:57:15.000-04:00",
+                            "collector": {
+                                "id": 2644279415
+                            },
+                            "coupon_id": null,
+                            "installments": 1,
+                            "authorization_code": null,
+                            "taxes_amount": 0,
+                            "id": 123949979007,
+                            "date_last_modified": "2025-09-01T15:57:15.000-04:00",
+                            "coupon_amount": 0,
+                            "available_actions": [
+                                "refund"
+                            ],
+                            "shipping_cost": 0,
+                            "installment_amount": null,
+                            "date_created": "2025-09-01T15:57:15.000-04:00",
+                            "activation_uri": null,
+                            "overpaid_amount": 0,
+                            "card_id": null,
+                            "status_detail": "accredited",
+                            "issuer_id": "2007",
+                            "payment_method_id": "account_money",
+                            "payment_type": "account_money",
+                            "deferred_period": null,
+                            "atm_transfer_reference": {
+                                "transaction_id": null,
+                                "company_id": null
+                            },
+                            "site_id": "MLB",
+                            "payer_id": 494657444,
+                            "order_id": 2000012879552776,
+                            "currency_id": "BRL",
+                            "status": "approved",
+                            "transaction_order_id": null
+                        }
+                    ],
+                    "fulfilled": true,
+                    "taxes": {
+                        "amount": null,
+                        "currency_id": null,
+                        "id": null
+                    },
+                    "order_request": {
+                        "change": null,
+                        "return": null
+                    },
+                    "expiration_date": "2025-09-29T15:57:16.000-04:00",
+                    "feedback": {
+                        "buyer": null,
+                        "seller": null
+                    },
+                    "shipping": {
+                        "id": 45439523170
+                    },
+                    "date_closed": "2025-09-01T15:57:16.000-04:00",
+                    "id": 2000012879552776,
+                    "manufacturing_ending_date": null,
+                    "order_items": [
+                        {
+                            "item": {
+                                "id": "MLB4176396571",
+                                "title": "Balan\u00e7a Veterin\u00e1ria Digital 300kg 52x42cm Prato Inox",
+                                "category_id": "MLB30179",
+                                "variation_id": 184967663920,
+                                "seller_custom_field": null,
+                                "global_price": null,
+                                "net_weight": null,
+                                "variation_attributes": [
+                                    {
+                                        "name": "Cor",
+                                        "id": "COLOR",
+                                        "value_id": "2133143",
+                                        "value_name": "Inox"
+                                    },
+                                    {
+                                        "name": "Voltagem",
+                                        "id": "VOLTAGE",
+                                        "value_id": "39205163",
+                                        "value_name": "127\/220V"
+                                    }
+                                ],
+                                "warranty": "Garantia do vendedor: 30 dias",
+                                "condition": "new",
+                                "seller_sku": null
+                            },
+                            "quantity": 1,
+                            "unit_price": 879,
+                            "full_unit_price": 879,
+                            "currency_id": "BRL",
+                            "manufacturing_days": null,
+                            "picked_quantity": null,
+                            "requested_quantity": {
+                                "measure": "unit",
+                                "value": 1
+                            },
+                            "sale_fee": 149.43,
+                            "listing_type_id": "gold_pro",
+                            "base_exchange_rate": null,
+                            "base_currency_id": null,
+                            "bundle": null,
+                            "element_id": 1
+                        }
+                    ],
+                    "date_last_updated": "2025-09-08T20:42:57+00:00",
+                    "last_updated": "2025-09-08T16:42:57.000-04:00",
+                    "comment": null,
+                    "pack_id": 2000009062358133,
+                    "coupon": {
+                        "amount": 0,
+                        "id": null
+                    },
+                    "shipping_cost": null,
+                    "date_created": "2025-09-01T15:56:30.000-04:00",
+                    "date_created_ttl": null,
+                    "pickup_id": null,
+                    "status_detail": null,
+                    "tags": [
+                        "pack_order",
+                        "order_has_discount",
+                        "paid",
+                        "delivered",
+                        "bundle"
+                    ],
+                    "buyer": {
+                        "id": 494657444,
+                        "nickname": "KELLYBRAGARIBEIRO"
+                    },
+                    "seller": {
+                        "id": 2644279415,
+                        "nickname": "NOVALUX_PRODUTOS"
+                    },
+                    "total_amount": 879,
+                    "paid_amount": 879,
+                    "currency_id": "BRL",
+                    "status": "paid",
+                    "context": {
+                        "application": null,
+                        "product_id": null,
+                        "channel": "marketplace",
+                        "site": "MLB",
+                        "flows": []
+                    }
+                }
+            ],
+            "sort": {
+                "id": "date_desc",
+                "name": "Date descending"
+            },
+            "available_sorts": [
+                {
+                    "id": "date_asc",
+                    "name": "Date ascending"
+                }
+            ],
+            "filters": [
+                {
+                    "id": "order.status",
+                    "name": "Order Status",
+                    "type": "text",
+                    "values": [
+                        {
+                            "id": "paid",
+                            "name": "Order Paid"
+                        }
+                    ]
+                }
+            ],
+            "paging": {
+                "total": 29,
+                "offset": 0,
+                "limit": 51
+            },
+            "display": "complete"
+        }
+    }
+}
